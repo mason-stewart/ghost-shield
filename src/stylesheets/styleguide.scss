@@ -1,0 +1,63 @@
+@import "compass/css3";
+@import "color-variables";
+
+.style-container {
+	border: 1px solid $gray-med;
+	border-radius: 7px;
+	padding: 15px;
+	margin-bottom: 25px;
+}
+
+.style-contents {
+	margin: 0px auto;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 100px;
+	height: 80px;
+	text-align: center;
+	padding-top: 20px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid $gray-dark;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.red-background {
+	background: $red;
+	color: white;
+}
+
+.blue-background {
+	background: $blue;
+	color: white;
+}
+
+.yellow-background {
+	background: $yellow;
+	color: white;
+}
+
+.gold-background {
+	background: $gold;
+	color: white;
+}
+
+.gray-light-background {
+	background: $gray-light;
+	color: $gray-dark;
+}
+
+.gray-med-background {
+	background: $gray-med;
+	color: $gray-dark;
+}
+
+.gray-dark-background {
+	background: $gray-dark;
+	color: white;
+}
