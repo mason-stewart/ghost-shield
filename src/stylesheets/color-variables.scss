@@ -1,0 +1,65 @@
+// Color Variables:
+$gray-light: #F2F4F5;
+$gray-med: #ADB8C4;
+$gray-dark: #39474e;
+$red: #A02121;
+$blue: #2C94CE;
+$blue-link: #158cbd;
+$yellow: #CEAE2C;
+$gold: #C4843C;
+
+// Element tags are listed first, then classes
+// All items & properties listed in alphabetical order
+// When using the background classes we will need to override the hover state 
+// for the header sections
+
+.blue-bg {
+  background: $blue;
+  color: white;
+}
+
+.blue-link-bg {
+  background: $blue-link;
+  color: white;
+}
+
+.gold-bg {
+  background: $gold;
+  color: white;
+}
+
+.gray-dark-bg {
+  background: $gray-dark;
+  color: white;
+}
+
+.gray-light-bg {
+  background: $gray-light;
+  color: $gray-dark;
+}
+
+.gray-med-bg {
+  background: $gray-med;
+  color: $gray-dark;
+}
+
+.red-bg {
+  background: $red;
+  color: white;
+}
+
+.yellow-bg {
+  background: $yellow;
+  color: white;
+}
+
+// Link styling - white 
+.link-w {
+  a {
+    color: white;
+    
+    &:hover {
+      color: white;
+    }
+  }
+}

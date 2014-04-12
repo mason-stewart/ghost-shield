@@ -1,0 +1,56 @@
+@import "compass/css3";
+@import "color-variables";
+
+// Element tags are listed first, then classes
+// All items & properties listed in alphabetical order
+
+pre {
+  font-size: 15px;
+}
+
+.circle {
+  border: 1px solid $gray-dark;
+  border-radius: 50%;
+  height: 80px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  width: 100px;
+}
+
+.circle-small {
+  border: 1px solid $gray-dark;
+  border-radius: 50%;
+  display: inline-block;
+  height: 55px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  padding-top: 13px;
+  text-align: center;
+  width: 40px;
+}
+
+.style-container {
+  border: 1px solid $gray-med;
+  border-radius: 7px;
+  margin-bottom: 25px;
+  padding: 35px 15px 15px;
+}
+
+.style-contents {
+  margin: 0px auto;
+}
+
+.style-item {
+  margin: 0px auto;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+// Possibly move to Typography or Body
+.text-center {
+  text-align: center;
+}
+
+
