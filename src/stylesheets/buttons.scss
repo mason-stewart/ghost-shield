@@ -3,33 +3,33 @@
 
 .btn {
   display: inline-block;
-	border-radius: 4px;
-	font-weight: bolder;
-	font-style: italic;
-	padding: 15px 20px;
-	font-size: 24px;
-	text-decoration: none;
-	background: #ADB8C4;
-	color: #fff;
-	margin-bottom: 20px;
-	&:hover {
-		background: #39474e;
-		text-decoration: none;
-	}
+  border-radius: 4px;
+  font-weight: bolder;
+  font-style: italic;
+  padding: 15px 20px;
+  font-size: 24px;
+  text-decoration: none;
+  background: #ADB8C4;
+  color: #fff;
+  margin-bottom: 20px;
+  &:hover {
+    background: #39474e;
+    text-decoration: none;
+  }
 
-	&.hover-red:hover {
-		background: $red;
-		text-decoration: none;
-	}
+  &.hover-red:hover {
+    background: $red;
+    text-decoration: none;
+  }
 
-	&.hover-yellow:hover {
-		background: $yellow;
-		text-decoration: none;
-	}
+  &.hover-yellow:hover {
+    background: $yellow;
+    text-decoration: none;
+  }
 
-	&.hover-blue:hover {
-		background: $blue;
-		text-decoration: none;
-	}
+  &.hover-blue:hover {
+    background: $blue;
+    text-decoration: none;
+  }
 }
 

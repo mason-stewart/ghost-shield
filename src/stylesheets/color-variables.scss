@@ -13,77 +13,53 @@ $gold: #C4843C;
 // When using the background classes we will need to override the hover state 
 // for the header sections
 
-.blue-background {
-	background: $blue;
-	color: white;
-	a {
-		color: white;
-		&:hover {
-			color: white;
-			text-decoration: none;
-		}
-	}
+.blue-bg {
+  background: $blue;
+  color: white;
 }
 
-.blue-link-background {
-	background: $blue-link;
-	color: white;
+.blue-link-bg {
+  background: $blue-link;
+  color: white;
 }
 
-.gold-background {
-	background: $gold;
-	color: white;
-	a {
-		color: white;
-		&:hover {
-			color: white;
-			text-decoration: none;
-		}
-	}
+.gold-bg {
+  background: $gold;
+  color: white;
 }
 
-.gray-dark-background {
-	background: $gray-dark;
-	color: white;
-	a {
-		color: white;
-		&:hover {
-			color: white;
-			text-decoration: none;
-		}
-	}
+.gray-dark-bg {
+  background: $gray-dark;
+  color: white;
 }
 
-.gray-light-background {
-	background: $gray-light;
-	color: $gray-dark;
+.gray-light-bg {
+  background: $gray-light;
+  color: $gray-dark;
 }
 
-.gray-med-background {
-	background: $gray-med;
-	color: $gray-dark;
+.gray-med-bg {
+  background: $gray-med;
+  color: $gray-dark;
 }
 
-.red-background {
-	background: $red;
-	color: white;
-	a {
-		color: white;
-		&:hover {
-			color: white;
-			text-decoration: none;
-		}
-	}
+.red-bg {
+  background: $red;
+  color: white;
 }
 
-.yellow-background {
-	background: $yellow;
-	color: white;
-	a {
-		color: white;
-		&:hover {
-			color: white;
-			text-decoration: none;
-		}
-	}
+.yellow-bg {
+  background: $yellow;
+  color: white;
+}
+
+// Link styling - white 
+.link-w {
+  a {
+    color: white;
+    
+    &:hover {
+      color: white;
+    }
+  }
 }
