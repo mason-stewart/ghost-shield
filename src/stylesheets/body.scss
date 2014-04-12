@@ -7,8 +7,11 @@ body {
 	font-family: 'Droid Serif', serif;
 }
 
+// Element tags are listed first, then classes
+// All items & properties listed in alphabetical order
+
 a {
-	color: #158cbd;
+	color: $blue-link;
 	text-decoration: none;
 	&:hover {
 		text-decoration: underline;

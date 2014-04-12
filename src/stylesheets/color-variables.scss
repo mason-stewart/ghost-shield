@@ -4,5 +4,86 @@ $gray-med: #ADB8C4;
 $gray-dark: #39474e;
 $red: #A02121;
 $blue: #2C94CE;
+$blue-link: #158cbd;
 $yellow: #CEAE2C;
 $gold: #C4843C;
+
+// Element tags are listed first, then classes
+// All items & properties listed in alphabetical order
+// When using the background classes we will need to override the hover state 
+// for the header sections
+
+.blue-background {
+	background: $blue;
+	color: white;
+	a {
+		color: white;
+		&:hover {
+			color: white;
+			text-decoration: none;
+		}
+	}
+}
+
+.blue-link-background {
+	background: $blue-link;
+	color: white;
+}
+
+.gold-background {
+	background: $gold;
+	color: white;
+	a {
+		color: white;
+		&:hover {
+			color: white;
+			text-decoration: none;
+		}
+	}
+}
+
+.gray-dark-background {
+	background: $gray-dark;
+	color: white;
+	a {
+		color: white;
+		&:hover {
+			color: white;
+			text-decoration: none;
+		}
+	}
+}
+
+.gray-light-background {
+	background: $gray-light;
+	color: $gray-dark;
+}
+
+.gray-med-background {
+	background: $gray-med;
+	color: $gray-dark;
+}
+
+.red-background {
+	background: $red;
+	color: white;
+	a {
+		color: white;
+		&:hover {
+			color: white;
+			text-decoration: none;
+		}
+	}
+}
+
+.yellow-background {
+	background: $yellow;
+	color: white;
+	a {
+		color: white;
+		&:hover {
+			color: white;
+			text-decoration: none;
+		}
+	}
+}
