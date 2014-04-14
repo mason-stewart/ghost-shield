@@ -1,0 +1,13 @@
+@import "compass/css3";
+@import "color-variables";
+
+.photo {
+  @include border-radius(3px);
+}
+
+.photo-bio {
+  border: 6px solid #FFF;
+  box-shadow: 0px 0px 3px 1px #D3D3D3;
+  height: 258px;
+  width: 259px;
+}
