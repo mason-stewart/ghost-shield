@@ -1,0 +1,42 @@
+@import "compass/css3";
+@import "color-variables";
+
+.header {
+  background: url(http://theironyard.com/images/pattern.png?1393883957);
+}
+
+.nav {
+  text-transform: uppercase;
+  li {
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 15px 0 3px;
+    float: left;
+    a{
+      color: #EEF1F6;
+      &:hover {
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.nav-mute {
+  text-transform: uppercase;
+  li {
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 15px 0 3px;
+    float: left;
+    a{
+      color: rgba(255, 255, 255, 0.5);
+      &:hover {
+        color: #EEF1F6;
+        cursor: pointer;
+        text-decoration: none;
+       }
+     }
+   }
+}
