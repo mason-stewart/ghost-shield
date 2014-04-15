@@ -31,6 +31,12 @@ pre {
   width: 40px;
 }
 
+.divider {
+  height: 1px;
+  width: 100%;
+  background: $gray-med;
+}
+
 .style-container {
   border: 1px solid $gray-med;
   border-radius: 7px;

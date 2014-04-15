@@ -19,9 +19,15 @@ a {
 }
 
 blockquote {
-  font-style: italic;
-  text-align: left;
-  font-size: 18px;
+  p {
+    font-style: italic;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  footer {
+    font-weight: bold;
+  }
 }
 
 ol {
@@ -29,18 +35,6 @@ ol {
   margin: 0 0 25px 25px;
   li {
     margin-bottom: 12px;
-  }
-}
-
-small {
-  &.author {
-    font-weight: bold;
-    font-size: 18px;
-    display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 40px;
-    -webkit-margin-end: 40px;
   }
 }
 
