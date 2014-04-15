@@ -1,6 +1,10 @@
 @import "compass/css3";
 @import "color-variables";
 
+$nav-text-color: #EEF1F6;
+$nav-text-color-mute: rgba(255, 255, 255, 0.5);
+$nav-text-color-underline: rgba(255, 255, 255, 0.5);
+
 // Element tags are listed first, then classes
 // All items & properties listed in alphabetical order
 
@@ -10,13 +14,12 @@
   li {
     float: left;
     list-style-type: none;
-    margin: 0 10px;
     a{
-      color: #EEF1F6;
-      padding: 15px 0 3px;
+      color: $nav-text-color;
+      margin: 0 10px;
       &:hover,
       &.active {
-        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 3px solid $nav-text-color-underline;
         cursor: pointer;
         text-decoration: none;
       }
@@ -30,13 +33,12 @@
   li {
     float: left;
     list-style-type: none;
-    margin: 0 10px;
     a{
-      color: #EEF1F6;
-      padding: 15px 0 3px;
+      color: $nav-text-color;
+      margin: 0 8px;
       &:hover,
       &.active {
-        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 3px solid $nav-text-color-underline;
         cursor: pointer;
         text-decoration: none;
       }
@@ -50,13 +52,12 @@
   li {
     float: left;
     list-style-type: none;
-    margin: 0 10px;
     a{
-      color: rgba(255, 255, 255, 0.5);
-      padding: 15px 0 3px;
+      color: $nav-text-color-mute;
+      margin: 0 4px;
       &:hover,
       &.active {
-        color: #EEF1F6;
+        color: $nav-text-color;
         cursor: pointer;
         text-decoration: none;
        }
@@ -69,13 +70,12 @@
   li {
     float: left;
     list-style-type: none;
-    padding: 0 10px 5px;
     a{
-      color: #EEF1F6;
-      // padding: 15px 0 3px;
+      color: $nav-text-color;
+      margin: 0 10px;
       &:hover,
       &.active {
-        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 3px solid $nav-text-color-underline;
         cursor: pointer;
         text-decoration: none;
        }
