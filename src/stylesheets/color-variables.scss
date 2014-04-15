@@ -19,6 +19,10 @@ $gold: #C4843C;
   color: white;
 }
 
+.blue-text {
+  color: $blue;
+}
+
 .blue-link-bg {
   background: $blue-link;
   color: white;
@@ -27,6 +31,10 @@ $gold: #C4843C;
 .gold-bg {
   background: $gold;
   color: white;
+}
+
+.gold-text {
+  color: $gold;
 }
 
 .gray-dark-bg {
@@ -54,9 +62,17 @@ $gold: #C4843C;
   color: white;
 }
 
+.red-text {
+  color: $red;
+}
+
 .yellow-bg {
   background: $yellow;
   color: white;
+}
+
+.yellow-text {
+  color: $yellow;
 }
 
 // Link styling - white 
