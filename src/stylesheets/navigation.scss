@@ -4,17 +4,13 @@
 // Element tags are listed first, then classes
 // All items & properties listed in alphabetical order
 
-.header {
-  background: url(http://theironyard.com/images/pattern.png?1393883957);
-}
-
 .nav {
   font-size: 16px;
   text-transform: uppercase;
   li {
+    float: left;
     list-style-type: none;
     margin: 0 10px;
-    float: left;
     a{
       color: #EEF1F6;
       padding: 15px 0 3px;
@@ -32,9 +28,9 @@
   font-size: 14px;
   text-transform: uppercase;
   li {
+    float: left;
     list-style-type: none;
     margin: 0 10px;
-    float: left;
     a{
       color: #EEF1F6;
       padding: 15px 0 3px;
@@ -52,9 +48,9 @@
   font-size: 14px;
   text-transform: uppercase;
   li {
+    float: left;
     list-style-type: none;
     margin: 0 10px;
-    float: left;
     a{
       color: rgba(255, 255, 255, 0.5);
       padding: 15px 0 3px;
@@ -71,9 +67,9 @@
 .nav-sub {
   font-size: 24px;
   li {
+    float: left;
     list-style-type: none;
     padding: 0 10px 5px;
-    float: left;
     a{
       color: #EEF1F6;
       // padding: 15px 0 3px;
