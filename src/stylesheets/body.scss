@@ -9,11 +9,3 @@ body {
 
 // Element tags are listed first, then classes
 // All items & properties listed in alphabetical order
-
-a {
-  color: $blue-link;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
