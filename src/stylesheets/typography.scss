@@ -1,0 +1,41 @@
+@import "compass/css3";
+@import "color-variables";
+
+// Element tags are listed first, then classes
+// All items & properties listed in alphabetical order
+
+a {
+  color: $blue-link;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+blockquote {
+  p {
+    font-style: italic;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  footer {
+    font-weight: bold;
+  }
+}
+
+ol {
+  padding: 0px;
+  margin: 0 0 25px 25px;
+  li {
+    margin-bottom: 12px;
+  }
+}
+
+ul {
+  padding: 0px;
+  margin: 0 0 25px 25px;
+  li {
+    margin-bottom: 12px;
+  }
+}

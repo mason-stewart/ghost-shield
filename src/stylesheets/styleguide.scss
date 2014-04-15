@@ -31,11 +31,17 @@ pre {
   width: 40px;
 }
 
+.divider {
+  height: 1px;
+  width: 100%;
+  background: $gray-med;
+}
+
 .style-container {
   border: 1px solid $gray-med;
   border-radius: 7px;
   margin-bottom: 25px;
-  padding: 35px 15px 15px;
+  padding: 25px 15px 15px;
 }
 
 .style-contents {
