@@ -1,16 +1,77 @@
 @import "compass/css3";
 @import "color-variables";
 
-.content-gray-bg {
-	background: $gray-lighter;
-	padding: 30px 0 50px;
+.content-box {
+	padding: 30px 0px 50px;
 }
 
 .questions-box {
 	background: $gray-light;
 	text-align: center;
 	padding: 1% 4%;
-	margin: 0px 0px 33px 0px;
+	margin: 0px auto;
+	margin-bottom: 33px;
 	width: 92%;
 	font-size: 15px;
+}
+
+.three-col-box {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	.col-md-2,
+	.col-md-3,
+	.col-md-7,
+	.col-lg-2,
+	.col-lg-3,
+	.col-lg-7,
+	.col-sm-2,
+	.col-sm-3,
+	.col-sm-7 {
+		padding: 0px;
+	}
+
+	h3 {
+		margin: 0 0 0 30px;
+		@media (max-width: 768px) {
+			text-align: center;
+			margin: 0px;
+		}
+	}
+
+	img {
+		float: right;
+		@media (max-width: 768px) {
+			float: none;
+		}
+	}
+
+	.image-box {
+		margin: 0px auto;
+		width: 110px;
+		@media (max-width: 768px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	p {
+		margin: 0 30px 0 30px;
+		@media (max-width: 768px) {
+			margin: 0px;
+		}
+	}
+
+	a {
+		margin-top: 54px;
+		@media (max-width: 768px) {
+			margin-top: 20px;
+		}
+	}
+
+	&.no-mobile-img {
+		@media (max-width: 768px) {
+			.image-box {
+				display: none;
+			}
+		}
+	}
 }

@@ -9,8 +9,58 @@
     p Call <strong><a href="tel:+18553992275">(855) 399-2275</a> to talk to someone on the team.</strong>
     br
     p (You can also <a href="mailto:academy@theironyard.com?subject=I want to learn more about the academy">shoot us an email</a> or jump into our <a href="#">Academy Chat</a>.)
-  div.divider
-  pre.text-center .content-gray-bg
-  .content-gray-bg
+  .divider
+  pre.text-center .content-box.gray-lighter-bg
+  .content-box.gray-lighter-bg
    h3.text-center A section background to break up the monotony.
-   p.text-center Use this class to style the background of the div. Helps to break up the visual monotony. 
+   p.text-center Use this class to style the background of the div. Add the color background class to break up the visual monotony. 
+  .divider
+  pre.text-center .three-col-box
+  .three-col-box.row
+.content-box.col-lg-12.col-md-12.col-sm-12.gray-lighter-bg
+ .container
+  .col-lg-12.col-md-12.col-sm-12
+   h2.text-center Multi-column Containers
+   p.text-center (Hey look! I just used the '.content-box' class!)
+   .divider
+   pre.text-center .three-col-box
+   pre &lt;div class="container"&gt;
+   pre  &lt;div class="row three-col-box col-lg-12 col-md-12
+   pre   col-sm-12"&gt;
+   pre   &lt;div class="col-lg-2 col-md-2 col-sm-2"&gt;
+   pre    Image
+   pre   &lt;/div&gt;
+   pre   &lt;div class="col-lg-7 col-md-7 col-sm-6"&gt;
+   pre    &lt;h3&gt;Copy Title&lt;/h3&gt;
+   pre    &lt;p&gt;Copy Text&lt;/p&gt;
+   pre   &lt;/div&gt;
+   pre   &lt;div class="col-lg-2 col-md-2 col-sm-3 text-center"&gt;
+   pre   &lt;/div&gt;
+   pre    &lt;a href="#" class="btn hover-yellow"&gt;Learn More&lt;/a&gt;
+   pre  &lt;/div&gt;
+   pre &lt;/div&gt;
+  .container
+   .row.three-col-box.col-lg-12.col-md-12.col-sm-12
+    .row 
+     .col-lg-2.col-md-2.col-sm-2.image-box
+      img(src="http://theironyard.com/images/icons/front-end-engineering-logo.png")
+     .col-lg-7.col-md-7.col-sm-6
+      h3 Copy Title
+      p Tote bag meh +1, master cleanse sustainable literally chia messenger bag fingerstache cray organic. Banksy deep v before they sold out iPhone umami. 
+     .col-lg-2.col-md-2.col-sm-3.text-center
+      a(href="#").btn.hover-yellow Learn More
+   .divider
+  .col-lg-12.col-md-12.col-sm-12
+   h3 Don't want the image on the smaller screen? 
+   h4 Just add the "no-mobile-img" class to the "three-col-box" div like so:
+   pre &lt;div class="row three-col-box no-mobile-img col-lg-12 col-md-12 col-sm-12"&gt;
+  .container
+   .row.three-col-box.no-mobile-img.col-lg-12.col-md-12.col-sm-12
+    .row 
+     .col-lg-2.col-md-2.col-sm-2.image-box
+      img(src="http://theironyard.com/images/icons/front-end-engineering-logo.png")
+     .col-lg-7.col-md-7.col-sm-6
+      h3 Copy Title
+      p Tote bag meh +1, master cleanse sustainable literally chia messenger bag fingerstache cray organic. Banksy deep v before they sold out iPhone umami. 
+     .col-lg-2.col-md-2.col-sm-3.text-center
+      a(href="#").btn.hover-yellow Learn More
