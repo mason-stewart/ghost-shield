@@ -1,5 +1,6 @@
 // Color Variables:
-$gray-light: #F2F4F5;
+$gray-lighter: #F2F4F5;
+$gray-light: #E3E7E9;
 $gray-med: #ADB8C4;
 $gray-dark: #39474e;
 $red: #A02121;
@@ -31,6 +32,11 @@ $gold: #C4843C;
 .gray-dark-bg {
   background: $gray-dark;
   color: white;
+}
+
+.gray-lighter-bg {
+  background: $gray-lighter;
+  color: $gray-dark;
 }
 
 .gray-light-bg {

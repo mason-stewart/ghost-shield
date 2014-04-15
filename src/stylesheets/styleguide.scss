@@ -17,6 +17,10 @@ pre {
   padding-top: 20px;
   text-align: center;
   width: 100px;
+
+  &.gray-lighter-bg {
+    line-height: 6px;
+  }
 }
 
 .circle-small {
@@ -40,6 +44,7 @@ pre {
 
 .style-contents {
   margin: 0px auto;
+  width: 100%;
 }
 
 .style-item {
