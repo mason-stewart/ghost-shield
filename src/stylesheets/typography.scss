@@ -1,8 +1,42 @@
-@import "compass/css3";
+@import "bourbon";
 @import "color-variables";
 
-// Element tags are listed first, then classes
-// All items & properties listed in alphabetical order
+
+html,
+body {
+  font-size: 100%; 
+}
+
+body {
+  background: white;
+  color: $gray-dark;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.6;
+  position: relative;
+  cursor: default; 
+}
+
+/* Default paragraph styles */
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  text-rendering: optimizeLegibility;
+
+  aside {
+    font-size: 0.875rem;
+    line-height: 1.35;
+    font-style: italic; 
+  }
+
+}
+
 
 a {
   color: $blue-link;
@@ -16,7 +50,7 @@ blockquote {
   p {
     font-style: italic;
     text-align: left;
-    font-size: 18px;
+    font-size: 1.3rem;
   }
 
   footer {
@@ -27,6 +61,7 @@ blockquote {
 ol {
   padding: 0px;
   margin: 0 0 25px 25px;
+
   li {
     margin-bottom: 12px;
   }
@@ -35,6 +70,7 @@ ol {
 ul {
   padding: 0px;
   margin: 0 0 25px 25px;
+
   li {
     margin-bottom: 12px;
   }

@@ -1,51 +1,77 @@
-.container
-  .col-lg-8.col-lg-offset-2.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
-    h2 Color Variables
-  .style-container.col-lg-8.col-lg-offset-2.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
-    .style-contents
-      .style-item.col-md-6.col-sm-6
-        .circle.gray-light-bg
-          pre $gray-light
-          p <a href="#" class="text-center">link</a>
-        p.text-center Gray option for section backgrounds
-        pre.text-center .gray-light-bg
-      .style-item.col-md-6.col-sm-6
-        .circle.gray-med-bg 
-          pre $gray-med
-          p <a href="#" class="text-center">link</a>
-        p.text-center Another gray option for a section
-        pre.text-center .gray-med-bg
-      .style-item.col-md-6.col-sm-6
-        .circle.gray-dark-bg 
-          pre $gray-dark
-          p <a href="#" class="text-center">link</a>
-        p.text-center Footer background & default text color
-        pre.text-center .gray-dark-bg
-      .style-item.col-md-6.col-sm-6
-        .circle.blue-bg.link-w
-          pre $blue
-          p <a href="#" class="text-center">link</a>
-        p.text-center For Mobile course
-        pre.text-center .blue-bg .link-w
-      .style-item.col-md-6.col-sm-6
-        .circle.yellow-bg.link-w
-          pre $yellow
-          p <a href="#" class="text-center">link</a>
-        p.text-center For JS course
-        pre.text-center .yellow-bg .link-w
-      .style-item.col-md-6.col-sm-6
-        .circle.red-bg.link-w
-          pre $red
-          p <a href="#" class="text-center">link</a>
-        p.text-center For Ruby course
-        pre.text-center .red-bg .link-w
-      .style-item.col-md-6.col-sm-6
-        .circle.gold-bg.link-w
-          pre $gold
-          p <a href="#" class="text-center">link</a>
-        p.text-center For sponsor section
-        pre.text-center .gold-bg .link-w
-      .style-item.col-md-6.col-sm-6
-        .circle.blue-link-bg
-          pre $blue-link
-        p.text-center Link color
+h2 Color Variables
+.sg-container.sg-colors
+  .row
+    .col-sm-2
+      .sg-circle.gray-light-bg
+    .col-sm-4.sg-example
+      p Gray option for section backgrounds
+      span Variable:
+        pre $gray-light
+      span Class:
+        pre .gray-light-bg
+
+    .col-sm-2 
+      .sg-circle.gray-med-bg
+    .col-sm-4.sg-example
+      p Another gray option for a section
+      span Variable:
+        pre $gray-med
+      span Class:
+        pre .gray-med-bg
+
+  .row
+    .col-sm-2 
+      .sg-circle.gray-dark-bg
+    .col-sm-4.sg-example
+      p Footer background & default text color
+      span Variable:
+        pre $gray-dark
+      span Class:
+        pre .gray-dark-bg
+
+    .col-sm-2
+      .sg-circle.blue-bg
+    .col-sm-4.sg-example
+      p For Mobile course
+      span Variable:
+        pre $blue
+      span Class:
+        pre .blue-bg
+
+  .row
+    .col-sm-2
+      .sg-circle.yellow-bg
+    .col-sm-4.sg-example
+      p For JS course
+      span Variable:
+        pre $yellow
+      span Class:
+        pre .yellow-bg
+
+    .col-sm-2
+      .sg-circle.red-bg
+    .col-sm-4.sg-example
+      p For Ruby course
+      span Variable:
+        pre $red
+      span Class:
+        pre .red-bg
+
+  .row
+    .col-sm-2
+      .sg-circle.gold-bg
+    .col-sm-4.sg-example
+      p For sponsor section
+      span Variable:
+        pre $gold
+      span Class:
+        pre .gold-bg
+
+    .col-sm-2
+      .sg-circle.blue-link-bg
+    .col-sm-4.sg-example
+      p It's blue!
+      span Variable:
+        pre $blue-link
+      span Class:
+        pre .blue-link-bg

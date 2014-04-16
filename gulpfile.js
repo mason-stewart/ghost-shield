@@ -4,8 +4,8 @@
 var gulp        = require('gulp'),
     gutil       = require('gulp-util'),
     sass        = require('gulp-sass'),
-    compass     = require('gulp-compass'),
     csso        = require('gulp-csso'),
+    bourbon = require('node-bourbon').includePaths,
     uglify      = require('gulp-uglify'),
     jade        = require('gulp-jade'),
     concat      = require('gulp-concat'),
@@ -22,11 +22,11 @@ var gulp        = require('gulp'),
 // --- Basic Tasks ---
 gulp.task('css', function() {
   return gulp.src('src/stylesheets/*.scss')
-    .pipe(compass({
-      css: 'dist/stylesheets',
-      sass: 'src/stylesheets',
-      image: 'dist/images'
-    }))
+    .pipe( 
+      sass( { 
+        includePaths: ['src/stylesheets'].concat(bourbon),
+        errLogToConsole: true
+      } ) )
     .pipe( csso() )
     .pipe( gulp.dest('dist/stylesheets/') )
     .pipe( livereload( server ));
