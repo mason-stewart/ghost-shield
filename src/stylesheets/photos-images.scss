@@ -4,28 +4,22 @@
 // Element tags are listed first, then classes
 // All items & properties listed in alphabetical order
 
-.photo-alum {
+.photo-bio {
   border: 6px solid #FFF;
   box-shadow: 0px 0px 3px 1px #D3D3D3;
   width: 271px;
 }
 
-.photo-lg {
+.photo {
   border-radius: 3px;
-  width: 400px;
-}
-
-.photo-md {
-  border-radius: 3px;
-  width: 300px;
+  width: 100%;
 }
 
 .photo-mentor {
   width: 220px;
 }
 
-.photo,
-.photo-sm {
+.photo-thumbnail {
   border-radius: 3px;
   width: 125px;
 }
