@@ -8,28 +8,37 @@ pre {
   font-size: 15px;
 }
 
-.circle {
-  border: 1px solid $gray-dark;
-  border-radius: 50%;
-  height: 80px;
-  margin: 0px auto;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  text-align: center;
-  width: 100px;
+.sg-colors {
+  .row {
+    margin-bottom: 50px;
+  }
+
+  span {
+    display: block;
+  }
+
+  pre {
+    display: inline;
+  }
 }
 
-.circle-small {
-  border: 1px solid $gray-dark;
+.sg-circle {
   border-radius: 50%;
-  display: inline-block;
-  height: 55px;
-  margin: 0px auto;
-  margin-bottom: 20px;
-  padding-top: 13px;
-  text-align: center;
-  width: 40px;
+  width: 100px;
+  height: 100px;
 }
+
+// .circle-small {
+//   border: 1px solid $gray-dark;
+//   border-radius: 50%;
+//   display: inline-block;
+//   height: 55px;
+//   margin: 0px auto;
+//   margin-bottom: 20px;
+//   padding-top: 13px;
+//   text-align: center;
+//   width: 40px;
+// }
 
 .divider {
   height: 1px;
@@ -41,7 +50,8 @@ pre {
   border: 1px solid $gray-med;
   border-radius: 7px;
   margin-bottom: 25px;
-  padding: 25px 15px 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .style-contents {
