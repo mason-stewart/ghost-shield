@@ -5,6 +5,13 @@
 	padding: 30px 0px 50px;
 }
 
+hr {
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px solid $gray-lighter;
+	clear: both;
+}
+
 .questions-box {
 	background: $gray-light;
 	text-align: center;
@@ -20,6 +27,7 @@
 	margin-bottom: 30px;
 	.copy-box {
 		padding: 0px;
+		margin-bottom: 30px;
 	}
 
 	h3 {
@@ -168,5 +176,32 @@
 			padding: 0;
 			width: 100% !important;
 		}
+	}
+}
+
+.two-col-sb {
+
+	.two-col-sb-left {
+		padding: 0;
+		h1,
+		h2,
+		h3,
+		h4 {
+			margin-top: 0px;
+		}
+
+		vertical-align: top;
+	}
+
+	.two-col-sb-right {
+		padding: 0;
+		h1,
+		h2,
+		h3,
+		h4 {
+			margin-top: 0px;
+		}
+
+		vertical-align: top;
 	}
 }
