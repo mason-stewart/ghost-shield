@@ -1,4 +1,4 @@
-@import "compass/css3";
+@import "bourbon";
 @import "color-variables";
 
 .btn {
@@ -6,14 +6,14 @@
   font-weight: bolder;
   font-style: italic;
   padding: 10px 20px 15px;
-  font-size: 24px;
+  font-size: 30px;
   text-decoration: none;
-  background: #ADB8C4;
+  background: $gray-med;
   color: #fff;
   margin-bottom: 20px;
   
   &:hover {
-    background: #39474e;
+    background: $gray-dark;
     text-decoration: none;
   }
 
@@ -32,7 +32,7 @@
     text-decoration: none;
   }
 
-  &.btn-hello {
+  & .btn-hello {
     background: $blue-hello;
     font-style: normal;
     text-align: center;

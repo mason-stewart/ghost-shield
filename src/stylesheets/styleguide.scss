@@ -1,8 +1,5 @@
-@import "compass/css3";
+@import "bourbon";
 @import "color-variables";
-
-// Element tags are listed first, then classes
-// All items & properties listed in alphabetical order
 
 pre {
   font-size: 15px;
@@ -13,61 +10,41 @@ pre {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-.circle {
-  border: 1px solid $gray-dark;
-  border-radius: 50%;
-  height: 80px;
-  margin: 0px auto;
-  margin-bottom: 20px;
-  padding-top: 20px;
+.sg-header {
   text-align: center;
-  width: 100px;
+}
 
-  &.gray-lighter-bg {
-    line-height: 6px;
+.sg-sidebar, .sg-main {
+  border: 1px solid $gray-med;
+}
+
+.sg-colors {
+  .row {
+    margin-bottom: 50px;
   }
 }
 
-.circle-small {
-  border: 1px solid $gray-dark;
+.sg-example {
+  span {
+    display: block;
+  }
+
+  pre {
+    display: inline;
+  }
+}
+
+.sg-circle {
   border-radius: 50%;
-  display: inline-block;
-  height: 55px;
-  margin: 0px auto;
-  margin-bottom: 20px;
-  padding-top: 13px;
-  text-align: center;
-  width: 40px;
+  width: 100px;
+  height: 100px;
 }
 
-.divider {
-  height: 1px;
-  width: 100%;
-  background: $gray-med;
-  margin: 20px 0px;
-}
-
-.style-container {
-  border: 1px solid $gray-med;
-  border-radius: 7px;
+.sg-container {
+  border-top: 1px solid $gray-med;
   margin-bottom: 25px;
-  padding: 25px 15px 15px;
-}
-
-.style-contents {
-  margin: 0px auto;
-  width: 100%;
-}
-
-.style-item {
-  margin: 0px auto;
-  margin-bottom: 10px;
-  padding: 0px;
-}
-
-// Possibly move to Typography or Body
-.text-center {
-  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 

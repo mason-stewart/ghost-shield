@@ -1,0 +1,90 @@
+@import "bourbon";
+@import "color-variables";
+
+$nav-text-color: #EEF1F6;
+$nav-text-color-mute: rgba(255, 255, 255, 0.5);
+$nav-text-color-underline: rgba(255, 255, 255, 0.5);
+
+// Element tags are listed first, then classes
+// All items & properties listed in alphabetical order
+
+.nav {
+  font-size: 16px;
+  margin: 0;
+  text-transform: uppercase;
+  li {
+    float: left;
+    list-style-type: none;
+    a{
+      color: $nav-text-color;
+      margin: 0 10px;
+      &:hover,
+      &.active {
+        border-bottom: 3px solid $nav-text-color-underline;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.nav-footer {
+  font-size: 14px;
+  margin: 0;
+  text-transform: uppercase;
+  li {
+    float: left;
+    list-style-type: none;
+    a{
+      color: $nav-text-color;
+      margin: 0 8px;
+      &:hover,
+      &.active {
+        border-bottom: 3px solid $nav-text-color-underline;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.nav-mute {
+  font-size: 14px;
+  margin: 0;
+  text-transform: uppercase;
+  li {
+    float: left;
+    list-style-type: none;
+    a{
+      color: $nav-text-color-mute;
+      margin: 0 4px;
+      &:hover,
+      &.active {
+        color: $nav-text-color;
+        cursor: pointer;
+        text-decoration: none;
+       }
+     }
+   }
+}
+
+.nav-sub {
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  margin: 0;
+  padding-top: 15px;
+  li {
+    float: left;
+    list-style-type: none;
+    a{
+      color: $nav-text-color;
+      margin: 0 10px;
+      &:hover,
+      &.active {
+        border-bottom: 3px solid $nav-text-color-underline;
+        cursor: pointer;
+        text-decoration: none;
+       }
+     }
+   }
+}

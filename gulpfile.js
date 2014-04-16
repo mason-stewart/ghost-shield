@@ -4,8 +4,8 @@
 var gulp        = require('gulp'),
     gutil       = require('gulp-util'),
     sass        = require('gulp-sass'),
-    compass     = require('gulp-compass'),
     csso        = require('gulp-csso'),
+    bourbon = require('node-bourbon').includePaths,
     uglify      = require('gulp-uglify'),
     jade        = require('gulp-jade'),
     concat      = require('gulp-concat'),
@@ -15,17 +15,18 @@ var gulp        = require('gulp'),
     app         = express(),
     marked      = require('marked'), // For :markdown filter in jade
     path        = require('path'),
-    server      = tinylr();
+    server      = tinylr(),
+    deploy      = require("gulp-gh-pages");
 
 
 // --- Basic Tasks ---
 gulp.task('css', function() {
   return gulp.src('src/stylesheets/*.scss')
-    .pipe(compass({
-      css: 'dist/stylesheets',
-      sass: 'src/stylesheets',
-      image: 'dist/images'
-    }))
+    .pipe( 
+      sass( { 
+        includePaths: ['src/stylesheets'].concat(bourbon),
+        errLogToConsole: true
+      } ) )
     .pipe( csso() )
     .pipe( gulp.dest('dist/stylesheets/') )
     .pipe( livereload( server ));
@@ -67,6 +68,11 @@ gulp.task('watch', function () {
     gulp.watch('src/**/*.jade',['templates']);
     
   });
+});
+
+gulp.task('deploy', ['js','css','templates'], function() {
+  gulp.src("dist/**/*")
+    .pipe(deploy('git@github.com:masondesu/ghost-shield.git', 'origin'));
 });
 
 // Default Task
