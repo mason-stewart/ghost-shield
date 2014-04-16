@@ -15,23 +15,15 @@
 	font-size: 15px;
 }
 
-.three-col-box {
+.three-col-cta {
 	margin-top: 30px;
 	margin-bottom: 30px;
-	.col-md-2,
-	.col-md-3,
-	.col-md-7,
-	.col-lg-2,
-	.col-lg-3,
-	.col-lg-7,
-	.col-sm-2,
-	.col-sm-3,
-	.col-sm-7 {
+	.copy-box {
 		padding: 0px;
 	}
 
 	h3 {
-		margin: 0 0 0 30px;
+		margin: 0 0 0 0px;
 		@media (max-width: 768px) {
 			text-align: center;
 			margin: 0px;
@@ -39,22 +31,27 @@
 	}
 
 	img {
-		float: right;
+		float: left;
 		@media (max-width: 768px) {
 			float: none;
 		}
 	}
 
+	.cta-box {
+		padding: 0px;
+	}
+
 	.image-box {
 		margin: 0px auto;
-		width: 110px;
+		padding: 0px;
 		@media (max-width: 768px) {
 			margin-bottom: 15px;
+			width: 110px;
 		}
 	}
 
 	p {
-		margin: 0 30px 0 30px;
+		margin: 0 0 0 0px;
 		@media (max-width: 768px) {
 			margin: 0px;
 		}
@@ -62,8 +59,10 @@
 
 	a {
 		margin-top: 54px;
+		float: right;
 		@media (max-width: 768px) {
 			margin-top: 20px;
+			float: none;
 		}
 	}
 
