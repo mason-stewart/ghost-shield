@@ -74,3 +74,37 @@
 		}
 	}
 }
+
+.two-col-cont {
+	.two-col-left {
+		display: inline-block;
+		margin: 0px 9% 0px 0px;
+		vertical-align: top;
+		width: 45%;
+		@media (max-width: 780px) {
+			display: inline-block;
+			vertical-align: middle;
+			zoom: 1;
+			float: none;
+			margin: 0;
+			padding: 0;
+			width: 100% !important;
+		}
+	}
+
+	.two-col-right {
+		display: inline-block;
+		margin: 0;
+		vertical-align: top;
+		width: 45%;
+		@media (max-width: 780px) {
+			display: inline-block;
+			vertical-align: middle;
+			zoom: 1;
+			float: none;
+			margin: 0;
+			padding: 0;
+			width: 100% !important;
+		}
+	}
+}
