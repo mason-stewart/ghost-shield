@@ -4,7 +4,20 @@ html
     link(type="text/css" rel="stylesheet" media="all" href="stylesheets/ghost-shield.css")
     link(href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css')
   body
-    include examples/colors
-    include examples/buttons
-    include examples/typography
-    include examples/photos-images
+    .container
+      .row
+        .col-md-12.sg-header
+          h1 Welcome to Ghost Shield
+          h2 Wow.
+      .row
+        .col-md-3.sg-sidebar
+          ul
+            li Colors
+            li Buttons
+            li Typography
+            li Photos-images
+        .col-md-9.sg-main
+          include examples/colors
+          include examples/buttons
+          include examples/typography
+          include examples/photos-images

@@ -1,18 +1,21 @@
 @import "bourbon";
 @import "color-variables";
 
-// Element tags are listed first, then classes
-// All items & properties listed in alphabetical order
+.sg-header {
+  text-align: center;
+}
 
-pre {
-  font-size: 15px;
+.sg-sidebar, .sg-main {
+  border: 1px solid $gray-med;
 }
 
 .sg-colors {
   .row {
     margin-bottom: 50px;
   }
+}
 
+.sg-example {
   span {
     display: block;
   }
@@ -28,45 +31,11 @@ pre {
   height: 100px;
 }
 
-// .circle-small {
-//   border: 1px solid $gray-dark;
-//   border-radius: 50%;
-//   display: inline-block;
-//   height: 55px;
-//   margin: 0px auto;
-//   margin-bottom: 20px;
-//   padding-top: 13px;
-//   text-align: center;
-//   width: 40px;
-// }
-
-.divider {
-  height: 1px;
-  width: 100%;
-  background: $gray-med;
-}
-
-.style-container {
-  border: 1px solid $gray-med;
-  border-radius: 7px;
+.sg-container {
+  border-top: 1px solid $gray-med;
   margin-bottom: 25px;
   padding-top: 25px;
   padding-bottom: 25px;
-}
-
-.style-contents {
-  margin: 0px auto;
-}
-
-.style-item {
-  margin: 0px auto;
-  margin-bottom: 10px;
-  padding: 0px;
-}
-
-// Possibly move to Typography or Body
-.text-center {
-  text-align: center;
 }
 
 
