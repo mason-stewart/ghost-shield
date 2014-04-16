@@ -11,12 +11,12 @@
 }
 
 .photo-lg {
-  @include border-radius(3px);
+  border-radius: 3px;
   width: 400px;
 }
 
 .photo-md {
-  @include border-radius(3px);
+  border-radius: 3px;
   width: 300px;
 }
 
@@ -26,6 +26,6 @@
 
 .photo,
 .photo-sm {
-  @include border-radius(3px);
+  border-radius: 3px;
   width: 125px;
 }
