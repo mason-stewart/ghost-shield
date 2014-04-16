@@ -15,7 +15,8 @@ var gulp        = require('gulp'),
     app         = express(),
     marked      = require('marked'), // For :markdown filter in jade
     path        = require('path'),
-    server      = tinylr();
+    server      = tinylr(),
+    deploy      = require("gulp-gh-pages");
 
 
 // --- Basic Tasks ---
@@ -67,6 +68,11 @@ gulp.task('watch', function () {
     gulp.watch('src/**/*.jade',['templates']);
     
   });
+});
+
+gulp.task('deploy', ['js','css','templates'], function() {
+  gulp.src("dist/**/*")
+    .pipe(deploy('git@github.com:masondesu/ghost-shield.git', 'origin'));
 });
 
 // Default Task
