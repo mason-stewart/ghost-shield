@@ -2,7 +2,6 @@
 @import "color-variables";
 
 .btn {
-  display: inline-block;
   border-radius: 4px;
   font-weight: bolder;
   font-style: italic;
@@ -12,6 +11,7 @@
   background: #ADB8C4;
   color: #fff;
   margin-bottom: 20px;
+  
   &:hover {
     background: #39474e;
     text-decoration: none;
@@ -30,6 +30,27 @@
   &.hover-blue:hover {
     background: $blue;
     text-decoration: none;
+  }
+
+  &.btn-hello {
+    background: $blue-hello;
+    font-style: normal;
+    text-align: center;
+
+    img {
+      display: inline-block;
+    }
+
+    p {
+      display: inline-block;
+      font-weight: 100;
+      margin: 0;
+      padding-left: 10px;
+    }
+
+    &:hover {
+      background: #1b93c4;
+    }
   }
 }
 

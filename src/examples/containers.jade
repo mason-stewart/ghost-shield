@@ -9,67 +9,105 @@
         p Call <strong><a href="tel:+18553992275">(855) 399-2275</a> to talk to someone on the team.</strong>
         br
         p (You can also <a href="mailto:academy@theironyard.com?subject=I want to learn more about the academy">shoot us an email</a> or jump into our <a href="#">Academy Chat</a>.)
-    .divider
+    //.divider
     pre.text-center .content-box.gray-lighter-bg
     .content-box.gray-lighter-bg
       h3.text-center A section background to break up the monotony.
       p.text-center Use this class to style the background of the div. Add the color background class to break up the visual monotony. 
 .content-box.col-lg-12.col-md-12.col-sm-12.gray-lighter-bg
   .container
-    .col-lg-12.col-md-12.col-sm-12
-      h2.text-center Multi-column Containers
-      .divider
-      // Begin Two Column Container
-      h3.text-center Two Column Container
-      pre &lt;div class="container"&gt;
-      pre  &lt;.col-lg-12.col-md-12.col-sm-12&gt;
-      pre &lt;/div&gt;
-      .two-col-cont
-        .two-col-left
-          p Vegan wayfarers quinoa photo booth. Tote bag VHS cliche art party, occupy freegan artisan. Polaroid kale chips flannel hella cred. Artisan High Life keytar, actually farm-to-table beard Blue Bottle ethnic PBR. Mlkshk Cosby sweater 90's, next level semiotics seitan umami Wes Anderson Austin forage leggings.
-        .two-col-right
-          p Umami normcore jean shorts, Schlitz polaroid Godard twee wolf American Apparel roof party Truffaut Cosby sweater stumptown YOLO fap. Whatever pug ethnic tofu Brooklyn. Keffiyeh blog Schlitz umami, farm-to-table 8-bit authentic High Life mustache cliche. 
-      // Begin Three Column Container with Call To Action
-      h3.text-center Three Column Container w/Call To Action (cta)
-      pre.text-center .three-col-cta
-      pre &lt;div class="container"&gt;
-      pre  &lt;div class="row three-col-box col-lg-12 col-md-12 col-sm-12"&gt;
-      pre   &lt;div class="image-box col-lg-2 col-md-2 col-sm-2"&gt;
-      pre    &lt;img src="http://theironyard.com/images/icons/front-end-engineering-logo.png"
-      pre   &lt;/div&gt;
-      pre   &lt;div class="copy-box col-lg-8 col-md-7 col-sm-7"&gt;
-      pre    &lt;h3&gt;Copy Title&lt;/h3&gt;
-      pre    &lt;p&gt;Copy Text&lt;/p&gt;
-      pre   &lt;/div&gt;
-      pre   &lt;div class="cta-box col-lg-2 col-md-3 col-sm-3 text-center"&gt;
-      pre    &lt;a href="#" class="btn hover-yellow"&gt;Learn More&lt;/a&gt;
-      pre   &lt;/div&gt;
-      pre  &lt;/div&gt;
-      pre &lt;/div&gt;
-  .container
-    .row.three-col-cta.col-lg-12.col-md-12.col-sm-12
-      .col-lg-2.col-md-2.col-sm-2.image-box
-        img(src="http://theironyard.com/images/icons/front-end-engineering-logo.png")
-      .col-lg-8.col-md-7.col-sm-7.copy-box
-        h3 Copy Title
-        p Tote bag meh +1, master cleanse sustainable literally chia messenger bag fingerstache cray organic. Banksy deep v before they sold out iPhone umami. 
-      .col-lg-2.col-md-3.col-sm-3.text-center.cta-box
-        a(href="#").btn.hover-yellow Learn More
-    .col-lg-12.col-md-12.col-sm-12
-      .divider
-      h3 Remove image on small screens 
-      h4 Just add the "no-mobile-img" class to the "three-col-box" div like so:
-      pre &lt;div class="row three-col-cta no-mobile-img col-lg-12 col-md-12 col-sm-12"&gt;
-  .container
-    .row.three-col-cta.no-mobile-img.col-lg-12.col-md-12.col-sm-12
-      .col-lg-2.col-md-2.col-sm-2.image-box
-        img(src="http://theironyard.com/images/icons/front-end-engineering-logo.png")
-      .col-lg-8.col-md-8.col-sm-7.copy-box
-        h3 Copy Title
-        p Tote bag meh +1, master cleanse sustainable literally chia messenger bag fingerstache cray organic. Banksy deep v before they sold out iPhone umami. 
-      .col-lg-2.col-md-2.col-sm-3.text-center.cta-box
-        a(href="#").btn.hover-yellow Learn More
-  .container
-    .col-lg-12.col-md-12.col-sm-12
-      .divider
-      h3 New Section
+    h2.text-center Multi-column Containers
+    //.divider
+    // Begin Two Column Container
+    h3.text-center Two Column Container
+    pre &lt;div class="container"&gt;
+    pre &lt;!-- Use bootstrap grid system to determine the overall width of the two column container--&gt;
+    pre &lt;!-- In this example I am setting the width at 100%--&gt;
+    pre  &lt;.col-lg-12.col-md-12.col-sm-12&gt;
+    pre   &lt;div class="<strong>two-col-cont</strong>"&gt;
+    pre    &lt;div class="<strong>two-col-left</strong>"&gt;
+    pre     &lt;p&gt;Lorem ipsum... &lt;/p&gt;
+    pre    &lt;/div&gt;
+    pre    &lt;div class="<strong>two-col-left</strong>"&gt;
+    pre     &lt;p&gt;Lorem ipsum... &lt;/p&gt;
+    pre    &lt;/div&gt;
+    pre   &lt;/div&gt;
+    pre  &lt;/div&gt;
+    pre &lt;/div&gt;
+    .two-col-cont
+      .two-col-left
+        h4 Left Column Copy
+        p Vegan wayfarers quinoa photo booth. Tote bag VHS cliche art party, occupy freegan artisan. Polaroid kale chips flannel hella cred. Artisan High Life keytar, actually farm-to-table beard Blue Bottle ethnic PBR. Mlkshk Cosby sweater 90's, next level semiotics seitan umami Wes Anderson Austin forage leggings.
+        ul
+          li <a href="#">Link 1</a>
+          li <a href="#">Link 2</a>
+          li <a href="#">Link 3</a>
+      .two-col-right
+        h4 Right Column Copy
+        p Umami normcore jean shorts, Schlitz polaroid Godard twee wolf American Apparel roof party Truffaut Cosby sweater stumptown YOLO fap. Whatever pug ethnic tofu Brooklyn. Keffiyeh blog Schlitz umami, farm-to-table 8-bit authentic High Life mustache cliche. 
+        a(href="#" class="btn") Learn More
+    //.divider
+    // Begin Two Column Bio Container
+    h3.text-center Two Column Bio Container
+    pre two-col-bio
+    .two-col-bio
+      .two-col-bio-left
+        img(src="http://theironyard.com/images/education/academy/front-end-2/graduates/alison-miller.jpg" class="photo-alum")
+        a(class="btn btn-hello" href="mailto:joetamburro38@gmail.com?subject=I found you through The Iron Yard and I'd love to chat")
+          img(src="http://theironyard.com/images/email.png")
+          p Say hello
+      .two-col-bio-right
+        h2.text-center Allison Miller
+        p.text-center <em>Core Front End Dev at Benefit Focus</em>
+        p American Apparel wayfarers normcore mustache, Truffaut Intelligentsia XOXO irony deep v photo booth locavore next level. Helvetica post-ironic four loko dreamcatcher normcore gluten-free, tofu Wes Anderson. Next level retro Schlitz, cardigan cliche jean shorts shabby chic. Hashtag cliche bitters cred Banksy salvia. Austin ennui raw denim Thundercats, wolf asymmetrical paleo. 
+        ul.links
+          li • <a href="#">Link 1</a>
+          li • <a href="#">Link 2</a>
+          li • <a href="#">Link 3</a>
+          li • <a href="#">Link 4</a>
+          li • <a href="#">Link 5</a>
+    //.divider
+    // Begin Three Column Container with Call To Action
+    h3.text-center Three Column Container w/Call To Action (cta)
+    pre.text-center .three-col-cta
+    pre &lt;div class="container"&gt;
+    pre  &lt;div class="row three-col-box col-lg-12 col-md-12 col-sm-12"&gt;
+    pre   &lt;div class="image-box col-lg-2 col-md-2 col-sm-2"&gt;
+    pre    &lt;img src="http://theironyard.com/images/icons/front-end-engineering-logo.png"
+    pre   &lt;/div&gt;
+    pre   &lt;div class="copy-box col-lg-8 col-md-7 col-sm-7"&gt;
+    pre    &lt;h3&gt;Copy Title&lt;/h3&gt;
+    pre    &lt;p&gt;Copy Text&lt;/p&gt;
+    pre   &lt;/div&gt;
+    pre   &lt;div class="cta-box col-lg-2 col-md-3 col-sm-3 text-center"&gt;
+    pre    &lt;a href="#" class="btn hover-yellow"&gt;Learn More&lt;/a&gt;
+    pre   &lt;/div&gt;
+    pre  &lt;/div&gt;
+    pre &lt;/div&gt;
+.container
+  .row.three-col-cta.col-lg-12.col-md-12.col-sm-12
+    .col-lg-2.col-md-2.col-sm-2.image-box
+      img(src="http://theironyard.com/images/icons/front-end-engineering-logo.png")
+    .col-lg-8.col-md-7.col-sm-7.copy-box
+      h3 Copy Title
+      p Tote bag meh +1, master cleanse sustainable literally chia messenger bag fingerstache cray organic. Banksy deep v before they sold out iPhone umami. 
+    .col-lg-2.col-md-3.col-sm-3.text-center.cta-box
+      a(href="#").btn.hover-yellow Learn More
+  .col-lg-12.col-md-12.col-sm-12
+    //.divider
+    h3 Remove image on small screens 
+    h4 Just add the "no-mobile-img" class to the "three-col-box" div like so:
+    pre &lt;div class="row three-col-cta no-mobile-img col-lg-12 col-md-12 col-sm-12"&gt;
+.container
+  .row.three-col-cta.no-mobile-img.col-lg-12.col-md-12.col-sm-12
+    .col-lg-2.col-md-2.col-sm-2.image-box
+      img(src="http://theironyard.com/images/icons/front-end-engineering-logo.png")
+    .col-lg-8.col-md-7.col-sm-7.copy-box
+      h3 Copy Title
+      p Tote bag meh +1, master cleanse sustainable literally chia messenger bag fingerstache cray organic. Banksy deep v before they sold out iPhone umami. 
+    .col-lg-2.col-md-3.col-sm-3.text-center.cta-box
+      a(href="#").btn.hover-yellow Learn More
+.container
+  .col-lg-12.col-md-12.col-sm-12
+    //.divider
+    h3 New Section
