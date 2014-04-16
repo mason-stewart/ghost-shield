@@ -10,6 +10,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 
 .nav {
   font-size: 16px;
+  margin: 0;
   text-transform: uppercase;
   li {
     float: left;
@@ -29,6 +30,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 
 .nav-footer {
   font-size: 14px;
+  margin: 0;
   text-transform: uppercase;
   li {
     float: left;
@@ -48,6 +50,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 
 .nav-mute {
   font-size: 14px;
+  margin: 0;
   text-transform: uppercase;
   li {
     float: left;
@@ -66,7 +69,10 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 }
 
 .nav-sub {
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
   font-size: 24px;
+  margin: 0;
+  padding-top: 15px;
   li {
     float: left;
     list-style-type: none;
