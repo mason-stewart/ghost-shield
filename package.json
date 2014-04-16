@@ -15,7 +15,6 @@
     "tiny-lr": "0.0.5",
     "express": "~3.4.8",
     "marked": "~0.3.0",
-    "gulp-compass": "~1.1.8",
     "node-bourbon": "~1.0.0"
   }
 }
