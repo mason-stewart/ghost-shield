@@ -104,6 +104,14 @@ hr {
 		vertical-align: top;
 		width: 55%;
 
+		h2 {
+			text-align: center;
+		}
+
+		h4 {
+			text-align: center;
+		}
+
 		@media (min-width: 1200px) {
 			width: 65%;
 		}
