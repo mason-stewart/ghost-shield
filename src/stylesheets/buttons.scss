@@ -6,7 +6,7 @@
   font-weight: bolder;
   font-style: italic;
   padding: 10px 20px 15px;
-  font-size: 30px;
+  font-size: 24px;
   text-decoration: none;
   background: $gray-med;
   color: #fff;
@@ -32,7 +32,7 @@
     text-decoration: none;
   }
 
-  & .btn-hello {
+  &.btn-hello {
     background: $blue-hello;
     font-style: normal;
     text-align: center;
