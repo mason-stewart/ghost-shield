@@ -1,10 +1,8 @@
 @import "bourbon";
 @import "color-variables";
 
-.content-box {
-	padding: 30px 0px 50px;
-}
-
+// Found this in use on the site
+// Use as a visual divider between content sections
 hr {
 	margin: 20px 0;
 	border: 0;
@@ -12,7 +10,7 @@ hr {
 	clear: both;
 }
 
-.questions-box {
+.callout-box {
 	background: $gray-light;
 	text-align: center;
 	padding: 1% 4%;
@@ -22,67 +20,10 @@ hr {
 	font-size: 15px;
 }
 
-.three-col-cta {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	.copy-box {
-		padding: 0px;
-		margin-bottom: 30px;
-	}
-
-	h3 {
-		margin: 0 0 0 0px;
-		@media (max-width: 768px) {
-			text-align: center;
-			margin: 0px;
-		}
-	}
-
-	img {
-		float: left;
-		@media (max-width: 768px) {
-			float: none;
-		}
-	}
-
-	.cta-box {
-		padding: 0px;
-	}
-
-	.image-box {
-		margin: 0px auto;
-		padding: 0px;
-		@media (max-width: 768px) {
-			margin-bottom: 15px;
-			width: 110px;
-		}
-	}
-
-	p {
-		margin: 0 0 0 0px;
-		@media (max-width: 768px) {
-			margin: 0px;
-		}
-	}
-
-	a {
-		margin-top: 54px;
-		float: right;
-		@media (max-width: 768px) {
-			margin-top: 20px;
-			float: none;
-		}
-	}
-
-	&.no-mobile-img {
-		@media (max-width: 768px) {
-			.image-box {
-				display: none;
-			}
-		}
-	}
-}
-
+// Two Column Container Styles
+// Two Column Bio Container
+// This may need to be revisited depending on the width of the container
+// This element is placed in
 .two-col-bio {
 	width: 95%;
 	background: $gray-light;
@@ -102,7 +43,7 @@ hr {
 	.two-col-bio-right {
 		display: inline-block;
 		vertical-align: top;
-		width: 55%;
+		width: 45%;
 
 		h2 {
 			text-align: center;
@@ -110,14 +51,7 @@ hr {
 
 		h4 {
 			text-align: center;
-		}
-
-		@media (min-width: 1200px) {
-			width: 65%;
-		}
-
-		@media (max-width: 992px) {
-			width: 45%;
+			font-weight: normal;
 		}
 	}
 
@@ -150,48 +84,19 @@ hr {
 			margin: 10px auto;
 		}
 	}
-
 }
 
 .two-col-cont {
-	.two-col-left {
-		display: inline-block;
-		margin: 0px 9% 0px 0px;
-		vertical-align: top;
-		width: 45%;
-		@media (max-width: 780px) {
-			display: inline-block;
-			vertical-align: middle;
-			zoom: 1;
-			float: none;
-			margin: 0;
-			padding: 0;
-			width: 100% !important;
-		}
-	}
-
-	.two-col-right {
-		display: inline-block;
-		margin: 0;
-		vertical-align: top;
-		width: 45%;
-		@media (max-width: 780px) {
-			display: inline-block;
-			vertical-align: middle;
-			zoom: 1;
-			float: none;
-			margin: 0;
-			padding: 0;
-			width: 100% !important;
-		}
-	}
+	
 }
 
+// Two Column With Side Bar Column
+// I removed the margin-top from the 'h' tags
+// Because it was creating an uneven/cluttered look at the top
 .two-col-sb {
 
 	.two-col-sb-left {
-		padding: 0;
-		h1,
+	  h1,
 		h2,
 		h3,
 		h4 {
@@ -202,7 +107,6 @@ hr {
 	}
 
 	.two-col-sb-right {
-		padding: 0;
 		h1,
 		h2,
 		h3,
@@ -211,5 +115,70 @@ hr {
 		}
 
 		vertical-align: top;
+	}
+}
+
+// Begin Three Column Container Styling
+// Three Column Container w/Call To Action (cta)
+.three-col-cta {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+	.image-box {
+		margin: 0px auto;
+		padding: 0px;
+		@media (max-width: 768px) {
+			margin-bottom: 15px;
+			width: 110px;
+		}
+	}
+
+	.copy-box {
+		padding: 0px;
+		margin-bottom: 30px;
+	}
+
+	.cta-box {
+		padding: 0px;
+	}
+
+	h3 {
+		margin: 0 0 0 0px;
+		@media (max-width: 768px) {
+			text-align: center;
+			margin: 0px;
+		}
+	}
+
+	img {
+		float: left;
+		@media (max-width: 768px) {
+			float: none;
+		}
+	}
+
+	p {
+		margin: 0 0 0 0px;
+		@media (max-width: 768px) {
+			margin: 0px;
+		}
+	}
+
+	a {
+		margin-top: 54px;
+		float: right;
+		@media (max-width: 768px) {
+			margin-top: 20px;
+			float: none;
+			text-align: center;
+		}
+	}
+
+	&.no-mobile-img {
+		@media (max-width: 768px) {
+			.image-box {
+				display: none;
+			}
+		}
 	}
 }
