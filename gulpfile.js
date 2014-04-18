@@ -5,7 +5,7 @@ var gulp        = require('gulp'),
     gutil       = require('gulp-util'),
     sass        = require('gulp-sass'),
     csso        = require('gulp-csso'),
-    bourbon = require('node-bourbon').includePaths,
+    bourbon     = require('node-bourbon').includePaths,
     uglify      = require('gulp-uglify'),
     jade        = require('gulp-jade'),
     concat      = require('gulp-concat'),
@@ -20,6 +20,13 @@ var gulp        = require('gulp'),
 
 
 // --- Basic Tasks ---
+
+gulp.task('images', function() {
+  return gulp.src('src/images/**/*.*')
+    .pipe( gulp.dest('dist/images/'))
+    .pipe( livereload( server ));
+});
+
 gulp.task('css', function() {
   return gulp.src('src/stylesheets/*.scss')
     .pipe( 
@@ -60,6 +67,7 @@ gulp.task('watch', function () {
     if (err) {
       return console.log(err);
     }
+    gulp.watch('src/images/**/*.*',['images']);
 
     gulp.watch('src/stylesheets/*.scss',['css']);
 
@@ -70,10 +78,10 @@ gulp.task('watch', function () {
   });
 });
 
-gulp.task('deploy', ['js','css','templates'], function() {
+gulp.task('deploy', ['images','js','css','templates'], function() {
   gulp.src("dist/**/*")
     .pipe(deploy('git@github.com:masondesu/ghost-shield.git', 'origin'));
 });
 
 // Default Task
-gulp.task('default', ['js','css','templates','express','watch']);
+gulp.task('default', ['images','js','css','templates','express','watch']);
