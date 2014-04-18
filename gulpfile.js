@@ -42,7 +42,6 @@ gulp.task('css', function() {
 gulp.task('js', function() {
   return gulp.src('src/scripts/*.js')
     .pipe( uglify() )
-    .pipe( concat('all.min.js'))
     .pipe( gulp.dest('dist/scripts/'))
     .pipe( livereload( server ));
 });
@@ -71,7 +70,7 @@ gulp.task('watch', function () {
 
     gulp.watch('src/stylesheets/*.*',['css']);
 
-    gulp.watch('src/js/*.js',['js']);
+    gulp.watch('src/scripts/*.js',['js']);
 
     gulp.watch('src/**/*.jade',['templates']);
     
