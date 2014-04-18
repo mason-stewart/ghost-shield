@@ -28,7 +28,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('css', function() {
-  return gulp.src('src/stylesheets/*.scss')
+  return gulp.src('src/stylesheets/*.*')
     .pipe( 
       sass( { 
         includePaths: ['src/stylesheets'].concat(bourbon),
@@ -69,7 +69,7 @@ gulp.task('watch', function () {
     }
     gulp.watch('src/images/**/*.*',['images']);
 
-    gulp.watch('src/stylesheets/*.scss',['css']);
+    gulp.watch('src/stylesheets/*.*',['css']);
 
     gulp.watch('src/js/*.js',['js']);
 
