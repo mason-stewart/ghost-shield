@@ -13,7 +13,7 @@ hr {
 .callout-box {
 	background: $gray-light;
 	text-align: center;
-	padding: 1% 4%;
+	padding: 4% 4%;
 	margin: 0px auto;
 	margin-bottom: 33px;
 	width: 92%;
@@ -25,34 +25,24 @@ hr {
 // This may need to be revisited depending on the width of the container
 // This element is placed in
 .two-col-bio {
-	width: 95%;
 	background: $gray-light;
-	margin: 50px auto;
+	padding-top: 20px;
+	text-align: center;
 
-	.two-col-bio-left {
-		display: inline-block;
-		margin: 30px 30px 15px;
-		vertical-align: top;
-
-		a {
-			display: block;
-			margin-top: 5px;
-		}
+	.btn {
+		width: 271px;
+		display: block;
+		margin: 5px auto;
 	}
 
-	.two-col-bio-right {
-		display: inline-block;
-		vertical-align: top;
-		width: 45%;
+	h2 {
+		text-align: center;
+		margin-top: 0px;
+	}
 
-		h2 {
-			text-align: center;
-		}
-
-		h4 {
-			text-align: center;
-			font-weight: normal;
-		}
+	h4 {
+		text-align: center;
+		font-weight: normal;
 	}
 
 	ul.links {
@@ -67,27 +57,10 @@ hr {
 		}
 	}
 
-	@media (max-width: 768px) {
-		.two-col-bio-left {
-			width: 100%;
-			text-align: center;
-		}
-
-		.two-col-bio-right {
-			width: 95%;
-			margin-left: 2.5%;
-			margin-right: 2.5%;
-		}
-
-		.btn-hello {
-			width: 250px;
-			margin: 10px auto;
-		}
+	.bio-left-col {
+		margin: 0px auto;
+		padding-bottom: 20px;
 	}
-}
-
-.two-col-cont {
-	
 }
 
 // Two Column With Side Bar Column
@@ -126,50 +99,28 @@ hr {
 	
 	.image-box {
 		margin: 0px auto;
-		padding: 0px;
+		text-align: center;
 		@media (max-width: 768px) {
 			margin-bottom: 15px;
-			width: 110px;
 		}
-	}
-
-	.copy-box {
-		margin-bottom: 30px;
 	}
 
 	.cta-box {
-		padding: 0px;
 		text-align: center;
+		padding-top: 35px;
+		a {
+			float: right;
+			@media (max-width: 768px) {
+				margin-top: 20px;
+				float: none;
+				text-align: center;
+			}
+		}
 	}
 
 	h3 {
-		margin: 0 0 0 0px;
+		margin: 0px;
 		@media (max-width: 768px) {
-			text-align: center;
-			margin: 0px;
-		}
-	}
-
-	img {
-		float: left;
-		@media (max-width: 768px) {
-			float: none;
-		}
-	}
-
-	p {
-		margin: 0 0 0 0px;
-		@media (max-width: 768px) {
-			margin: 0px;
-		}
-	}
-
-	a {
-		margin-top: 54px;
-		float: right;
-		@media (max-width: 768px) {
-			margin-top: 20px;
-			float: none;
 			text-align: center;
 		}
 	}

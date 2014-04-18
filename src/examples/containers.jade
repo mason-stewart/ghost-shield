@@ -1,31 +1,27 @@
 h2 Containers
 .sg-container
-  h2 Single Column Container
-  pre &lt;div class="<strong>callout-box</strong>"&gt;
-  pre  &lt;p&gt;Lorem ipsum&lt;/p&gt;
-  pre  &lt;p&gt;More lorem&lt;/p&gt;
-  pre  &lt;br&gt;
-  pre  &lt;p&gt;Even more lorem&lt;/p&gt;
-  pre &lt;/div&gt;
+  h3 Single Column Container
+  h4 *Code*
+  pre <strong>.callout-box</strong>
+  pre   h4 Lorem ipsum
+  pre   p More lorem
+  pre   span Even more lorem
+  h4 *Example*
   .callout-box 
-    p Questions? Want to know what makes us different?
+    h4 Questions? Want to know what makes us different?
     p Call <strong><a href="tel:+18553992275">(855) 399-2275</a> to talk to someone on the team.</strong>
-    br
-    p (You can also <a href="mailto:academy@theironyard.com?subject=I want to learn more about the academy">shoot us an email</a> or jump into our <a href="#">Academy Chat</a>.)
-.col-sm-12
+    span (You can also <a href="mailto:academy@theironyard.com?subject=I want to learn more about the academy">shoot us an email</a> or jump into our <a href="#">Academy Chat</a>.)
   // Begin Two Column Container
   h3 Two Column Containers
   h4 *Code*
-  pre  &lt;div class="<strong>two-col-cont</strong>.col-sm-12"&gt;
-  pre   &lt;div class="<strong>col-sm-6</strong>"&gt;
-  pre    &lt;p&gt;Lorem ipsum... &lt;/p&gt;
-  pre   &lt;/div&gt;
-  pre   &lt;div class="<strong>col-sm-6</strong>"&gt;
-  pre    &lt;p&gt;Lorem ipsum... &lt;/p&gt;
-  pre   &lt;/div&gt;
-  pre  &lt;/div&gt;
-  br
-  .two-col-cont.col-sm-12
+  pre  .row
+  pre   .col-sm-6
+  pre     h4 Left Column Copy
+  pre     p Lorem ipsum
+  pre   .col-sm-6
+  pre     h4 Right Column Copy
+  pre     p Lorem ipsum
+  .row
     .col-sm-6
       h4 Left Column Copy
       p Vegan wayfarers quinoa photo booth. Tote bag VHS cliche art party, occupy freegan artisan. Polaroid kale chips flannel hella cred. Artisan High Life keytar, actually farm-to-table beard Blue Bottle ethnic PBR. Mlkshk Cosby sweater 90's, next level semiotics seitan umami Wes Anderson Austin forage leggings.
@@ -40,60 +36,54 @@ h2 Containers
   // Begin Two Column Bio Container
   h3.text-center Two Column Bio Container
   h4 *Code*
-  pre &lt;div class="<strong>two-col-bio</strong>"&gt;
-  pre  &lt;div class="<strong>two-col-bio-left</strong>"&gt;
-  pre   &lt;img src="http://theironyard.com/images/education/academy/front-end-2/graduates/alison-miller.jpg" class="photo-alum&gt";
-  pre   &lt;a class="btn btn-contact" href="mailto:example@example.com?subject=I found you through The Iron Yard and I'd love to chat"&gt;
-  pre  	 &lt;img src="http://theironyard.com/images/email.png"&gt;
-  pre  	 &lt;p&gt;Say hello&lt;/p&gt;
-  pre  	&lt;/a&gt;
-  pre  &lt;/div&gt;
-  pre  &lt;div class="<strong>two-col-bio-right</strong>"&gt;
-  pre   &lt;h2&gt;Allison Miller&lt;/h2&gt;
-  pre   &lt;h4&gt;Bio Title&lt;/h4&gt;
-  pre   &lt;p&gt;Bio copy&lt;/p&gt;
-  pre   &lt;ul class="links"&gt;
-  pre    &lt;li&gt;&lt;a href="#"&gt; • Link 1&lt;/a&gt;&lt;/li&gt;
-  pre    &lt;li&gt;&lt;a href="#"&gt; • Link 2&lt;/a&gt;&lt;/li&gt;
-  pre    &lt;li&gt;&lt;a href="#"&gt; • Link 3&lt;/a&gt;&lt;/li&gt;
-  pre   &lt;/ul&gt;
-  pre  &lt;/div&gt;
-  pre &lt;/div&gt;
+  pre <strong>.two-col-bio</strong>.col-sm-12
+  pre   .row
+  pre    .col-lg-5.col-md-6.col-sm-5
+  pre     .bio-left-col
+  pre  	    img&#40;src="url/here" class="photo-alum"&#41;
+  pre  	    a&#40;class="btn btn-contact" href="mailto:emailhere?subject=msg-here"&#41;
+  pre  	      img(src="http://theironyard.com/images/email.png")
+  pre         p Say hello
+  pre     .col-lg-7.col-md-6.col-sm-7
+  pre       h2 Allison Miller
+  pre       h4 Core Front End Dev at Benefit Focus
+  pre       p Bio summary here
+  pre       ul.links
+  pre         li &lt;a href="#"&gt; • Link 1&lt;/a&gt;
+  pre         li &lt;a href="#"&gt; • Link 2&lt;/a&gt;
+  pre         li &lt;a href="#"&gt; • Link 3&lt;/a&gt;
   h4 *Example*
-  .two-col-bio
-    .two-col-bio-left
-      img(src="http://theironyard.com/images/education/academy/front-end-2/graduates/alison-miller.jpg" class="photo-alum")
-      a(class="btn btn-contact" href="mailto:example@example.com?subject=I found you through The Iron Yard and I'd love to chat")
-        img(src="http://theironyard.com/images/email.png")
-        p Say hello
-    .two-col-bio-right
-      h2 Allison Miller
-      h4 <em>Core Front End Dev at Benefit Focus</em>
-      p American Apparel wayfarers normcore mustache, Truffaut Intelligentsia XOXO irony deep v photo booth locavore next level. Helvetica post-ironic four loko dreamcatcher normcore gluten-free, tofu Wes Anderson. Next level retro Schlitz, cardigan cliche jean shorts shabby chic. Hashtag cliche bitters cred Banksy salvia. Austin ennui raw denim Thundercats, wolf asymmetrical paleo. 
-      ul.links
-        li • <a href="#">Link 1</a>
-        li • <a href="#">Link 2</a>
-        li • <a href="#">Link 3</a>
-        li • <a href="#">Link 4</a>
-        li • <a href="#">Link 5</a>
+  .two-col-bio.col-sm-12
+    .row
+      .col-lg-5.col-md-6.col-sm-5
+        .bio-left-col
+          img(src="http://theironyard.com/images/education/academy/front-end-2/graduates/alison-miller.jpg" class="photo-alum")
+          a(class="btn btn-contact" href="mailto:example@example.com?subject=I found you through The Iron Yard and I'd love to chat")
+            img(src="http://theironyard.com/images/email.png")
+            p Say hello
+      .col-lg-7.col-md-6.col-sm-7
+        h2 Allison Miller
+        h4 Core Front End Dev at Benefit Focus
+        p American Apparel wayfarers normcore mustache, Truffaut Intelligentsia XOXO irony deep v photo booth locavore next level. Helvetica post-ironic four loko dreamcatcher normcore gluten-free, tofu Wes Anderson. Next level retro Schlitz, cardigan cliche jean shorts shabby chic. Hashtag cliche bitters cred Banksy salvia. Austin ennui raw denim Thundercats, wolf asymmetrical paleo. 
+        ul.links
+          li • <a href="#">Link 1</a>
+          li • <a href="#">Link 2</a>
+          li • <a href="#">Link 3</a>
+          li • <a href="#">Link 4</a>
+          li • <a href="#">Link 5</a>
   // Begin Two Column w/Side Bar Column
   h3.text-center Two Column With Side Bar Column
   h4 *Code*
-  pre &lt;div class="<strong>two-col-sb</strong> col-sm-12"&gt;
-  pre  &lt;div class="row"&gt;
-  pre   &lt;div class="<strong>two-col-sb-left</strong> col-sm-8"&gt;
-  pre    &lt;h2 Content Title&gt;
-  pre    &lt;p&gt;More Content&lt;/p&gt;
-  pre   &lt;/div&gt;
-  pre   &lt;div class="<strong>two-col-sb-right</strong> col-sm-4"&gt;
-  pre    &lt;h4&gt; Side Bar Title&lt;/h4&gt;
-  pre    &lt;hr&gt;
-  pre    &lt;p&gt;More Content&lt;/p&gt;
-  pre   &lt;/div&gt;
-  pre  &lt;/div&gt;
-  pre &lt;/div&gt;
+  pre <strong>.two-col-sb</strong>
+  pre   .row
+  pre     <strong>.two-col-sb-left</strong>.col-sm-8
+  pre       h2 Content Title
+  pre       p More Content
+  pre     <strong>.two-col-sb-right</strong>.col-sm-4
+  pre       h4 Side Bar Title
+  pre       p More Content
   h4 *Example*
-  .two-col-sb.col-sm-12
+  .two-col-sb
     .row
       .two-col-sb-left.col-sm-8
         h2 Left Column Content
@@ -107,46 +97,38 @@ h2 Containers
           li <a href="#">Item 1</a>
           li <a href="#">Item 2</a>
           li <a href="#">Item 3</a>
-// Begin Three Column Container with Call To Action
-.col-sm-12
+  // Begin Three Column Container with Call To Action
   h3.text-center Three Column Container w/Call To Action (cta)
   h4 *Code*
-  pre &lt;div class="container"&gt;
-  pre  &lt;div class="<strong>three-col-cta</strong> col-sm-12"&gt;
-  pre   &lt;div class="<strong>image-box</strong> col-sm-2"&gt;
-  pre    &lt;img src="http://theironyard.com/images/icons/front-end-engineering-logo.png"
-  pre   &lt;/div&gt;
-  pre   &lt;div class="<strong>copy-box</strong> col-sm-7"&gt;
-  pre    &lt;h3&gt;Copy Title&lt;/h3&gt;
-  pre    &lt;p&gt;Copy Text&lt;/p&gt;
-  pre   &lt;/div&gt;
-  pre   &lt;div class="<strong>cta-box</strong> col-sm-3 text-center"&gt;
-  pre    &lt;a href="#" class="btn hover-yellow"&gt;Learn More&lt;/a&gt;
-  pre   &lt;/div&gt;
-  pre  &lt;/div&gt;
-  pre &lt;/div&gt;
+  pre <strong>.three-col-cta</strong>.row
+  pre   .col-lg-2.col-sm-2
+  pre     .image-box
+  pre       img
+  pre   .col-lg-7.col-sm-6
+  pre     h3 Copy Title
+  pre     p Lorem ipsum
+  pre   .col-lg-3.col-sm-4.cta-box
+  pre     a
   h4 *Example*
-.col-sm-12
-  .three-col-cta.col-sm-12
-    .col-sm-2.image-box
-      img(src="http://theironyard.com/images/icons/front-end-engineering-logo.png")
-    .col-sm-6.copy-box
+  .three-col-cta.row
+    .col-lg-2.col-sm-2
+      .image-box
+        img(src="http://theironyard.com/images/icons/front-end-engineering-logo.png")
+    .col-lg-7.col-sm-6
       h3 Copy Title
       p Tote bag meh +1, master cleanse sustainable literally chia messenger bag fingerstache cray organic. Banksy deep v before they sold out iPhone umami. 
-    .col-sm-4.cta-box
+    .col-lg-3.col-sm-4.cta-box
       a(href="#").btn.hover-yellow Learn More
-  .col-sm-12
-    h3 Remove image on small screens 
-    h4 *Code*
-    h5 *Add the "no-mobile-img" class to the "three-col-box" div like so:
-    pre &lt;div class="three-col-cta <strong>no-mobile-img</strong> col-sm-12"&gt;
-    h4 *Example*
-.col-sm-12
-  .three-col-cta.no-mobile-img.col-sm-12
-    .col-sm-2.image-box
+  h3 Remove image on small screens 
+  h4 *Code*
+  h5 *Add the "no-mobile-img" class to the "three-col-box" div like so:
+  pre &lt;div class="three-col-cta <strong>no-mobile-img</strong> col-sm-12"&gt;
+  h4 *Example*
+  .three-col-cta.no-mobile-img.row
+    .col-lg-2.col-sm-2.image-box
       img(src="http://theironyard.com/images/icons/front-end-engineering-logo.png")
-    .col-sm-6.copy-box
+    .col-lg-7.col-sm-6.copy-box
       h3 Copy Title
       p Tote bag meh +1, master cleanse sustainable literally chia messenger bag fingerstache cray organic. Banksy deep v before they sold out iPhone umami. 
-    .col-sm-4.text-center.cta-box
+    .col-lg-3.col-sm-4.text-center.cta-box
       a(href="#").btn.hover-yellow Learn More
