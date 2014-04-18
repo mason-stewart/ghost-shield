@@ -1,9 +1,9 @@
 @import "bourbon";
 @import "color-variables";
 
-table .class-table {
+.class-table {
 	border-spacing: 0;
-	width: 100%;
+	margin-bottom: 20px;
 }
 	
 tbody {
@@ -13,37 +13,37 @@ tbody {
 tr {
 	background: $gray-light;
 
-	& .btn {
-		  display: inline-block;
-		  border-radius: 4px;
-		  font-weight: bolder;
-		  font-style: italic;
-		  padding: 15px 20px;
-		  font-size: 24px;
-		  text-decoration: none;
-		  background: white;
-		  color: $gray-med;
-		  margin-bottom: 0px;
-
-		  &:hover {
-		  	background: white;
-		  }
-
-		  @media (max-width: 649px) {
-				padding: 10px;
-				border-bottom: 3px solid #fff;
-				font-size: 14px;
-				font-style: italic;
-				font-weight: bolder;
-			}
-	}
-
 	&:hover {
 		background: darken($gray-light, 10%);
 		color: $gray-dark;
 
-		& .btn {
+		.btn {
 			color: $gray-dark;
+		}
+	}
+
+	.btn {
+	  display: inline-block;
+	  border-radius: 4px;
+	  font-weight: bolder;
+	  font-style: italic;
+	  padding: 15px 20px;
+	  font-size: 24px;
+	  text-decoration: none;
+	  background: white;
+	  color: $gray-med;
+	  margin-bottom: 0px;
+
+	  &:hover {
+	  	background: white;
+	  }
+
+	  @media (max-width: 649px) {
+			padding: 10px;
+			border-bottom: 3px solid #fff;
+			font-size: 14px;
+			font-style: italic;
+			font-weight: bolder;
 		}
 	}
 
@@ -56,7 +56,7 @@ tr {
 			color: white;
 		}
 
-		& .btn {
+		.btn {
 			color: $blue;
 		}
 	}
