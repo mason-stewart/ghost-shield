@@ -1,0 +1,18 @@
+@import "bourbon";
+@import "color-variables";
+
+$header-text-color: #EEF1F6;
+
+// Element tags are listed first, then classes
+// All properties listed in alphabetical order
+
+.header {
+  color: $header-text-color;
+  h1 {
+    font-size:  30px;
+    @media only screen and (min-width: 600px) {
+      font-size: 70px;
+      line-height: 60px;
+    }
+  }
+}
