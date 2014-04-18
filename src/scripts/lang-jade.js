@@ -39,7 +39,7 @@ PR['registerLangHandler'](
       [PR['PR_ATTRIB_VALUE'], /[.#][a-zA-Z-]+/],
       
       // tag
-      [PR['PR_TAG'], /(\n[ ]*)(html|head|title|base|link|meta|style|script|noscript|template|body|body|section|navarticle|aside|h1|h2|h3|h4|h5|h6|header|footer|address|main|p|hr|pre|blockquote|ol|ul|li|dl|d|dd|dd|figure|figcaption|div|a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|varsamp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img|iframe|embedobject|param|object|video|audio|source|video|audio|track|video|audio|canvas|map|are|area|map|svg|table|caption|colgroup|col|tbody|thead|tfoot|tr|td|th|form|fieldset|lgend|fieldset|label|input|button|select|datalist|optgroup|option|select|datalist|tetarea|keygen|output|progress|meter|details|summary|details|menuitem|menu)/],
+      [PR['PR_TAG'], /(\n[ ]*)(abbr|address|area|are|aside|audio|a|base|bdi|bdo|blockquote|body|body|br|button|b|canvas|caption|cite|code|colgroup|col|datalist|datalist|data|dd|dd|del|details|details|dfn|div|dl|d|embedobject|em|fieldset|fieldset|figcaption|figure|footer|form|h1|h2|h3|h4|h5|h6|header|head|hr|html|iframe|img|input|ins|i|kbd|keygen|label|lgend|link|li|main|map|map|mark|menumenuitem|meta|meter|navarticle|noscript|object|ol|optgroup|option|output|param|pre|progress|p|q|rp|rt|ruby|script|section|select|select|small|source|span|strong|style|sub|summary|sup|svg|s|table|tbody|td|template|tetarea|tfoot|thead|th|time|title|track|tr|ul|u|varsamp|video|video|video|wbr|)/],
      
       
     ]), ['jade']);
