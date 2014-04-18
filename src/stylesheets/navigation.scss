@@ -29,6 +29,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 }
 
 .nav-footer {
+  float: right;
   font-size: 14px;
   margin: 0;
   text-transform: uppercase;
@@ -49,6 +50,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 }
 
 .nav-mute {
+  float: right;
   font-size: 14px;
   margin: 0;
   text-transform: uppercase;
@@ -79,6 +81,32 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
     a{
       color: $nav-text-color;
       margin: 0 10px;
+      &:hover,
+      &.active {
+        border-bottom: 3px solid $nav-text-color-underline;
+        cursor: pointer;
+        text-decoration: none;
+       }
+     }
+   }
+}
+
+.nav-sub-vertical {
+  // border-top: 3px solid rgba(255, 255, 255, 0.5);
+  float: right;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    font-weight: bolder;
+    line-height: 24px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    width: 170px;
+    a{
+      color: $green;
       &:hover,
       &.active {
         border-bottom: 3px solid $nav-text-color-underline;
