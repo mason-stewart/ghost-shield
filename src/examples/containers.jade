@@ -1,38 +1,67 @@
 h2 Containers
 .sg-container
-  h3 Single Column Container
-  h4 *Code*
-  pre <strong>.callout-box</strong>
-  pre   h4 Lorem ipsum
-  pre   p More lorem
-  pre   span Even more lorem
-  h4 *Example*
-  .callout-box 
-    h4 Questions? Want to know what makes us different?
-    p Call <strong><a href="tel:+18553992275">(855) 399-2275</a> to talk to someone on the team.</strong>
-    span (You can also <a href="mailto:academy@theironyard.com?subject=I want to learn more about the academy">shoot us an email</a> or jump into our <a href="#">Academy Chat</a>.)
-  // Begin Two Column Container
-  h3 Two Column Containers
-  h4 *Code*
-  pre  .row
-  pre   .col-sm-6
-  pre     h4 Left Column Copy
-  pre     p Lorem ipsum
-  pre   .col-sm-6
-  pre     h4 Right Column Copy
-  pre     p Lorem ipsum
-  .row
-    .col-sm-6
-      h4 Left Column Copy
-      p Vegan wayfarers quinoa photo booth. Tote bag VHS cliche art party, occupy freegan artisan. Polaroid kale chips flannel hella cred. Artisan High Life keytar, actually farm-to-table beard Blue Bottle ethnic PBR. Mlkshk Cosby sweater 90's, next level semiotics seitan umami Wes Anderson Austin forage leggings.
-      ul
-        li <a href="#">Link 1</a>
-        li <a href="#">Link 2</a>
-        li <a href="#">Link 3</a>
-    .col-sm-6
-      h4 Right Column Copy
-      p Umami normcore jean shorts, Schlitz polaroid Godard twee wolf American Apparel roof party Truffaut Cosby sweater stumptown YOLO fap. Whatever pug ethnic tofu Brooklyn. Keffiyeh blog Schlitz umami, farm-to-table 8-bit authentic High Life mustache cliche. 
-      a(href="#" class="btn") Learn More
+  .sg-section
+    .sg-info
+      h3 Single Column Container
+    .sg-demo
+      .callout-box 
+        h4 Questions? Want to know what makes us different?
+        p Call <strong><a href="tel:+18553992275">(855) 399-2275</a> to talk to someone on the team.</strong>
+        span (You can also <a href="#">shoot us an email</a> or jump into our <a href="#">Academy Chat</a>.)
+
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          <strong>.callout-box</strong>
+            h4 Questions? Want to know what makes us different?
+            p. 
+              Call &lt;strong&gt;&lt;a href="tel:+18553992275"&gt; (855) 399-2275&lt;/a&gt;
+              to talk to someone on the team.&lt;/strong&gt;
+            span.
+              (You can also &lt;a href="#"&gt;shoot us an email&lt;/a&gt; or jump into 
+                our &lt;a href="#"&gt;Academy Chat&lt;/a&gt;.)
+
+  .sg-section
+    .sg-info
+      h3 Two Column Containers
+    .sg-demo
+      .row
+        .col-sm-6
+          h4 Left Column Copy
+          p Vegan wayfarers quinoa photo booth. Tote bag VHS cliche art party, occupy freegan artisan. Polaroid kale chips flannel hella cred. Artisan High Life keytar, actually farm-to-table beard Blue Bottle ethnic PBR. Mlkshk Cosby sweater 90's, next level semiotics seitan umami Wes Anderson Austin forage leggings.
+          ul
+            li <a href="#">Link 1</a>
+            li <a href="#">Link 2</a>
+            li <a href="#">Link 3</a>
+        .col-sm-6
+          h4 Right Column Copy
+          p Umami normcore jean shorts, Schlitz polaroid Godard twee wolf American Apparel roof party Truffaut Cosby sweater stumptown YOLO fap. Whatever pug ethnic tofu Brooklyn. Keffiyeh blog Schlitz umami, farm-to-table 8-bit authentic High Life mustache cliche. 
+          a(href="#" class="btn") Learn More
+ 
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          .col-sm-6
+            h4 Left Column Copy
+            p ...
+            ul
+              li <a href="#">Link 1</a>
+              li <a href="#">Link 2</a>
+              li <a href="#">Link 3</a>
+          .col-sm-6
+            h4 Right Column Copy
+            p ...
+            a(href="#" class="btn") Learn More
+            .row
+             .col-sm-6
+               h4 Left Column Copy
+               p Lorem ipsum
+             .col-sm-6
+               h4 Right Column Copy
+               p Lorem ipsum
+  
   // Begin Two Column Bio Container
   h3.text-center Two Column Bio Container
   h4 *Code*
