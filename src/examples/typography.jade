@@ -1,39 +1,110 @@
 h2 Typography
 .sg-container
-  .row
-    .col-md-12
+  .sg-section
+    .sg-info
       h3 Headings
-      h1 h1. Hella mumblecore keffiyeh
-      h2 h2. Letterpress fashion axe fap
+    .sg-demo
+      h1 h1. Hella mumblecore
+      h2 h2. Letterpress fashion axe
       h3 h3. Deep v bicycle rights
       h4 h4. Put a bird on it
       h5 h5. Tofu organic
-      div.divider
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          h1 Hella mumblecore
+          h2 Letterpress fashion axe
+          h3 Deep v bicycle
+          h4 Put a bird on it
+          h5 Tofu organic
+  
+  .sg-section
+    .sg-info
       h3 Paragraphs
+    .sg-demo
       p Art party wayfarers Schlitz photo booth lomo, authentic whatever bicycle rights Thundercats DIY. Master cleanse Portland squid, beard keytar Helvetica sriracha street art gentrify art party ethnic. Typewriter fixie kale chips craft beer Truffaut. Vegan direct trade meh, pour-over actually kale chips wayfarers Portland. Cardigan Williamsburg flexitarian, narwhal master cleanse McSweeney's banh mi letterpress ennui brunch chia polaroid hoodie meggings 8-bit. 
       p Here is what a paragraph would look like. And here is a <a href="#">link</a>.
-      div.divider
-      h3 Lists
-      h4 Unordered Lists
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          p Art party wayfarers Schlitz photo booth lomo, authentic 
+          whatever bicycle rights Thundercats DIY. Master cleanse 
+          Portland squid, beard keytar Helvetica sriracha street art 
+          gentrify art party ethnic. Typewriter fixie kale chips 
+          craft beer Truffaut. Vegan direct trade meh, pour-over actually 
+          kale chips wayfarers Portland. Cardigan Williamsburg 
+          flexitarian, narwhal master cleanse McSweeneys banh 
+          mi letterpress ennui brunch chia polaroid hoodie meggings 
+          8-bit.
+          ---
+          p Here is what a paragraph with a &lt;a href="#"&gt;link&lt;/a&gt;.
+
+  
+  .sg-section
+    .sg-info
+      h3 Unordered Lists
+    .sg-demo 
       ul
         li Selvage Portland keytar
-        li Hashtag PBR&B
+        li Hashtag PBR&amp;B
         li <strong>For longer bullets, use the &lt;strong&gt; tag at the beginning.</strong>Wes Anderson craft beer 90's, leggings bitters gentrify gastropub normcore Shoreditch polaroid Cosby sweater tattooed. Drinking vinegar brunch leggings Carles, chillwave authentic cray stumptown cardigan hella. Meh artisan lo-fi pour-over distillery. Gluten-free put a bird on it drinking vinegar, Thundercats mumblecore wayfarers blog scenester small batch. 
         ul
           li Raw denim
           li Gluten-free Etsy pug
           li Thundercats
-      h4 Ordered Lists
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          ul
+            li Selvage Portland keytar
+            li Hashtag PBR&B
+            li.
+              &lt;strong&gt;For longer bullets, use the strong 
+              tag at the beginning.&lt;/strong&gt; Wes Anderson craft 
+              cider 90s, leggings bitters gentrify gastropub normcore 
+              Shoreditch  Cosby sweater tattooed. Drinking vinegar 
+              crunch leggings Carles, chillwave cray stumptown 
+              cardigan hella. Meh artisan lo-fi Zordon pour-over.
+              Mumford vinegar, Thundercats mumblecore wayfarers blog 
+              Yo The Noid small batch. 
+            ul
+              li Raw denim
+              li Gluten-free Etsy pug
+              li Thundercats
+
+  .sg-section
+    .sg-info
+      h3 Ordered Lists
+    .sg-demo 
       ol
         li Direct trade
         li Neutra bitters
-        li Wes Anderson 
-      div.divider
+        li Wes Anderson
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          ol
+            li Direct trade
+            li Neutra bitters
+            li Wes Anderson
+  
+  .sg-section
+    .sg-info
       h3 Pullquotes
-      pre &lt;blockquote&gt;
-      pre  &lt;p&gt;"Quote"&lt;/p&gt;
-      pre  &lt;footer&gt;- Author&lt;/footer&gt;
-      pre &lt;/blockquote&gt;
+    .sg-demo
       blockquote 
         p "Organic YOLO chambray American Apparel kale chips. Squid stumptown cardigan gentrify, try-hard seitan sartorial gluten-free messenger bag before they sold out." 
         footer - Hispteria Crazedor, Coffee Shop Prophet
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          blockquote
+            p. 
+              "Organic YOLO chambray American Apparel kale chips. 
+              Squid stumptown cardigan gentrify, try-hard seitan 
+              sartorial gluten-free before they sold out." 
+            footer - Hispteria Crazedor, Coffee Shop Prophet

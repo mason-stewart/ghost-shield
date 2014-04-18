@@ -1,27 +1,21 @@
 @import "bourbon";
 @import "color-variables";
 
+body {
+  background: #fdfdfd;
+}
+
 .sg-header {
   text-align: center;
 }
 
-.sg-sidebar, .sg-main {
-  border: 1px solid $gray-med;
+.sg-sidebar {
+  // 
 }
 
 .sg-colors {
   .row {
     margin-bottom: 50px;
-  }
-}
-
-.sg-example {
-  span {
-    display: block;
-  }
-
-  pre {
-    display: inline;
   }
 }
 
@@ -32,10 +26,48 @@
 }
 
 .sg-container {
-  border-top: 1px solid $gray-med;
   margin-bottom: 25px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
 
+.sg-section {
+  background: white;
+  border: 1px solid $gray-med;
+  margin-bottom: 30px;
+
+  .sg-info {
+    padding: 20px;
+    border-bottom: 1px solid $gray-med;
+  }
+
+  .sg-demo {
+    padding: 20px;
+    background: url('../images/sg/checked.png');
+  }
+
+  .sg-code {
+    padding: 20px;
+    position: relative;
+    border-top: 1px solid $gray-med;
+
+    pre {
+      margin-top: 0;
+      color: #fff;
+    }
+
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-right: 1px solid $gray-med;
+      border-bottom: 1px solid $gray-med;
+      padding: 2px 8px;
+      font-size: 0.8rem;
+      font-weight: bolder;
+
+      content: 'Jade';
+    }
+  }
+}
