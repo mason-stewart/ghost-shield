@@ -3,25 +3,29 @@ html
   head
     link(type="text/css" rel="stylesheet" media="all" href="stylesheets/ghost-shield.css")
     link(type="text/css" rel="stylesheet" media="all" href="stylesheets/styleguide.css")
+    link(type="text/css" rel="stylesheet" media="all" href="stylesheets/prettify.css")
 
+  body(onload="prettyPrint()")
     link(href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css')
-  body
     .container
       .row
         .col-md-12.sg-header
           h1 Welcome to Ghost Shield
           h2 Wow.
       .row
-        .col-md-3.sg-sidebar
+        .col-md-2.sg-sidebar
           ul
             li Colors
             li Buttons
             li Typography
             li Navigation
             li Photos-images
-        .col-md-9.sg-main
+        .col-md-9.col-md-offset-1.sg-main
           include examples/colors
           include examples/buttons
           include examples/typography
           include examples/navigation
           include examples/photos-images
+
+    script(src="scripts/prettify.js")
+    script(src="scripts/lang-jade.js")
