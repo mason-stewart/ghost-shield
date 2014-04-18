@@ -6,7 +6,7 @@
   font-weight: bolder;
   font-style: italic;
   padding: 10px 20px 15px;
-  font-size: 30px;
+  font-size: 24px;
   text-decoration: none;
   background: $gray-med;
   color: #fff;
@@ -32,8 +32,8 @@
     text-decoration: none;
   }
 
-  & .btn-hello {
-    background: $blue-hello;
+  &.btn-contact {
+    background: $blue-contact;
     font-style: normal;
     text-align: center;
 
@@ -44,6 +44,7 @@
     p {
       display: inline-block;
       font-weight: 100;
+      font-size: 24px;
       margin: 0;
       padding-left: 10px;
     }
