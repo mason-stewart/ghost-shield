@@ -16,3 +16,39 @@ $header-text-color: #EEF1F6;
     }
   }
 }
+
+.feature {
+  color: white;
+  font-size: 20px;
+  line-height: 41px;
+  font-weight: bolder;
+  background: #202F37;
+  box-shadow: 30px 0 0 #202F37,-30px 0 0 #202F37,30px 22px 0 #202F37,-30px 22px 0 #202F37;
+  @media only screen and (min-width: 600px) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  @media only screen and (min-width: 980px) {
+    font-size: 73px;
+    line-height: 110px;
+  }
+  
+}
+
+//This is the best way I could style 
+//just the anchor element and try to stay dry
+a.feature {
+  @extend .feature;
+  &:hover {
+    color: #20A3D9;
+    text-decoration: none;
+  }
+  @media only screen and (min-width: 600px) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  @media only screen and (min-width: 980px) {
+    font-size: 73px;
+    line-height: 110px;
+  }
+}
