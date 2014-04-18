@@ -2,24 +2,33 @@ h2 Color Variables
 .sg-container.sg-colors
   .row
     .col-sm-2
-      .sg-circle.gray-light-bg
+      .sg-circle.gray-lighter-bg
     .col-sm-4.sg-example
       p Gray option for section backgrounds
+      span Variable:
+        pre $gray-lighter
+      span Class:
+        pre .gray-lighter-bg
+
+    .col-sm-2 
+      .sg-circle.gray-light-bg
+    .col-sm-4.sg-example
+      p Another gray option for a section
       span Variable:
         pre $gray-light
       span Class:
         pre .gray-light-bg
 
+  .row
     .col-sm-2 
       .sg-circle.gray-med-bg
     .col-sm-4.sg-example
-      p Another gray option for a section
+      p Footer background & default text color
       span Variable:
         pre $gray-med
       span Class:
         pre .gray-med-bg
 
-  .row
     .col-sm-2 
       .sg-circle.gray-dark-bg
     .col-sm-4.sg-example
@@ -28,7 +37,8 @@ h2 Color Variables
         pre $gray-dark
       span Class:
         pre .gray-dark-bg
-
+  
+  .row
     .col-sm-2
       .sg-circle.blue-bg
     .col-sm-4.sg-example
@@ -39,7 +49,6 @@ h2 Color Variables
         pre .blue-bg 
         pre.blue-text .blue-text
 
-  .row
     .col-sm-2
       .sg-circle.yellow-bg
     .col-sm-4.sg-example
@@ -50,6 +59,7 @@ h2 Color Variables
         pre .yellow-bg
         pre.yellow-text .yellow-text
 
+  .row
     .col-sm-2
       .sg-circle.red-bg
     .col-sm-4.sg-example
@@ -60,7 +70,6 @@ h2 Color Variables
         pre .red-bg
         pre.red-text .red-text
 
-  .row
     .col-sm-2
       .sg-circle.gold-bg
     .col-sm-4.sg-example
@@ -71,11 +80,21 @@ h2 Color Variables
         pre .gold-bg
         pre.gold-text .gold-text
 
+  .row
     .col-sm-2
       .sg-circle.blue-link-bg
     .col-sm-4.sg-example
-      p It's blue!
+      p For links
       span Variable:
         pre $blue-link
       span Class:
         pre .blue-link-bg
+
+    .col-sm-2
+      .sg-circle.blue-hello-bg
+    .col-sm-4.sg-example
+      p For 'Say Hello' button
+      span Variable:
+        pre $blue-hello
+      span Class:
+        pre .blue-hello-bg

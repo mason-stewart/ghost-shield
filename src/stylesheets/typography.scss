@@ -34,7 +34,6 @@ p {
     line-height: 1.35;
     font-style: italic; 
   }
-
 }
 
 
@@ -56,6 +55,28 @@ blockquote {
   footer {
     font-weight: bold;
   }
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 42px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 38px;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 54px;
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0px;
+  padding-bottom: 10px;
 }
 
 ol {
