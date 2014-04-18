@@ -6,14 +6,14 @@
   border-radius: 4px;
   font-weight: bolder;
   font-style: italic;
-  padding: 15px 20px;
+  padding: 10px 20px 15px;
   font-size: 24px;
   text-decoration: none;
-  background: #ADB8C4;
+  background: $gray-med;
   color: #fff;
   
   &:hover {
-    background: #39474e;
+    background: $gray-dark;
     text-decoration: none;
   }
 
@@ -30,6 +30,28 @@
   &.hover-blue:hover {
     background: $blue;
     text-decoration: none;
+  }
+
+  &.btn-contact {
+    background: $blue-contact;
+    font-style: normal;
+    text-align: center;
+
+    img {
+      display: inline-block;
+    }
+
+    p {
+      display: inline-block;
+      font-weight: 100;
+      font-size: 24px;
+      margin: 0;
+      padding-left: 10px;
+    }
+
+    &:hover {
+      background: #1b93c4;
+    }
   }
 }
 

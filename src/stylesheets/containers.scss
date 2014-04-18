@@ -1,0 +1,135 @@
+@import "bourbon";
+@import "color-variables";
+
+// Found this in use on the site
+// Use as a visual divider between content sections
+hr {
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px solid $gray-lighter;
+	clear: both;
+}
+
+.callout-box {
+	background: $gray-light;
+	text-align: center;
+	padding: 4% 4%;
+	margin: 0px auto;
+	margin-bottom: 33px;
+	width: 92%;
+	font-size: 15px;
+}
+
+// Two Column Container Styles
+// Two Column Bio Container
+// This may need to be revisited depending on the width of the container
+// This element is placed in
+.two-col-bio {
+	background: $gray-light;
+	padding-top: 20px;
+	text-align: center;
+
+	.btn {
+		width: 271px;
+		display: block;
+		margin: 5px auto;
+	}
+
+	h2 {
+		text-align: center;
+		margin-top: 0px;
+	}
+
+	h4 {
+		text-align: center;
+		font-weight: normal;
+	}
+
+	ul.links {
+		padding-bottom: 19px;
+		font-size: 18px;
+		font-weight: 500;
+		margin: 0px;
+		
+		li {
+			display: inline-block;
+			list-style-type: disc;
+		}
+	}
+
+	.bio-left-col {
+		margin: 0px auto;
+		padding-bottom: 20px;
+	}
+}
+
+// Two Column With Side Bar Column
+// I removed the margin-top from the 'h' tags
+// Because it was creating an uneven/cluttered look at the top
+.two-col-sb {
+
+	.two-col-sb-left {
+	  h1,
+		h2,
+		h3,
+		h4 {
+			margin-top: 0px;
+		}
+
+		vertical-align: top;
+	}
+
+	.two-col-sb-right {
+		h1,
+		h2,
+		h3,
+		h4 {
+			margin-top: 0px;
+		}
+
+		vertical-align: top;
+	}
+}
+
+// Begin Three Column Container Styling
+// Three Column Container w/Call To Action (cta)
+.three-col-cta {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+	.image-box {
+		margin: 0px auto;
+		text-align: center;
+		@media (max-width: 768px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	.cta-box {
+		text-align: center;
+		padding-top: 35px;
+		a {
+			float: right;
+			@media (max-width: 768px) {
+				margin-top: 20px;
+				float: none;
+				text-align: center;
+			}
+		}
+	}
+
+	h3 {
+		margin: 0px;
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+	}
+
+	&.no-mobile-img {
+		@media (max-width: 768px) {
+			.image-box {
+				display: none;
+			}
+		}
+	}
+}

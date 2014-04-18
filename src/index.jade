@@ -5,8 +5,11 @@ html
     link(type="text/css" rel="stylesheet" media="all" href="stylesheets/styleguide.css")
     link(type="text/css" rel="stylesheet" media="all" href="stylesheets/prettify.css")
 
-  body(onload="prettyPrint()")
     link(href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css')
+
+    script(type="text/javascript" src="//use.typekit.net/zza7guc.js")
+    script(type="text/javascript") try{Typekit.load();}catch(e){}
+  body(onload="prettyPrint()")
     .container
       .row
         .col-md-12.sg-header
@@ -26,6 +29,9 @@ html
           include examples/typography
           include examples/navigation
           include examples/photos-images
+    
+    .container
+      include examples/containers
 
     script(src="scripts/prettify.js")
     script(src="scripts/lang-jade.js")
