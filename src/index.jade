@@ -3,30 +3,55 @@ html
   head
     link(type="text/css" rel="stylesheet" media="all" href="stylesheets/ghost-shield.css")
     link(type="text/css" rel="stylesheet" media="all" href="stylesheets/styleguide.css")
+    link(type="text/css" rel="stylesheet" media="all" href="stylesheets/prettify.css")
 
     link(href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css')
+
     script(type="text/javascript" src="//use.typekit.net/zza7guc.js")
     script(type="text/javascript") try{Typekit.load();}catch(e){}
-  body
+  body(onload="prettyPrint()")
     .container
       .row
         .col-md-12.sg-header
           h1 Welcome to Ghost Shield
           h2 Wow.
       .row
-        .col-md-3.sg-sidebar
+        .col-md-2.sg-sidebar
           ul
-            li Colors
-            li Buttons
-            li Typography
-            li Navigation
-            li Photos-images
-        .col-md-9.sg-main
-          include examples/colors
-          include examples/buttons
-          include examples/typography
-          include examples/headers
-          include examples/navigation
-          include examples/photos-images
-          include examples/tables
-          include examples/containers
+            li
+              a(href="#colors") Colors
+            li
+              a(href="#buttons") Buttons
+            li
+              a(href="#typography") Typography
+            li
+              a(href="#photos") Photos
+            li
+              a(href="#tables") Tables
+            li
+              a(href="#containers") Containers
+            li
+              a(href="#navigation") Navigation
+            li
+              a(href="#headers") Headers
+
+        .col-md-9.col-md-offset-1.sg-main
+          #colors
+            include examples/colors
+          #buttons
+            include examples/buttons
+          #typography
+            include examples/typography
+          #photos
+            include examples/photos-images
+          #tables
+            include examples/tables
+          #containers
+            include examples/containers
+          #navigation
+            include examples/navigation
+          #headers
+            include examples/headers
+
+    script(src="scripts/prettify.js")
+    script(src="scripts/lang-jade.js")

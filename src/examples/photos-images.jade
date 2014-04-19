@@ -1,19 +1,51 @@
 h2 Photos and Images
 .sg-container
-  .row
-    .col-sm-12
-      img(src="http://theironyard.com/images/locations/atlanta/atlanta-program-academy.jpg").photo-thumbnail
-      p Thumbnail Photo
-      pre .photo-thumbnail
-    .col-sm-12
-      img(src="http://theironyard.com/images/education/academy/front-end-2/faq/faq-image-3.jpg").photo
-      p Container-width Photo
-      pre .photo
-    .col-sm-12
-      img(src="http://theironyard.com/images/education/academy/front-end-2/graduates/alison-miller.jpg").photo-bio
-      p Bio Photo
-      pre .photo-bio
-    .col-sm-12
-      img(src="http://theironyard.com/images/accelerator/mentors/accelerator_mentors_irene_au.png").photo-mentor
-      p Mentor Photo
-      pre .photo-mentor
+  .sg-section
+    .sg-info
+      h3 Thumbnail Photo
+      p It's cool for small photos.
+    .sg-demo
+      img.photo-thumbnail(src="images/sg/big-donuts.jpg")
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          --- 
+          img.photo-thumbnail(src="images/sg/big-donuts.jpg")
+
+.sg-container
+  .sg-section
+    .sg-info
+      h3 Container-width Photo
+      p This is great when you don't care.
+    .sg-demo
+      img.photo(src="images/sg/so-many-donuts.jpg")
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          --- 
+          img.photo(src="images/sg/so-many-donuts.jpg")
+
+.sg-container
+  .sg-section
+    .sg-info
+      h3 Thumbnail Photo
+    .sg-demo
+      img.photo-bio(src="images/sg/chocolate-donuts.jpg")
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          --- 
+          img.photo-bio(src="images/sg/chocolate-donuts.jpg")
+
+.sg-container
+  .sg-section
+    .sg-info
+      h3 Thumbnail Photo
+    .sg-demo
+      img.photo-mentor(src="images/sg/strawberry-donuts.jpg")
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          --- 
+          img.photo-mentor(src="images/sg/strawberry-donuts.jpg")
+

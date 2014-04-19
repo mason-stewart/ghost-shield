@@ -1,44 +1,49 @@
-h2 Table Styles
+h2 Tables
 .sg-container
-	h3 *Code*
-	pre h3.blue-text Table title
-	pre p Lorem ipsum
-	pre table.class-table.col-xs-12
-	pre   tr.active
-	pre     td Start date
-	pre     td Location
-	pre     td Instructor
-	pre       a(href="#").btn Closed
-	pre   tr
-	pre     td Start date
-	pre     td Location
-	pre     td Instructor
-	pre       a(href="#").btn Apply
-	pre   tr
-	pre     td Start date
-	pre     td Location
-	pre     td Instructor
-	pre       a(href="#").btn Wait List
-	h3 *Example*
-	h3.sg-header.blue-text Table title
-	p XOXO gluten-free deep v selvage blog. Shoreditch four loko Wes Anderson, craft beer keffiyeh artisan cliche. Selfies asymmetrical mustache viral, food truck drinking vinegar literally lo-fi yr Intelligentsia. Actually Neutra cornhole, Blue Bottle leggings 8-bit 90's four loko Schlitz VHS tote bag distillery Marfa tousled letterpress. Ethical four loko keytar, distillery fashion axe meggings tote bag YOLO messenger bag roof party. 
-	table.class-table.col-xs-12
-		tbody
-			tr.active
-				td Start date
-				td Location
-				td Instructor
-				td 
-					a(href="#").btn Closed
-			tr
-				td Start date
-				td Location
-				td Instructor
-				td 
-					a(href="#").btn Apply
-			tr
-				td Start date
-				td Location
-				td Instructor
-				td 
-					a(href="#").btn Wait List
+  .sg-section
+    .sg-info
+      h3 Class Table
+    .sg-demo
+      h3.blue-text Table title
+      table.class-table
+        tbody
+          tr.active
+            td Start date
+            td Location
+            td Instructor
+            td 
+              a.btn(href="#") Closed
+          tr
+            td Start date
+            td Location
+            td Instructor
+            td 
+              a.btn(href="#") Apply
+          tr
+            td Start date
+            td Location
+            td Instructor
+            td 
+              a.btn(href="#") Wait List
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          h3.blue-text Table title
+          table.class-table
+            tr.active
+              td Start date
+              td Location
+              td Instructor
+                a.btn(href="#") Closed
+            tr
+              td Start date
+              td Location
+              td Instructor
+                a.btn(href="#") Apply
+            tr
+              td Start date
+              td Location
+              td Instructor
+                a.btn(href="#") Wait List
+  

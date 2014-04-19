@@ -1,6 +1,10 @@
 @import "bourbon";
 @import "color-variables";
 
+body {
+  background: #fdfdfd;
+}
+
 pre {
   font-size: 15px;
   white-space: pre-wrap;       /* css-3 */
@@ -14,8 +18,10 @@ pre {
   text-align: center;
 }
 
-.sg-sidebar, .sg-main {
-  border: 1px solid $gray-med;
+.sg-sidebar {
+  ul {
+    position: fixed;
+  }
 }
 
 .sg-buttons {
@@ -30,16 +36,6 @@ pre {
   }
 }
 
-.sg-example {
-  span {
-    display: block;
-  }
-
-  pre {
-    display: inline;
-  }
-}
-
 .sg-circle {
   border-radius: 50%;
   width: 100px;
@@ -47,10 +43,57 @@ pre {
 }
 
 .sg-container {
-  border-top: 1px solid $gray-med;
-  margin-bottom: 25px;
-  padding-top: 25px;
   padding-bottom: 25px;
 }
 
 
+.sg-section {
+  border-radius: 4px;
+  background: white;
+  border: 1px solid $gray-med;
+  margin-bottom: 30px;
+
+  .sg-info {
+    padding: 20px;
+    border-bottom: 1px solid $gray-med;
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      margin-bottom: 0
+    }
+  }
+
+  .sg-demo {
+    padding: 20px;
+    background: url('../images/sg/checked.png');
+  }
+
+  .sg-code {
+    padding: 20px;
+    position: relative;
+    border-top: 1px solid $gray-med;
+
+    pre {
+      margin-top: 0;
+      color: #fff;
+    }
+
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #5FA6F3;
+      color: white;
+      // border-right: 1px solid $gray-med;
+      // border-bottom: 1px solid $gray-med;
+      padding: 2px 8px;
+      font-size: 0.8rem;
+      font-weight: bolder;
+
+      content: 'Jade';
+    }
+  }
+}

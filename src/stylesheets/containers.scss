@@ -27,12 +27,15 @@ hr {
 .two-col-bio {
 	background: $gray-light;
 	padding-top: 20px;
-	text-align: center;
 
 	.btn {
 		width: 271px;
 		display: block;
 		margin: 5px auto;
+	}
+
+	p {
+		padding-right: 15px;
 	}
 
 	h2 {

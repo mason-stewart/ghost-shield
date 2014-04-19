@@ -1,30 +1,51 @@
 h2 Button Styles
 .sg-container
-  .row.sg-buttons
-    .col-sm-6
-      a(href="#").btn Learn More
-      .sg-example
-        span Class:
-          pre .btn
-    .col-sm-6
-      a(href="#").btn.hover-red Learn More
-      .sg-example
-        span Class:
-          pre .btn.hover-red
-    .col-sm-6
-      a(href="#").btn.hover-yellow Learn More
-      .sg-example
-        span Class:
-          pre .btn.hover-yellow
-    .col-sm-6
-      a(href="#").btn.hover-blue Learn More
-      .sg-example
-        span Class:
-          pre .btn.hover-blue
-    .col-sm-6
-      a(href="#").btn.btn-contact
+  .sg-section
+    .sg-demo
+      a.btn(href="#") Learn More
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          .btn
+  
+  .sg-section
+    .sg-demo
+      a.btn.hover-red(href="#") Learn More
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          .btn.hover-red
+  
+  .sg-section
+    .sg-demo
+      a.btn.hover-yellow(href="#") Learn More
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          .btn.hover-yellow
+  
+  .sg-section
+    .sg-demo
+      a.btn.hover-blue(href="#") Learn More
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          .btn.hover-blue
+
+
+  .sg-section
+    .sg-demo
+      a.btn.btn-contact(href="#")
         img(src="http://theironyard.com/images/email.png")
         p Say Hello
-      .sg-example
-        span Class:
-          pre .btn.btn-contact
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          a.btn.btn-contact(href="#")
+            img(src="http://theironyard.com/images/email.png")
+            p Say Hello
