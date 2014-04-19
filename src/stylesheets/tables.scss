@@ -1,0 +1,88 @@
+@import "bourbon";
+@import "color-variables";
+
+.class-table {
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+  
+tbody {
+  color: $gray-med;
+}
+
+tr {
+  background: $gray-light;
+
+  &:hover {
+    background: darken($gray-light, 10%);
+    color: $gray-dark;
+
+    .btn {
+      color: $gray-dark;
+    }
+  }
+  
+  .btn {
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 15px 20px;
+    font-size: 24px;
+    text-decoration: none;
+    background: white;
+    color: $gray-med;
+    margin-bottom: 0px;
+
+    &:hover {
+      background: white;
+    }
+
+    @media (max-width: 649px) {
+      padding: 10px;
+      border-bottom: 3px solid #fff;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: bolder;
+    }
+  }
+
+  &.active {
+    background: $blue;
+    color: lighten($blue, 30%);
+
+    &:hover {
+      background: darken($blue, 10%);
+      color: white;
+    }
+
+    .btn {
+      color: $blue;
+    }
+  }
+
+  @media (max-width: 649px) {
+    padding: 10px;
+    border-bottom: 3px solid #fff;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bolder;
+  }
+}
+
+td {
+  padding: 24px;
+  border-bottom: 3px solid #fff;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bolder;
+  text-align: center;
+
+  @media (max-width: 649px) {
+    padding: 10px;
+    border-bottom: 3px solid #fff;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bolder;
+  }
+}
