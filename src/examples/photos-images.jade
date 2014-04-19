@@ -1,19 +1,51 @@
 h2 Photos and Images
 .sg-container
-  .row
-    .col-sm-12
+  .sg-section
+    .sg-info
+      h3 Thumbnail Photo
+      p It's cool for small photos.
+    .sg-demo
       img.photo-thumbnail(src="images/sg/big-donuts.jpg")
-      p Thumbnail Photo
-      pre .photo-thumbnail
-    .col-sm-12
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          --- 
+          img.photo-thumbnail(src="images/sg/big-donuts.jpg")
+
+.sg-container
+  .sg-section
+    .sg-info
+      h3 Container-width Photo
+      p This is great when you don't care.
+    .sg-demo
       img.photo(src="images/sg/so-many-donuts.jpg")
-      p Container-width Photo
-      pre .photo
-    .col-sm-12
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          --- 
+          img.photo(src="images/sg/so-many-donuts.jpg")
+
+.sg-container
+  .sg-section
+    .sg-info
+      h3 Thumbnail Photo
+    .sg-demo
       img.photo-bio(src="images/sg/chocolate-donuts.jpg")
-      p Bio Photo
-      pre .photo-bio
-    .col-sm-12
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          --- 
+          img.photo-bio(src="images/sg/chocolate-donuts.jpg")
+
+.sg-container
+  .sg-section
+    .sg-info
+      h3 Thumbnail Photo
+    .sg-demo
       img.photo-mentor(src="images/sg/strawberry-donuts.jpg")
-      p Mentor Photo
-      pre .photo-mentor
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          --- 
+          img.photo-mentor(src="images/sg/strawberry-donuts.jpg")
+

@@ -62,102 +62,111 @@ h2 Containers
                h4 Right Column Copy
                p Lorem ipsum
   
-  // Begin Two Column Bio Container
-  h3.text-center Two Column Bio Container
-  h4 *Code*
-  pre <strong>.two-col-bio</strong>.col-sm-12
-  pre   .row
-  pre    .col-lg-5.col-md-6.col-sm-5
-  pre     .bio-left-col
-  pre  	    img&#40;src="url/here" class="photo-bio"&#41;
-  pre  	    a&#40;class="btn btn-contact" href="mailto:emailhere?subject=msg-here"&#41;
-  pre  	      img(src="http://theironyard.com/images/email.png")
-  pre         p Say hello
-  pre     .col-lg-7.col-md-6.col-sm-7
-  pre       h2 Allison Miller
-  pre       h4 Core Front End Dev at Benefit Focus
-  pre       p Bio summary here
-  pre       ul.links
-  pre         li &lt;a href="#"&gt; • Link 1&lt;/a&gt;
-  pre         li &lt;a href="#"&gt; • Link 2&lt;/a&gt;
-  pre         li &lt;a href="#"&gt; • Link 3&lt;/a&gt;
-  h4 *Example*
-  .two-col-bio.col-sm-12
-    .row
-      .col-lg-5.col-md-6.col-sm-5
-        .bio-left-col
-          img(src="http://theironyard.com/images/education/academy/front-end-2/graduates/alison-miller.jpg" class="photo-bio")
-          a(class="btn btn-contact" href="mailto:example@example.com?subject=I found you through The Iron Yard and I'd love to chat")
-            img(src="http://theironyard.com/images/email.png")
-            p Say hello
-      .col-lg-7.col-md-6.col-sm-7
-        h2 Allison Miller
-        h4 Core Front End Dev at Benefit Focus
-        p American Apparel wayfarers normcore mustache, Truffaut Intelligentsia XOXO irony deep v photo booth locavore next level. Helvetica post-ironic four loko dreamcatcher normcore gluten-free, tofu Wes Anderson. Next level retro Schlitz, cardigan cliche jean shorts shabby chic. Hashtag cliche bitters cred Banksy salvia. Austin ennui raw denim Thundercats, wolf asymmetrical paleo. 
-        ul.links
-          li • <a href="#">Link 1</a>
-          li • <a href="#">Link 2</a>
-          li • <a href="#">Link 3</a>
-          li • <a href="#">Link 4</a>
-          li • <a href="#">Link 5</a>
-  // Begin Two Column w/Side Bar Column
-  h3.text-center Two Column With Side Bar Column
-  h4 *Code*
-  pre <strong>.two-col-sb</strong>
-  pre   .row
-  pre     <strong>.two-col-sb-left</strong>.col-sm-8
-  pre       h2 Content Title
-  pre       p More Content
-  pre     <strong>.two-col-sb-right</strong>.col-sm-4
-  pre       h4 Side Bar Title
-  pre       p More Content
-  h4 *Example*
-  .two-col-sb
-    .row
-      .two-col-sb-left.col-sm-8
-        h2 Left Column Content
-        p PBR hashtag vegan wolf ennui. Letterpress quinoa raw denim, hoodie kale chips stumptown biodiesel Echo Park scenester XOXO 8-bit you probably haven't heard of them. Banksy Helvetica gentrify, distillery hoodie selfies art party American Apparel Truffaut fashion axe irony Tumblr salvia 8-bit keffiyeh. Put a bird on it Thundercats DIY narwhal, disrupt kogi tofu irony pop-up ugh. 
-        p Irony kitsch synth meh. Food truck Blue Bottle swag, wolf Odd Future slow-carb Etsy Intelligentsia synth High Life narwhal tofu. Sustainable ugh kale chips pop-up Blue Bottle Intelligentsia, Odd Future chillwave.
-      .two-col-sb-right.col-sm-4
-        h4 Right Column Content
-        hr
-        p More copy
-        ul
-          li <a href="#">Item 1</a>
-          li <a href="#">Item 2</a>
-          li <a href="#">Item 3</a>
-  // Begin Three Column Container with Call To Action
-  h3.text-center Three Column Container w/Call To Action (cta)
-  h4 *Code*
-  pre <strong>.three-col-cta</strong>.row
-  pre   .col-lg-2.col-sm-2
-  pre     .image-box
-  pre       img
-  pre   .col-lg-7.col-sm-6
-  pre     h3 Copy Title
-  pre     p Lorem ipsum
-  pre   .col-lg-3.col-sm-4.cta-box
-  pre     a
-  h4 *Example*
-  .three-col-cta.row
-    .col-lg-2.col-sm-2
-      .image-box
-        img(src="http://theironyard.com/images/icons/front-end-engineering-logo.png")
-    .col-lg-7.col-sm-6
-      h3 Copy Title
-      p Tote bag meh +1, master cleanse sustainable literally chia messenger bag fingerstache cray organic. Banksy deep v before they sold out iPhone umami. 
-    .col-lg-3.col-sm-4.cta-box
-      a(href="#").btn.hover-yellow Learn More
-  h3 Remove image on small screens 
-  h4 *Code*
-  h5 *Add the "no-mobile-img" class to the "three-col-box" div like so:
-  pre &lt;div class="three-col-cta <strong>no-mobile-img</strong> col-sm-12"&gt;
-  h4 *Example*
-  .three-col-cta.no-mobile-img.row
-    .col-lg-2.col-sm-2.image-box
-      img(src="http://theironyard.com/images/icons/front-end-engineering-logo.png")
-    .col-lg-7.col-sm-6.copy-box
-      h3 Copy Title
-      p Tote bag meh +1, master cleanse sustainable literally chia messenger bag fingerstache cray organic. Banksy deep v before they sold out iPhone umami. 
-    .col-lg-3.col-sm-4.text-center.cta-box
-      a(href="#").btn.hover-yellow Learn More
+  .sg-section
+    .sg-info
+      h3 Two Column Bio Container
+    .sg-demo
+      .two-col-bio
+        .row
+          .col-sm-5
+            .bio-left-col
+              img.photo-bio(src="images/sg/nyancat.gif")
+              a.btn.btn-contact(href="#")
+                img(src="http://theironyard.com/images/email.png")
+                p Say hello
+          .col-sm-7
+            h2 Nyan
+            h4 Erlang Engineer
+            p American Apparel wayfarers normcore mustache, Truffaut Intelligentsia XOXO irony deep v photo booth locavore next level. Helvetica post-ironic four loko dreamcatcher normcore gluten-free, tofu Wes Anderson. Next level retro Schlitz, cardigan cliche jean shorts shabby chic. Hashtag cliche bitters cred Banksy salvia. Austin ennui raw denim Thundercats, wolf asymmetrical paleo. 
+            ul.links
+              li <a href="#">Link 1</a>
+              li <a href="#">Link 2</a>
+              li <a href="#">Link 3</a>
+              li <a href="#">Link 4</a>
+              li <a href="#">Link 5</a>
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---   
+          .two-col-bio
+            .row
+             .col-sm-5
+              .bio-left-col
+                img.photo-bio(src="images/sg/nyancat.gif")
+                a.btn.btn-contact(href="#")
+                  img(src="http://theironyard.com/images/email.png")
+                  p Say hello
+              .col-sm-7
+                h2 Allison Miller
+                h4 Core Front End Dev at Benefit Focus
+                p Bio summary here
+                ul.links
+                  li &lt;a href="#"&gt; Link 1&lt;/a&gt;
+                  li &lt;a href="#"&gt; Link 2&lt;/a&gt;
+                  li &lt;a href="#"&gt; Link 3&lt;/a&gt;
+
+  .sg-section
+    .sg-info
+      h3 Two Column With Side Bar Column
+    .sg-demo
+      .two-col-sb
+        .row
+          .two-col-sb-left.col-sm-8
+            h2 Left Column Content
+            p PBR hashtag vegan wolf ennui. Letterpress quinoa raw denim, hoodie kale chips stumptown biodiesel Echo Park scenester XOXO 8-bit you probably haven't heard of them. Banksy Helvetica gentrify, distillery hoodie selfies art party American Apparel Truffaut fashion axe irony Tumblr salvia 8-bit keffiyeh. Put a bird on it Thundercats DIY narwhal, disrupt kogi tofu irony pop-up ugh. 
+            p Irony kitsch synth meh. Food truck Blue Bottle swag, wolf Odd Future slow-carb Etsy Intelligentsia synth High Life narwhal tofu. Sustainable ugh kale chips pop-up Blue Bottle Intelligentsia, Odd Future chillwave.
+          .two-col-sb-right.col-sm-4
+            h4 Right Column Content
+            hr
+            p More copy
+            ul
+              li <a href="#">Item 1</a>
+              li <a href="#">Item 2</a>
+              li <a href="#">Item 3</a>
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          .two-col-sb
+            .row
+              .two-col-sb-left.col-sm-8
+                h2 Left Column Content
+                p PBR hashtag ...
+                p Irony kitsch synth ...
+              .two-col-sb-right.col-sm-4
+                h4 Right Column Content
+                hr
+                p More copy
+                ul
+                  li &lt;a href="#"&gt; Item 1&lt;/a&gt;
+                  li &lt;a href="#"&gt; Item 2&lt;/a&gt;
+                  li &lt;a href="#"&gt; Item 3&lt;/a&gt;
+  
+  .sg-section
+    .sg-info
+      h3 Three Column Container w/Call To Action (cta)
+    .sg-demo
+      .three-col-cta.row
+        .col-lg-2.col-sm-2
+          .image-box
+            img(src="http://theironyard.com/images/icons/front-end-engineering-logo.png")
+        .col-lg-7.col-sm-6
+          h3 Copy Title
+          p Tote bag meh +1, master cleanse sustainable literally chia messenger bag fingerstache cray organic. Banksy deep v before they sold out iPhone umami. 
+        .col-lg-3.col-sm-4.cta-box
+          a(href="#").btn.hover-yellow Learn More
+      
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          .three-col-cta.row
+            .col-lg-2.col-sm-2
+              .image-box
+                img(src="images/icons/front-end-engineering-logo.png")
+            .col-lg-7.col-sm-6
+              h3 Copy Title
+              p Tote bag meh ...
+            .col-lg-3.col-sm-4.cta-box
+              a(href="#").btn.hover-yellow Learn More
+  
