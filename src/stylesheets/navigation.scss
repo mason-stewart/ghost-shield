@@ -1,28 +1,130 @@
 @import "bourbon";
 @import "color-variables";
+@import "bootstrap";
 
-$nav-text-color: #EEF1F6;
+$nav-text-color: #eef1f6;
 $nav-text-color-mute: rgba(255, 255, 255, 0.5);
 $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 
 // Element tags are listed first, then classes
 // All items & properties listed in alphabetical order
 
-.nav {
-  font-size: 16px;
-  margin: 0;
-  text-transform: uppercase;
-  li {
-    float: left;
-    list-style-type: none;
-    a{
+.header {
+  @extend .row;
+  @include clearfix;
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+
+  ul {
+    margin: 0;
+    @include clearfix;
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+      margin-right: 10px;
+      margin-bottom: 6px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .logo {
+    @extend .col-xs-6;
+    @extend .col-xs-offset-3;
+    @extend .col-sm-2;
+    @extend .col-sm-offset-0;
+    @extend .col-md-1;
+
+    img {
+      width: 100%;
+      min-width: 90px;
+      max-width: 180px;
+
+
+    }
+    
+  }
+
+  .nav {
+    @extend .col-xs-12;
+    @extend .col-sm-10;
+    @extend .col-md-11;
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+      padding-left: 0;
+    }
+  }
+
+  .primary-nav {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    @extend .col-xs-12;
+    @extend .col-md-8;
+
+    a {
       color: $nav-text-color;
-      margin: 0 10px;
+
       &:hover,
       &.active {
         border-bottom: 3px solid $nav-text-color-underline;
-        cursor: pointer;
         text-decoration: none;
+      }
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+      padding-left: 60px;
+    }
+    
+  }
+
+  .secondary-nav {
+    float: right;
+    font-size: 14px;
+    margin: 0;
+    text-transform: uppercase;
+    @extend .col-xs-12;
+    @extend .col-md-4;
+
+    @media screen and (min-width: 993px) {
+
+      ul {
+        float: right;
+      }  
+    }
+
+    a {
+      color: $nav-text-color-mute;
+
+      &:hover,
+      &.active {
+        color: $nav-text-color;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    text-align: center;
+
+    ul {
+
+      text-align: center;
+      li {
+        text-align: center; 
+        margin: 0 6px 6px;
+
+        &:last-child {
+          margin: 0 6px 6px;
+        }
       }
     }
   }
@@ -36,7 +138,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
   li {
     float: left;
     list-style-type: none;
-    a{
+    a {
       color: $nav-text-color;
       margin: 0 8px;
       &:hover,
@@ -49,46 +151,34 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
   }
 }
 
-.nav-mute {
-  float: right;
-  font-size: 14px;
-  margin: 0;
-  text-transform: uppercase;
-  li {
-    float: left;
-    list-style-type: none;
-    a{
-      color: $nav-text-color-mute;
-      margin: 0 4px;
-      &:hover,
-      &.active {
-        color: $nav-text-color;
-        cursor: pointer;
-        text-decoration: none;
-       }
-     }
-   }
-}
+.sub-nav {
+  h2 {
+    margin-bottom: 30px;
+    font-size: 50px;
+  }
 
-.nav-sub {
-  border-top: 3px solid rgba(255, 255, 255, 0.5);
-  font-size: 24px;
-  margin: 0;
-  padding-top: 15px;
-  li {
-    float: left;
-    list-style-type: none;
-    a{
-      color: $nav-text-color;
-      margin: 0 10px;
-      &:hover,
-      &.active {
-        border-bottom: 3px solid $nav-text-color-underline;
-        cursor: pointer;
-        text-decoration: none;
-       }
-     }
-   }
+  ul { 
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    margin: 0;
+    padding-top: 15px;
+    @include clearfix();
+
+    li {
+      float: left;
+      list-style-type: none;
+      a {
+        color: $nav-text-color;
+        margin: 0 10px;
+        &:hover,
+        &.active {
+          border-bottom: 3px solid $nav-text-color-underline;
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 .nav-sub-vertical {
@@ -105,14 +195,14 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
     margin-bottom: 10px;
     margin-right: 20px;
     width: 170px;
-    a{
+    a {
       color: $green;
       &:hover,
       &.active {
         border-bottom: 3px solid $nav-text-color-underline;
         cursor: pointer;
         text-decoration: none;
-       }
-     }
-   }
+      }
+    }
+  }
 }

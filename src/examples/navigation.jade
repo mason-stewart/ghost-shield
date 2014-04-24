@@ -1,85 +1,135 @@
-h2 Navigation Styles
+h2 Headers
 .sg-container
-  .row
-    .col-xs-12.yellow-bg
-      ul.nav
-        li 
-          a locations
-        li 
-          a academy
-        li 
-          a accelerator
-    .col-xs-12
-      p Main Navigation Style
-      pre .nav
+  .sg-section
+    .sg-info
+      h3 Top Navigation
+    .sg-demo
+      .header.yellow-bg
+        .logo
+          img(src="images/iron-yard-logo.svg")
+        .nav
+          .primary-nav
+            ul
+              li 
+                a(href="#") Locations
+              li 
+                a(href="#") Events
+              li 
+                a(href="#") Academy
+              li 
+                a(href="#") Accelerator
+          .secondary-nav
+            ul
+              li 
+                a(href="#") Jobs
+              li
+                a(href="#") About
+              li
+                a(href="#") News
+              li
+                a(href="#") Blog
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          .header.yellow-bg
+            .logo
+              img(src="images/iron-yard-logo.svg")
+            .nav
+              .primary-nav
+                ul
+                  li 
+                    a(href="#") Locations
+                  li 
+                    a(href="#") Events
+                  li 
+                    a(href="#") Academy
+                  li 
+                    a(href="#") Accelerator
+              ---
+              .secondary-nav
+                ul
+                  li 
+                    a(href="#") Jobs
+                  li
+                    a(href="#") About
+                  li
+                    a(href="#") News
+                  li
+                    a(href="#") Blog
 
-  .row
-    .col-xs-12.red-bg
-      ul.nav-mute
-        li 
-          a jobs
-        li
-          a about
-        li
-          a news
-        li
-          a blog
-    .col-xs-12
-      p Muted Navigation Style
-      pre .nav-mute
 
-  .row      
-    .col-xs-12.blue-bg
-      ul.nav-sub
-        li 
-          a Hire Graduates
-        li
-          a Alumni
-        li
-          a FAQs
-        li
-          a Kids Classes
-    .col-xs-12
-      p Sub Navigation Style
-      pre .nav-sub
+  .sg-section
+    .sg-info
+      h3 Top Navigation
+    .sg-demo
+      .sub-nav.blue-bg
+        h2 Cool Nav
+        ul
+          li 
+            a(href="#") Hire Graduates
+          li
+            a(href="#") Alumni
+          li
+            a(href="#") FAQs
+          li
+            a(href="#") Kids Classes
 
-  .row
-    .col-xs-12.gray-dark-bg
-      ul.nav-footer
-        li 
-          a about
-        li
-          a jobs
-        li
-          a news
-        li
-          a blogs
-        li
-          a locations
-    .col-xs-12
-      p Footer Navigation Style
-      pre .nav-footer  
-  .row
-    .col-xs-8.gray-dark-bg
-      ul.nav-sub-vertical
-        li 
-          a Asheville, NC 
-        li 
-          a Atlanta, GA 
-        li 
-          a Austin, TX
-        li 
-          a Charleston, SC
-        li 
-          a Durham, NC                    
-        li 
-          a Greenville, SC
-        li 
-          a Houston, TX
-        li 
-          a Spartanburg, SC
-        li 
-          a Tampa, FL              
-    .col-xs-12
-      p Sub-nav Vertical Navigation Style
-      pre .nav-sub-vertical  
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          .sub-nav.blue-bg
+            h2 Cool Nav
+            ul
+              li 
+                a(href="#") Hire Graduates
+              li
+                a(href="#") Alumni
+              li
+                a(href="#") FAQs
+              li
+                a(href="#") Kids Classes
+           
+
+
+  //- .row
+  //-   .col-xs-12.gray-dark-bg
+  //-     ul.nav-footer
+  //-       li 
+  //-         a about
+  //-       li
+  //-         a jobs
+  //-       li
+  //-         a news
+  //-       li
+  //-         a blogs
+  //-       li
+  //-         a locations
+  //-   .col-xs-12
+  //-     p Footer Navigation Style
+  //-     pre .nav-footer  
+  //- .row
+  //-   .col-xs-8.gray-dark-bg
+  //-     ul.nav-sub-vertical
+  //-       li 
+  //-         a Asheville, NC 
+  //-       li 
+  //-         a Atlanta, GA 
+  //-       li 
+  //-         a Austin, TX
+  //-       li 
+  //-         a Charleston, SC
+  //-       li 
+  //-         a Durham, NC                    
+  //-       li 
+  //-         a Greenville, SC
+  //-       li 
+  //-         a Houston, TX
+  //-       li 
+  //-         a Spartanburg, SC
+  //-       li 
+  //-         a Tampa, FL              
+  //-   .col-xs-12
+  //-     p Sub-nav Vertical Navigation Style
+  //-     pre .nav-sub-vertical  

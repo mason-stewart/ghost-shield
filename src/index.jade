@@ -1,6 +1,10 @@
 doctype
 html
   head
+    meta(name="HandheldFriendly" content="True")
+    meta(name="MobileOptimized" content="320")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
     link(type="text/css" rel="stylesheet" media="all" href="stylesheets/ghost-shield.css")
     link(type="text/css" rel="stylesheet" media="all" href="stylesheets/styleguide.css")
     link(type="text/css" rel="stylesheet" media="all" href="stylesheets/prettify.css")
@@ -16,26 +20,26 @@ html
           h1 Welcome to Ghost Shield
           h2 Wow.
       .row
-        .col-md-2.sg-sidebar
-          ul
-            li
-              a(href="#colors") Colors
-            li
-              a(href="#buttons") Buttons
-            li
-              a(href="#typography") Typography
-            li
-              a(href="#photos") Photos
-            li
-              a(href="#tables") Tables
-            li
-              a(href="#containers") Containers
-            li
-              a(href="#navigation") Navigation
-            li
-              a(href="#headers") Headers
+        //- .col-md-2.sg-sidebar
+        //-   ul
+        //-     li
+        //-       a(href="#colors") Colors
+        //-     li
+        //-       a(href="#buttons") Buttons
+        //-     li
+        //-       a(href="#typography") Typography
+        //-     li
+        //-       a(href="#photos") Photos
+        //-     li
+        //-       a(href="#tables") Tables
+        //-     li
+        //-       a(href="#containers") Containers
+        //-     li
+        //-       a(href="#navigation") Navigation
+        //-     li
+        //-       a(href="#headers") Headers
 
-        .col-md-9.col-md-offset-1.sg-main
+        .col-md-12.sg-main
           #colors
             include examples/colors
           #buttons
@@ -50,8 +54,8 @@ html
             include examples/containers
           #navigation
             include examples/navigation
-          #headers
-            include examples/headers
+          //- #headers
+          //-   include examples/headers
 
     script(src="scripts/prettify.js")
     script(src="scripts/lang-jade.js")
