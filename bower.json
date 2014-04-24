@@ -12,6 +12,7 @@
   "license": "MIT",
   "ignore": [
     "src",
+    "dist/images/sg",
     "dist/scripts",
     "dist/index.html",
     "package.json",
