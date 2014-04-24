@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" media="all" href="stylesheets/ghost-shield.css">
     <link type="text/css" rel="stylesheet" media="all" href="stylesheets/styleguide.css">
     <link type="text/css" rel="stylesheet" media="all" href="stylesheets/prettify.css">
@@ -17,19 +20,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2 sg-sidebar">
-          <ul>
-            <li><a href="#colors">Colors</a></li>
-            <li><a href="#buttons">Buttons</a></li>
-            <li><a href="#typography">Typography</a></li>
-            <li><a href="#photos">Photos</a></li>
-            <li><a href="#tables">Tables</a></li>
-            <li><a href="#containers">Containers</a></li>
-            <li><a href="#navigation">Navigation</a></li>
-            <li><a href="#headers">Headers</a></li>
-          </ul>
-        </div>
-        <div class="col-md-9 col-md-offset-1 sg-main">
+        <div class="col-md-12 sg-main">
           <div id="colors">
             <h2>Color Variables</h2>
             <div class="sg-container sg-colors">
@@ -337,13 +328,12 @@ img.photo-thumbnail(src="images/sg/big-donuts.jpg")
             <div class="sg-container">
               <div class="sg-section">
                 <div class="sg-info">
-                  <h3>Container-width Photo</h3>
-                  <p>This is great when you don't care.</p>
+                  <h3>Mentor Photo</h3>
                 </div>
-                <div class="sg-demo"><img src="images/sg/so-many-donuts.jpg" class="photo"></div>
+                <div class="sg-demo"><img src="images/sg/strawberry-donuts.jpg" class="photo-mentor"></div>
                 <div class="sg-code">
                   <pre><code class="prettyprint lang-jade">--- 
-img.photo(src="images/sg/so-many-donuts.jpg")
+img.photo-mentor(src="images/sg/strawberry-donuts.jpg")
 </code></pre>
                 </div>
               </div>
@@ -351,7 +341,7 @@ img.photo(src="images/sg/so-many-donuts.jpg")
             <div class="sg-container">
               <div class="sg-section">
                 <div class="sg-info">
-                  <h3>Thumbnail Photo</h3>
+                  <h3>Bio Photo</h3>
                 </div>
                 <div class="sg-demo"><img src="images/sg/chocolate-donuts.jpg" class="photo-bio"></div>
                 <div class="sg-code">
@@ -364,13 +354,13 @@ img.photo-bio(src="images/sg/chocolate-donuts.jpg")
             <div class="sg-container">
               <div class="sg-section">
                 <div class="sg-info">
-                  <h3>Thumbnail Photo</h3>
+                  <h3>Container-width Photo</h3>
+                  <p>This is great when you don't care.</p>
                 </div>
-                <div class="sg-demo"><img src="images/sg/strawberry-donuts.jpg" class="photo-mentor"></div>
+                <div class="sg-demo"><img src="images/sg/so-many-donuts.jpg" class="photo"></div>
                 <div class="sg-code">
                   <pre><code class="prettyprint lang-jade">--- 
-img.photo-mentor(src="images/sg/strawberry-donuts.jpg")
-</code></pre>
+img.photo(src="images/sg/so-many-donuts.jpg")</code></pre>
                 </div>
               </div>
             </div>
@@ -623,94 +613,98 @@ table.class-table
             </div>
           </div>
           <div id="navigation">
-            <h2>Navigation Styles</h2>
-            <div class="sg-container">
-              <div class="row">
-                <div class="col-xs-12 yellow-bg">
-                  <ul class="nav">
-                    <li><a>locations</a></li>
-                    <li><a>academy</a></li>
-                    <li><a>accelerator</a></li>
-                  </ul>
-                </div>
-                <div class="col-xs-12">
-                  <p>Main Navigation Style</p>
-                  <pre>.nav</pre>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12 red-bg">
-                  <ul class="nav-mute">
-                    <li><a>jobs</a></li>
-                    <li><a>about</a></li>
-                    <li><a>news</a></li>
-                    <li><a>blog</a></li>
-                  </ul>
-                </div>
-                <div class="col-xs-12">
-                  <p>Muted Navigation Style</p>
-                  <pre>.nav-mute</pre>
-                </div>
-              </div>
-              <div class="row">     
-                <div class="col-xs-12 blue-bg">
-                  <ul class="nav-sub">
-                    <li><a>Hire Graduates</a></li>
-                    <li><a>Alumni</a></li>
-                    <li><a>FAQs</a></li>
-                    <li><a>Kids Classes</a></li>
-                  </ul>
-                </div>
-                <div class="col-xs-12">
-                  <p>Sub Navigation Style</p>
-                  <pre>.nav-sub</pre>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12 gray-dark-bg">
-                  <ul class="nav-footer">
-                    <li><a>about</a></li>
-                    <li><a>jobs</a></li>
-                    <li><a>news</a></li>
-                    <li><a>blogs</a></li>
-                    <li><a>locations</a></li>
-                  </ul>
-                </div>
-                <div class="col-xs-12">
-                  <p>Footer Navigation Style</p>
-                  <pre>.nav-footer  </pre>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-8 gray-dark-bg">
-                  <ul class="nav-sub-vertical">
-                    <li><a>Asheville, NC </a></li>
-                    <li><a>Atlanta, GA </a></li>
-                    <li><a>Austin, TX</a></li>
-                    <li><a>Charleston, SC</a></li>
-                    <li><a>Durham, NC                    </a></li>
-                    <li><a>Greenville, SC</a></li>
-                    <li><a>Houston, TX</a></li>
-                    <li><a>Spartanburg, SC</a></li>
-                    <li><a>Tampa, FL              </a></li>
-                  </ul>
-                </div>
-                <div class="col-xs-12">
-                  <p>Sub-nav Vertical Navigation Style</p>
-                  <pre>.nav-sub-vertical  </pre>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="headers">
             <h2>Headers</h2>
             <div class="sg-container">
-              <div class="row red-bg header">
-                <div class="col-sm-12">
-                  <h1>Academy</h1>
+              <div class="sg-section">
+                <div class="sg-info">
+                  <h3>Top Navigation</h3>
                 </div>
-                <div class="col-sm-12"><a class="feature">Launch your company in the Accelerator.<span class="ss-navigateright ss-standard"></span></a></div>
-                <div class="col-sm-12"><span class="feature">Amazing Southern food and drinks</span></div>
+                <div class="sg-demo">
+                  <div class="header yellow-bg">
+                    <div class="logo"><img src="images/iron-yard-logo.svg"></div>
+                    <div class="nav">
+                      <div class="primary-nav">
+                        <ul>
+                          <li><a href="#">Locations</a></li>
+                          <li><a href="#">Events</a></li>
+                          <li><a href="#">Academy</a></li>
+                          <li><a href="#">Accelerator</a></li>
+                        </ul>
+                      </div>
+                      <div class="secondary-nav">
+                        <ul>
+                          <li><a href="#">Jobs</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">News</a></li>
+                          <li><a href="#">Blog</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sg-code">
+                  <pre><code class="prettyprint lang-jade">---
+.header.yellow-bg
+  .logo
+    img(src="images/iron-yard-logo.svg")
+  .nav
+    .primary-nav
+      ul
+        li 
+          a(href="#") Locations
+        li 
+          a(href="#") Events
+        li 
+          a(href="#") Academy
+        li 
+          a(href="#") Accelerator
+    ---
+    .secondary-nav
+      ul
+        li 
+          a(href="#") Jobs
+        li
+          a(href="#") About
+        li
+          a(href="#") News
+        li
+          a(href="#") Blog
+          
+          </code></pre>
+                </div>
+              </div>
+              <div class="sg-section">
+                <div class="sg-info">
+                  <h3>Top Navigation</h3>
+                </div>
+                <div class="sg-demo">
+                  <div class="sub-nav blue-bg">
+                    <h2>Cool Nav</h2>
+                    <ul>
+                      <li><a href="#">Hire Graduates</a></li>
+                      <li><a href="#">Alumni</a></li>
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">Kids Classes</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sg-code">
+                  <pre><code class="prettyprint lang-jade">---
+.sub-nav.blue-bg
+  h2 Cool Nav
+  ul
+    li 
+      a(href="#") Hire Graduates
+    li
+      a(href="#") Alumni
+    li
+      a(href="#") FAQs
+    li
+      a(href="#") Kids Classes
+      
+      
+      </code></pre>
+                </div>
               </div>
             </div>
           </div>
