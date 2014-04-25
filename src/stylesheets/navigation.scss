@@ -57,6 +57,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
     /* Small devices (tablets, 768px and up) */
     @media (min-width: 768px) { 
       padding-left: 0;
+      padding-top: 30px;
     }
   }
 
@@ -127,12 +128,6 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
         }
       }
     }
-  }
-
-  //wraps up the elements of the main-nav bar
-  .wrapper {
-    margin: 0 auto
-    max-width: 980px
   }
 }
 
