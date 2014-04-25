@@ -128,6 +128,12 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
       }
     }
   }
+
+  //wraps up the elements of the main-nav bar
+  .wrapper {
+    margin: 0 auto
+    max-width: 980px
+  }
 }
 
 .nav-footer {
@@ -204,5 +210,5 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
         text-decoration: none;
       }
     }
-  }
+  }  
 }
