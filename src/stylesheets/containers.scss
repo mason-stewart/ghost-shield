@@ -22,7 +22,12 @@ hr {
 
 .wrapper {
 	margin: 0 auto;
-	max-width: 1020px;
+	max-width: 960px;
+
+	@media (max-width: 990px) {
+		padding-left: 30px;
+		padding-right: 30px
+	}
 }
 
 // Two Column Container Styles
@@ -32,6 +37,7 @@ hr {
 .two-col-bio {
 	background: $gray-light;
 	padding-top: 20px;
+	margin-bottom:30px;
 
 	.btn {
 		width: 271px;
