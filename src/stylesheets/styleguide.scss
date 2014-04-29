@@ -73,6 +73,12 @@ pre {
     .header {
       margin-left: -2px;
       margin-right: -2px;
+
+      .logo {
+        @media (min-width: 768px) {
+          margin:0px
+        }
+      }
     }
   }
 
