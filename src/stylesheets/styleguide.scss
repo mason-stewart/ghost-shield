@@ -69,6 +69,17 @@ pre {
   .sg-demo {
     padding: 15px;
     background: url('../images/sg/checked.png');
+
+    .header {
+      margin-left: -2px;
+      margin-right: -2px;
+
+      .logo {
+        @media (min-width: 768px) {
+          margin:0px
+        }
+      }
+    }
   }
 
   .sg-code {
@@ -95,5 +106,9 @@ pre {
 
       content: 'Jade';
     }
+  }
+
+  .sub-nav {
+    padding: 2px 20px 20px 20px;
   }
 }

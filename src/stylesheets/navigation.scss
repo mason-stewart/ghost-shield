@@ -12,9 +12,9 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 .header {
   @extend .row;
   @include clearfix;
-  padding-top: 20px;
-  padding-bottom: 15px;
-
+  background: url(http://theironyard.com/images/pattern.png?1393883957);
+  background-color: #39474E;
+  padding:15px 20px 0px 20px;
 
   ul {
     margin: 0;
@@ -46,6 +46,14 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 
 
     }
+
+    @media (min-width: 992px) {
+      margin-left: -20px
+    }
+
+    @media (min-width: 768px) {
+      margin-left: -30px
+    }
     
   }
 
@@ -57,6 +65,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
     /* Small devices (tablets, 768px and up) */
     @media (min-width: 768px) { 
       padding-left: 0;
+      padding-top: 30px;
     }
   }
 
@@ -78,11 +87,17 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
       }
     }
 
+    // accounts for issues with alignment when line breaks
+    ul {
+      @media (min-width:768px) {
+        margin-left: -18px;
+      }
+    }  
+
     /* Medium devices (desktops, 992px and up) */
     @media (min-width: 992px) { 
       padding-left: 60px;
     }
-    
   }
 
   .secondary-nav {
@@ -152,21 +167,36 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 }
 
 .sub-nav {
+  padding:1px 10px 0 0;
+
   h2 {
     margin-bottom: 30px;
+    margin-top: 18px;
     font-size: 50px;
+
+    @media (max-width: 490px) {
+      margin-bottom:12px;
+      margin-top:12px;
+      font-size:30px;
+    }
   }
 
   ul { 
     border-top: 3px solid rgba(255, 255, 255, 0.5);
     font-size: 24px;
     margin: 0;
+    margin-bottom:-22px;
     padding-top: 15px;
     @include clearfix();
+
+    @media (max-width:490px)  {
+        margin-bottom:-16px;
+    }
 
     li {
       float: left;
       list-style-type: none;
+
       a {
         color: $nav-text-color;
         margin: 0 10px;
@@ -176,6 +206,13 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
           cursor: pointer;
           text-decoration: none;
         }
+      }
+
+      @media(max-width: 490px) {
+        font-size:18px;
+        display:block;
+        margin-right: 200px;
+        margin-bottom: 0px;
       }
     }
   }
@@ -204,5 +241,17 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
         text-decoration: none;
       }
     }
-  }
+  }  
+}
+
+.gray-dark-triangle {
+  position: relative;
+  z-index: 1;
+  bottom: -40px;
+  left:13px;
+  border-right: 18px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 18px solid transparent;
+  width: 0;
+  height: 0;
 }

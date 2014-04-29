@@ -20,6 +20,16 @@ hr {
 	font-size: 15px;
 }
 
+.wrapper {
+	margin: 0 auto;
+	max-width: 960px;
+
+	@media (max-width: 990px) {
+		padding-left: 30px;
+		padding-right: 30px
+	}
+}
+
 // Two Column Container Styles
 // Two Column Bio Container
 // This may need to be revisited depending on the width of the container
@@ -27,6 +37,7 @@ hr {
 .two-col-bio {
 	background: $gray-light;
 	padding-top: 20px;
+	margin-bottom:30px;
 
 	.btn {
 		width: 271px;
