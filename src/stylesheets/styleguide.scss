@@ -69,6 +69,11 @@ pre {
   .sg-demo {
     padding: 15px;
     background: url('../images/sg/checked.png');
+
+    .header {
+      margin-left: -2px;
+      margin-right: -2px;
+    }
   }
 
   .sg-code {
