@@ -98,6 +98,10 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
     @media (min-width: 992px) { 
       padding-left: 60px;
     }
+
+    @media (max-width: 992px){
+    margin: -10px 0 -8px 0;
+  }
   }
 
   .secondary-nav {

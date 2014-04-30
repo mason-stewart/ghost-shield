@@ -114,7 +114,16 @@ pre {
   margin:0 auto;
 }
 
+.primary-nav {
+  left: 18px;
+  
+  @media screen and (max-width: 768px) {
+    left:0px
+  }
+}
+
 .sub-nav {
   margin:0 auto;
 }
+
 
