@@ -22,7 +22,7 @@
       <div class="row">
         <div class="col-md-12 sg-main">
           <div id="colors">
-            <h2>Color Variables</h2>
+            <h2 class="section-headline">Color Variables</h2>
             <div class="sg-container sg-colors">
               <div class="row">
                 <div class="col-sm-2">
@@ -150,7 +150,7 @@ $blue-contact
             </div>
           </div>
           <div id="buttons">
-            <h2>Button Styles</h2>
+            <h2 class="section-headline">Button Styles</h2>
             <div class="sg-container">
               <div class="sg-section">
                 <div class="sg-demo"><a href="#" class="btn">Learn More</a></div>
@@ -198,7 +198,7 @@ a.btn.btn-contact(href="#")
             </div>
           </div>
           <div id="typography">
-            <h2>Typography</h2>
+            <h2 class="section-headline">Typography</h2>
             <div class="sg-container">
               <div class="sg-section">
                 <div class="sg-info">
@@ -310,7 +310,7 @@ blockquote
             </div>
           </div>
           <div id="photos">
-            <h2>Photos and Images</h2>
+            <h2 class="section-headline">Photos and Images</h2>
             <div class="sg-container">
               <div class="sg-section">
                 <div class="sg-info">
@@ -366,7 +366,7 @@ img.photo(src="images/sg/so-many-donuts.jpg")</code></pre>
             </div>
           </div>
           <div id="tables">
-            <h2>Tables</h2>
+            <h2 class="section-headline">Tables</h2>
             <div class="sg-container">
               <div class="sg-section">
                 <div class="sg-info">
@@ -421,7 +421,7 @@ table.class-table
             </div>
           </div>
           <div id="containers">
-            <h2>Containers</h2>
+            <h2 class="section-headline">Containers</h2>
             <div class="sg-container">
               <div class="sg-section">
                 <div class="sg-info">
@@ -612,7 +612,7 @@ table.class-table
             </div>
           </div>
           <div id="navigation">
-            <h2>Headers</h2>
+            <h2 class="section-headline">Headers</h2>
             <div class="sg-container">
               <div class="sg-section">
                 <div class="sg-info">
@@ -687,10 +687,88 @@ table.class-table
     li: a(href="#") Hire Graduates
     li: a(href="#") Alumni
     li: a(href="#") FAQs
-    li: a(href="#") Kids Classes
-    
-    
-    </code></pre>
+    li: a(href="#") Kids Classes</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="layout">
+            <h2 class="section-headline">Layout</h2>
+            <div class="sg-container">
+              <div class="sg-section">
+                <div class="sg-info">
+                  <h3>Example Page</h3>
+                </div>
+                <div class="sg-demo">
+                  <div class="container-fluid">
+                    <div class="header">
+                      <div class="wrapper">
+                        <div class="logo"><img src="images/iron-yard-logo.svg"></div>
+                        <div class="nav">
+                          <div class="primary-nav">
+                            <ul>
+                              <li><a href="#">Locations</a></li>
+                              <li><a href="#">Events</a></li>
+                              <li><a href="#">Academy</a></li>
+                              <li><a href="#">Accelerator</a></li>
+                            </ul>
+                          </div>
+                          <div class="secondary-nav">
+                            <ul>
+                              <li><a href="#">Jobs</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">News</a></li>
+                              <li><a href="#">Blog           </a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row sub-nav gray-dark-bg">
+                      <div class="wrapper">
+                        <h2>Cool Nav</h2>
+                        <ul>
+                          <li><a href="#">Hire Graduates</a></li>
+                          <li><a href="#">Alumni</a></li>
+                          <li><a href="#">FAQs</a></li>
+                          <li><a href="#">Kids Classes      </a></li>
+                        </ul>
+                        <div style="border-top: 20px solid #39474E; bottom: -58px" class="triangle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sg-code">
+                  <pre><code class="prettyprint lang-jade">---
+  .container-fluid
+    .header
+      .wrapper
+        .logo
+          img(src="images/iron-yard-logo.svg")
+        .nav
+          .primary-nav
+            ul
+              li 
+                a(href="#") Locations
+              li ...
+          .secondary-nav
+            ul
+              li ...
+              
+    .row.sub-nav.gray-dark-bg
+      .wrapper 
+        h2 Cool Nav
+        ul
+          li 
+            a(href="#") Hire Graduates
+          li
+            a(href="#") Alumni
+          li
+            a(href="#") FAQs
+          li
+            a(href="#") Kids Classes
+        /* border-top on .triangle matches the color of the nav-bar */           
+        .triangle(style="border-top: 20px solid #39474E")      </code></pre>
                 </div>
               </div>
             </div>
