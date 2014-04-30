@@ -70,14 +70,9 @@ pre {
     padding: 15px;
     background: url('../images/sg/checked.png');
 
-    .header {
-      margin-left: -2px;
-      margin-right: -2px;
-
-      .logo {
-        @media (min-width: 768px) {
-          margin:0px
-        }
+    .logo {
+      @media (min-width: 768px) {
+        margin:0px
       }
     }
   }
