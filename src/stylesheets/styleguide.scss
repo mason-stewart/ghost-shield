@@ -70,11 +70,35 @@ pre {
     padding: 15px;
     background: url('../images/sg/checked.png');
 
+    .footer {
+      .footer-nav ul {
+        padding-right: 13px;
+
+        @media (max-width: 992px) {
+          padding: 0;
+          text-align:center
+        }
+      }
+
+      .logo {
+        margin: 22px 0 0 18px;
+        float: left;
+        width: 10%;
+
+        @media (max-width: 992px) {
+          display:none
+        }
+      }
+ 
+    }
+
     .logo {
       @media (min-width: 768px) {
         margin:0px
       }
     }
+
+
   }
 
   .sg-code {
