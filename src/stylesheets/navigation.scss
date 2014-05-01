@@ -16,18 +16,16 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
   height: 120px;
   padding-bottom: 15px;
 
-  span {
-    bottom: 0px;
-    color: rgb(181, 183, 190);
-    float: right;
-    font-size: 13px;
-    position: absolute;
-    right: 18px;
-  }
+  .copyright {
+    color:#b5b7be;
+    padding-right:13px;
+    text-align:right;
 
-  .wrapper {
-    height:100%;
-    position:relative;
+    @media (max-width: 992px){
+      padding-right:0;
+      text-align:center;
+    }
+
   }
 
   .footer-nav ul {
@@ -67,13 +65,14 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
     margin: 22px 0 18px;
     width:10%;
 
-    @media (min-width: 768px) {
-      margin:0px
-    }
-
     @media (max-width: 992px) {
           display:none
     }
+  }
+
+  .wrapper {
+    height:100%;
+    position:relative;
   }
 
 }
