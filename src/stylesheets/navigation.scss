@@ -32,6 +32,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 
   .footer-nav ul {
     margin: 0;
+    padding-right: 13px;
     padding-top: 5px;
     text-align:right;
 
@@ -54,12 +55,25 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
         text-decoration: none;
       }
     }
+
+    @media (max-width: 992px) {
+      padding: 0;
+      text-align:center
+    }
   }
 
   .logo {
     float:left;
-    margin-top: 15px;
+    margin: 22px 0 18px;
     width:10%;
+
+    @media (min-width: 768px) {
+      margin:0px
+    }
+
+    @media (max-width: 992px) {
+          display:none
+    }
   }
 
 }
@@ -316,30 +330,3 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
   height: 0;
 }
 
-    .footer {
-      .footer-nav ul {
-        padding-right: 13px;
-
-        @media (max-width: 992px) {
-          padding: 0;
-          text-align:center
-        }
-      }
-
-      .logo {
-        margin: 22px 0 0 18px;
-        float: left;
-        width: 10%;
-
-        @media (max-width: 992px) {
-          display:none
-        }
-      }
- 
-    }
-
-    .logo {
-      @media (min-width: 768px) {
-        margin:0px
-      }
-    }
