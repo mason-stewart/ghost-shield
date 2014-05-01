@@ -1,12 +1,12 @@
-h2 Headers
+h2.section-headline Navigation
 .sg-container
   .sg-section
     .sg-info
-      h3 Top Navigation
+      h3 Header
     .sg-demo
       .header.yellow-bg
         .logo
-          img(src="images/iron-yard-logo.svg")
+          img(src="/images/iron-yard-logo.svg")
         .nav
           .primary-nav
             ul
@@ -26,7 +26,7 @@ h2 Headers
           ---
           .header.yellow-bg
             .logo
-              img(src="images/iron-yard-logo.svg")
+              img(src="/images/iron-yard-logo.svg")
             .nav
               .primary-nav
                 ul
@@ -66,8 +66,43 @@ h2 Headers
               li: a(href="#") Alumni
               li: a(href="#") FAQs
               li: a(href="#") Kids Classes
-           
 
+
+  .sg-section
+    .sg-info
+      h3 Footer
+    .sg-demo
+      .footer 
+        .wrapper
+          .logo
+            img(src="/images/footer-logo.png")
+          .footer-nav: ul
+            li: a(href="#") About
+            li: a(href="#") Jobs
+            li: a(href="#") News
+            li: a(href="#") Blog
+            li: a(href="#") Locations
+            li: a(href="#") Academy
+            li: a(href="#") Accelerator
+          .social-nav: ul
+            li: a(href="http://twitter.com/theironyard").ss-icon twitter
+            li: a(href="http://twitter.com/symbolset").ss-icon facebook
+            li: a(href="http://twitter.com/symbolset").ss-icon vimeo  
+
+          .copyright ©2014 The Iron Yard. All Rights Reserved   
+
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          .footer 
+            .wrapper
+              .logo
+                img(src="/images/footer-logo.png")
+              .footer-nav: ul
+                li: a(href="#") About
+                li: ...
+              .copyright ©2014 The Iron Yard. All Rights Reserved 
 
   //- .row
   //-   .col-xs-12.gray-dark-bg

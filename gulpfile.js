@@ -27,6 +27,12 @@ gulp.task('images', function() {
     .pipe( livereload( server ));
 });
 
+gulp.task('fonts', function() {
+  return gulp.src('src/webfonts/*.*')
+    .pipe( gulp.dest('dist/webfonts/'))
+    .pipe( livereload( server ));
+})
+
 gulp.task('css', function() {
   return gulp.src('src/stylesheets/*.*')
     .pipe( 
@@ -77,10 +83,10 @@ gulp.task('watch', function () {
   });
 });
 
-gulp.task('deploy', ['images','js','css','templates'], function() {
+gulp.task('deploy', ['images','js','css','templates', 'fonts'], function() {
   gulp.src("dist/**/*")
     .pipe(deploy('git@github.com:masondesu/ghost-shield.git', 'origin'));
 });
 
 // Default Task
-gulp.task('default', ['images','js','css','templates','express','watch']);
+gulp.task('default', ['images','js','css','templates', 'fonts', 'express','watch']);
