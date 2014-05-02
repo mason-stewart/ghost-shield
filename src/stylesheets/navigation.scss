@@ -39,7 +39,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
       color:white;
       display: inline-block;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 16px;
       margin: 0 8px;
       padding: 15px 0 3px;
@@ -53,7 +53,15 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
         border-bottom: 3px solid rgba(255,255,255,.5);
         text-decoration: none;
       }
-    }
+
+      @media (max-width: 992px) {
+      font-size:12px;
+      }
+
+      @media (max-width: 640px) {
+        padding: 2px 0 0 0;
+      }
+    } 
 
     @media (max-width: 992px) {
       padding: 0;
@@ -71,9 +79,46 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
     }
   }
 
+  .social-nav {
+    ul {
+      list-style:none;
+      margin: 11px 20px -3px 20px;
+      text-align:right;
+
+      li {
+        display: inline-block;
+        margin-bottom: 6px;
+        padding: 0 2px 0 8px;
+  
+        a {
+          color:#eef1f6;
+          font-size:20px;
+        }
+  
+        a:hover {
+          border-bottom: 3px solid rgba(255,255,255,.5);
+          text-decoration:none;
+        }
+
+        @media (max-width:640px) {
+          margin-bottom: 0px;
+          padding: 0 3px 0 3px;
+        }
+      }
+
+      @media (max-width: 992px) {
+        text-align:center
+      }
+    }  
+  }
+
   .wrapper {
     height:100%;
     position:relative;
+  }
+
+  @media (max-width:412px) {
+    height:140px
   }
 
 }
