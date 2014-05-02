@@ -621,7 +621,7 @@ table.class-table
                 </div>
                 <div class="sg-demo">
                   <div class="header yellow-bg">
-                    <div class="logo"><img src="images/iron-yard-logo.svg"></div>
+                    <div class="logo"><img src="/images/iron-yard-logo.svg"></div>
                     <div class="nav">
                       <div class="primary-nav">
                         <ul>
@@ -646,7 +646,7 @@ table.class-table
                   <pre><code class="prettyprint lang-jade">---
 .header.yellow-bg
   .logo
-    img(src="images/iron-yard-logo.svg")
+    img(src="/images/iron-yard-logo.svg")
   .nav
     .primary-nav
       ul
@@ -700,7 +700,7 @@ table.class-table
                 <div class="sg-demo">
                   <div class="footer">
                     <div class="wrapper">
-                      <div class="logo"><img src="images/footer-logo.png"></div>
+                      <div class="logo"><img src="/images/footer-logo.png"></div>
                       <div class="footer-nav">
                         <ul>
                           <li><a href="#">About</a></li>
@@ -728,10 +728,15 @@ table.class-table
 .footer 
   .wrapper
     .logo
-      img(src="images/footer-logo.png")
+      img(src="/images/footer-logo.png")
     .footer-nav: ul
       li: a(href="#") About
       li: ...
+    .social-nav: ul
+      li: a(href="http://twitter.com/theironyard").ss-icon twitter
+      li: a(href="http://twitter.com/symbolset").ss-icon facebook
+      li: a(href="http://twitter.com/symbolset").ss-icon vimeo
+      
     .copyright ©2014 The Iron Yard. All Rights Reserved 
     </code></pre>
                 </div>
@@ -747,7 +752,7 @@ table.class-table
                 </div>
                 <div class="sg-demo">
                   <div class="container-fluid">
-                    <div class="header">
+                    <div class="header gray-dark-bg">
                       <div class="wrapper">
                         <div class="logo"><img src="images/iron-yard-logo.svg"></div>
                         <div class="nav">
