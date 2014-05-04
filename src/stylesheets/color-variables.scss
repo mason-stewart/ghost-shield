@@ -68,6 +68,15 @@ $green: #3AC29C; // location page green
   color: $gray-med;
 }
 
+.green-bg {
+  background: $green;
+  color: white;
+}
+
+.green-text {
+  color: $green;
+}
+
 .red-bg {
   background: $red;
   color: white;
