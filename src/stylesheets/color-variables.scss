@@ -21,6 +21,10 @@ $green: #3AC29C; // location page green
   color: white;
 }
 
+.blue-triangle {
+  border-top: 20px solid $blue;
+}
+
 .blue-text {
   color: $blue;
 }
@@ -30,14 +34,26 @@ $green: #3AC29C; // location page green
   color: white;
 }
 
+.blue-link-triangle {
+  border-top: 20px solid $blue-link;
+}
+
 .blue-contact-bg {
   background: $blue-contact;
   color: white;
 }
 
+.blue-contact-triangle {
+  border-top: 20px solid $blue-contact;
+}
+
 .gold-bg {
   background: $gold;
   color: white;
+}
+
+.gold-triangle {
+  border-top: 20px solid $gold;
 }
 
 .gold-text {
@@ -49,9 +65,17 @@ $green: #3AC29C; // location page green
   color: white;
 }
 
+.gray-dark-triangle {
+  border-top: 20px solid $gray-dark;
+}
+
 .gray-lighter-bg {
   background: $gray-lighter;
   color: $gray-dark;
+}
+
+.gray-lighter-triangle {
+  border-top: 20px solid $gray-lighter;
 }
 
 .gray-light-bg {
@@ -59,9 +83,17 @@ $green: #3AC29C; // location page green
   color: $gray-dark;
 }
 
+.gray-light-triangle {
+  border-top: 20px solid $gray-light;
+}
+
 .gray-med-bg {
   background: $gray-med;
   color: $gray-dark;
+}
+
+.gray-med-triangle {
+  border-top: 20px solid $gray-med;
 }
 
 .gray-med-text {
@@ -73,6 +105,10 @@ $green: #3AC29C; // location page green
   color: white;
 }
 
+.red-triangle {
+  border-top: 20px solid $red;
+}
+
 .red-text {
   color: $red;
 }
@@ -80,6 +116,10 @@ $green: #3AC29C; // location page green
 .yellow-bg {
   background: $yellow;
   color: white;
+}
+
+.yellow-triangle {
+  border-top: 20px solid $yellow;
 }
 
 .yellow-text {
