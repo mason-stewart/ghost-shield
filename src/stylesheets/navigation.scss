@@ -99,7 +99,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
             text-decoration:none;
           }
         }
-                  
+
         @media (max-width:640px) {
           margin-bottom: 0px;
           padding: 0 3px 0 3px;
@@ -266,19 +266,20 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 
 .image-header {
   background-size:cover;
-  height:500px;
+  height:570px;
   margin-top:-140px;
   z-index:0;
   position:relative;
-  box-shadow: inset 0 -82px 60px -14px rgba(0, 0, 0, 0.67);
+  box-shadow: inset 0 -120px 60px -14px rgba(0, 0, 0, 0.67);
 
   .sub-nav {
     position: absolute;
-    bottom: 2px;
+    bottom: -20px;
     color: white;
 
     h2 {
-      font-size:70px
+      font-size:70px;
+      margin-bottom: 65px;
     }
   }
 }
@@ -398,5 +399,35 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
   border-left: 18px solid transparent;
   width: 0;
   height: 0;
+}
+
+.triangle-cutout {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  display: block;
+  border: none;
+  bottom: 20px;
+  width: 41px;
+  height: 20px;
+  background: url('/images/reverse-triangle.png?1393883957') no-repeat top center;
+
+  &:after {
+  	position: absolute;
+		height: 20px;
+		background: #fff;
+		width: 10000%;
+		content: " ";
+		left: 41px;
+  }
+
+	&:before {
+		position: absolute;
+		height: 20px;
+		background: #fff;
+		width: 10000%;
+		content: " ";
+		right: 41px;
+  }
 }
 
