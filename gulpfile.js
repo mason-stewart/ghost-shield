@@ -34,15 +34,20 @@ gulp.task('fonts', function() {
 })
 
 gulp.task('css', function() {
-  return gulp.src('src/stylesheets/*.*')
+  return gulp.src('src/stylesheets/ghost-shield.scss')
     .pipe( 
       sass( { 
         includePaths: ['src/stylesheets'].concat(bourbon),
         errLogToConsole: true
       } ) )
     .pipe( csso() )
-    .pipe( gulp.dest('dist/stylesheets/') )
+    .pipe( gulp.dest('.tmp/stylesheets/') )
     .pipe( livereload( server ));
+});
+
+gulp.task('copy-css', function() {
+  return gulp.src('.tmp/stylesheets/ghost-shield.css')
+    .pipe( gulp.dest('dist/stylesheets/') );
 });
 
 gulp.task('js', function() {
@@ -57,11 +62,13 @@ gulp.task('templates', function() {
     .pipe(jade({
       pretty: true
     }))
-    .pipe(gulp.dest('dist/'))
+    .pipe(gulp.dest('.tmp/'))
 });
 
 gulp.task('express', function() {
-  app.use(express.static(path.resolve('./dist')));
+  app.use(express.static(path.resolve('./dist')))
+     .use(express.static(path.resolve('./src')))
+     .use(express.static(path.resolve('./.tmp')));
   app.listen(1337);
   gutil.log('Listening on port: 1337');
 });
@@ -78,7 +85,9 @@ gulp.task('watch', function () {
 
 });
 
-gulp.task('deploy', ['images','js','css','templates', 'fonts'], function() {
+gulp.task('build', ['images','js','css','copy-css','templates', 'fonts']);
+
+gulp.task('deploy', ['build'], function() {
   gulp.src("dist/**/*")
     .pipe(deploy('git@github.com:masondesu/ghost-shield.git', 'origin'));
 });
