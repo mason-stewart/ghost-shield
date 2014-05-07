@@ -42,12 +42,8 @@ gulp.task('css', function() {
       } ) )
     .pipe( csso() )
     .pipe( gulp.dest('.tmp/stylesheets/') )
+    .pipe( gulp.dest('dist/stylesheets/') )
     .pipe( livereload( server ));
-});
-
-gulp.task('copy-css', function() {
-  return gulp.src('.tmp/stylesheets/ghost-shield.css')
-    .pipe( gulp.dest('dist/stylesheets/') );
 });
 
 gulp.task('js', function() {
@@ -85,7 +81,7 @@ gulp.task('watch', function () {
 
 });
 
-gulp.task('build', ['images','js','css','copy-css','templates', 'fonts']);
+gulp.task('build', ['images','js','css','templates', 'fonts']);
 
 gulp.task('deploy', ['build'], function() {
   gulp.src("dist/**/*")
