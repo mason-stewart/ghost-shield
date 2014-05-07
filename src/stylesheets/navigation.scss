@@ -10,6 +10,9 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 // All items & properties listed in alphabetical order
 
 .footer {
+  @extend .container;
+  @include clearfix;
+
   background: #39474e;
   background-size: cover;
   clear: both;
@@ -55,7 +58,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
       }
 
       @media (max-width: 992px) {
-      font-size:12px;
+        font-size:12px;
       }
 
       @media (max-width: 640px) {
@@ -64,12 +67,14 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
     } 
 
     @media (max-width: 992px) {
-      padding: 0;
+      padding: 24px 0 0;
       text-align:center
     }
   }
 
   .logo {
+    @extend .col-xs-2;
+
     float:left;
     margin: 22px 0 18px;
     width:10%;
@@ -123,13 +128,16 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 
 }
 
+.header-dimmer {
+  margin-right: -15px;
+  margin-left: -15px;
+  background: url(/images/header-pattern.png);
+}
 
 .header {
   @extend .row;
   @include clearfix;
-  background: url(/images/header-pattern.png);
-  padding:15px 20px 0px 20px;
-  position:relative;
+  padding: 15px 0 0;
 
   ul {
     margin: 0;
@@ -185,12 +193,13 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
   }
 
   .primary-nav {
+    @extend .col-xs-12;
+    @extend .col-md-8;
+
     font-size: 16px;
     margin: 0;
     margin-bottom: 10px;
     text-transform: uppercase;
-    @extend .col-xs-12;
-    @extend .col-md-8;
 
     a {
       color: $nav-text-color;
@@ -204,28 +213,38 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 
     // accounts for issues with alignment when line breaks
     ul {
+      margin-bottom: 20px;
+
       @media (min-width:768px) {
         margin-left: -18px;
       }
+
+      /* Medium devices (desktops, 992px and up) */
+      @media (min-width: 992px) { 
+        padding-left: 20px;
+      }
     }  
 
-    /* Medium devices (desktops, 992px and up) */
-    @media (min-width: 992px) { 
-      padding-left: 60px;
-    }
 
     @media (max-width: 992px){
-    margin: -10px 0 -8px 0;
-  }
+      margin: -10px 0 -8px 0;
+    }
   }
 
   .secondary-nav {
+    @extend .col-xs-12;
+    @extend .col-md-4;
+
     float: right;
     font-size: 14px;
     margin: 0;
     text-transform: uppercase;
-    @extend .col-xs-12;
-    @extend .col-md-4;
+    
+    ul {
+      margin-left: -20px;
+      margin-bottom: 20px;
+    }
+
 
     @media screen and (min-width: 993px) {
 
@@ -312,6 +331,8 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 }
 
 .sub-nav {
+  @extend .row;
+  @include clearfix;
   padding:1px 10px 0 0;
 
   h2 {
@@ -355,8 +376,8 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 
       @media(max-width: 490px) {
         font-size:18px;
-        display:block;
-        margin-right: 200px;
+        margin-right: 0;
+        float: none;
         margin-bottom: 0px;
       }
     }

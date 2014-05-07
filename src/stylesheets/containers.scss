@@ -1,5 +1,6 @@
 @import "bourbon";
 @import "color-variables";
+@import "bootstrap";
 
 // Found this in use on the site
 // Use as a visual divider between content sections
@@ -20,21 +21,14 @@ hr {
 	font-size: 15px;
 }
 
-.wrapper {
-	margin: 0 auto;
-	max-width: 960px;
-
-	@media (max-width: 990px) {
-		padding-left: 30px;
-		padding-right: 30px
-	}
-}
-
 // Two Column Container Styles
 // Two Column Bio Container
 // This may need to be revisited depending on the width of the container
 // This element is placed in
-.two-col-bio {
+.bio {
+	@extend .row;
+	@include clearfix;
+
 	background: $gray-light;
 	padding-top: 20px;
 	margin-bottom:30px;
@@ -70,8 +64,9 @@ hr {
 		margin: 0px;
 		
 		li {
+			margin-right: 20px;
 			display: inline-block;
-			list-style-type: disc;
+			list-style-type: none;
 		}
 
 		@media (max-width:992px){
@@ -79,9 +74,14 @@ hr {
 		}
 	}
 
-	.bio-left-col {
+	.bio-left {
+		@extend .col-sm-5;
 		margin: 0px auto;
 		padding-bottom: 20px;
+	}
+
+	.bio-right {
+		@extend .col-sm-7;
 	}
 }
 
