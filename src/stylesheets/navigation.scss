@@ -288,6 +288,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 }
 
 .image-header {
+  overflow: hidden;
   z-index:0;
   background-size:cover;
   height:570px;
@@ -309,6 +310,10 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
     width: 100%;  
     margin-bottom: 10px;
     color: white;
+
+    ul {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -438,10 +443,10 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
   left: 20px;
   display: block;
   border: none;
-  bottom: 20px;
+  bottom: -10px;
   width: 41px;
   height: 20px;
-  background: url('/images/reverse-triangle.png?1393883957') no-repeat top center;
+  background: url('/images/reverse-triangle.png') no-repeat top center;
 
   &:after {
   	position: absolute;
