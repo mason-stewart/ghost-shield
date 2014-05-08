@@ -19,6 +19,10 @@ hr {
 	margin-bottom: 33px;
 	width: 92%;
 	font-size: 15px;
+
+	h1, h2, h3, h4, h5 {
+		margin-top:0;
+	}
 }
 
 // Two Column Container Styles
@@ -85,33 +89,33 @@ hr {
 	}
 }
 
-// Two Column With Side Bar Column
-// I removed the margin-top from the 'h' tags
-// Because it was creating an uneven/cluttered look at the top
-.two-col-sb {
+// // Two Column With Side Bar Column
+// // I removed the margin-top from the 'h' tags
+// // Because it was creating an uneven/cluttered look at the top
+// .two-col-sb {
 
-	.two-col-sb-left {
-	  h1,
-		h2,
-		h3,
-		h4 {
-			margin-top: 0px;
-		}
+// 	.two-col-sb-left {
+// 	  h1,
+// 		h2,
+// 		h3,
+// 		h4 {
+// 			margin-top: 0px;
+// 		}
 
-		vertical-align: top;
-	}
+// 		vertical-align: top;
+// 	}
 
-	.two-col-sb-right {
-		h1,
-		h2,
-		h3,
-		h4 {
-			margin-top: 0px;
-		}
+// 	.two-col-sb-right {
+// 		h1,
+// 		h2,
+// 		h3,
+// 		h4 {
+// 			margin-top: 0px;
+// 		}
 
-		vertical-align: top;
-	}
-}
+// 		vertical-align: top;
+// 	}
+// }
 
 // Begin Three Column Container Styling
 // Three Column Container w/Call To Action (cta)
