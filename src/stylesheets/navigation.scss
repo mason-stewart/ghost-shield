@@ -205,6 +205,8 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 
     a {
       color: $nav-text-color;
+      font-size:17px;
+      font-weight:900;
 
       &:hover,
       &.active {
