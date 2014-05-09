@@ -117,6 +117,29 @@ hr {
 // 	}
 // }
 
+.mobile-container {
+
+	h1,h2,h3,h4 {
+		margin-top:4px;
+		margin-bottom:0;
+	}
+
+	h2 {
+		margin-bottom:20px;
+	}
+
+	ul {
+
+		li {
+			margin-bottom:0;
+		}
+	}
+
+	@media (max-width: 768px){
+		text-align:center;
+	}
+}
+
 // Begin Three Column Container Styling
 // Three Column Container w/Call To Action (cta)
 .three-col-cta {
