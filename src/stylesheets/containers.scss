@@ -118,6 +118,7 @@ hr {
 // }
 
 .mobile-container {
+	margin-bottom:30px;
 
 	h1,h2,h3,h4 {
 		margin-top:4px;
@@ -132,6 +133,14 @@ hr {
 
 		li {
 			margin-bottom:0;
+		}
+	}
+
+	.left-column {
+		box-shadow: inset -8px 0px 9px -8px rgba(128, 128, 128, 0.22);
+		 
+		@media (max-width:768px) {
+		 	box-shadow: 0 0 0 0;
 		}
 	}
 
