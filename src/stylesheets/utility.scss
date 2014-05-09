@@ -1,6 +1,15 @@
 @import "bourbon";
 
+
 .no-horizontal-padding {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+.horizontal-section {
+	@extend .no-horizontal-padding;
+
+	margin: 40px auto;
+	padding: 20px 0 20px 0;
+
 }
