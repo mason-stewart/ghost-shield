@@ -19,6 +19,10 @@ hr {
 	margin-bottom: 33px;
 	width: 92%;
 	font-size: 15px;
+
+	h1, h2, h3, h4, h5 {
+		margin-top:0;
+	}
 }
 
 // Two Column Container Styles
@@ -85,31 +89,63 @@ hr {
 	}
 }
 
-// Two Column With Side Bar Column
-// I removed the margin-top from the 'h' tags
-// Because it was creating an uneven/cluttered look at the top
-.two-col-sb {
+// // Two Column With Side Bar Column
+// // I removed the margin-top from the 'h' tags
+// // Because it was creating an uneven/cluttered look at the top
+// .two-col-sb {
 
-	.two-col-sb-left {
-	  h1,
-		h2,
-		h3,
-		h4 {
-			margin-top: 0px;
-		}
+// 	.two-col-sb-left {
+// 	  h1,
+// 		h2,
+// 		h3,
+// 		h4 {
+// 			margin-top: 0px;
+// 		}
 
-		vertical-align: top;
+// 		vertical-align: top;
+// 	}
+
+// 	.two-col-sb-right {
+// 		h1,
+// 		h2,
+// 		h3,
+// 		h4 {
+// 			margin-top: 0px;
+// 		}
+
+// 		vertical-align: top;
+// 	}
+// }
+
+.mobile-container {
+	margin-bottom:30px;
+
+	h1,h2,h3,h4 {
+		margin-top:4px;
+		margin-bottom:0;
 	}
 
-	.two-col-sb-right {
-		h1,
-		h2,
-		h3,
-		h4 {
-			margin-top: 0px;
-		}
+	h2 {
+		margin-bottom:20px;
+	}
 
-		vertical-align: top;
+	ul {
+
+		li {
+			margin-bottom:0;
+		}
+	}
+
+	.left-column {
+		box-shadow:  inset -8px 0 7px -12px rgba(40, 40, 40, 0.68);
+		 
+		@media (max-width:768px) {
+		 	box-shadow: 0 0 0 0;
+		}
+	}
+
+	@media (max-width: 992px){
+		text-align:center;
 	}
 }
 

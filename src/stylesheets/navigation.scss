@@ -98,11 +98,11 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
         a {
           color:#eef1f6;
           font-size:20px;
-        }
-  
-        a:hover {
-          border-bottom: 3px solid rgba(255,255,255,.5);
-          text-decoration:none;
+        
+          &:hover {
+            border-bottom: 3px solid rgba(255,255,255,.5);
+            text-decoration:none;
+          }
         }
 
         @media (max-width:640px) {
@@ -129,6 +129,8 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 }
 
 .header-dimmer {
+  position: relative;
+  z-index: 1;
   margin-right: -15px;
   margin-left: -15px;
   background: url(/images/header-pattern.png);
@@ -203,6 +205,8 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 
     a {
       color: $nav-text-color;
+      font-size:17px;
+      font-weight:900;
 
       &:hover,
       &.active {
@@ -283,6 +287,36 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
   }
 }
 
+.image-header {
+  overflow: hidden;
+  z-index:0;
+  background-size:cover;
+  height:570px;
+  margin-top:-140px;
+  margin-right: -15px;
+  margin-left: -15px;
+  position:relative;
+  box-shadow: inset 0 -120px 60px -14px rgba(0, 0, 0, 0.67);
+
+  .container { 
+    @include clearfix;
+    position: relative;
+    height:570px;
+  }
+
+  .sub-nav {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;  
+    margin-bottom: 10px;
+    color: white;
+
+    ul {
+      margin-bottom: 20px;
+    }
+  }
+}
+
 .nav-footer {
   float: right;
   font-size: 14px;
@@ -304,13 +338,19 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
   }
 }
 
+//add to container-fluid on locations/academy pages to insure that header sits on top of .image-header
+.nav-relative {
+  position:relative;
+  z-index:1;
+}
+
 .sub-nav {
   @extend .row;
   @include clearfix;
   padding:1px 10px 0 0;
 
   h2 {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     margin-top: 18px;
     font-size: 50px;
 
@@ -338,6 +378,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
       list-style-type: none;
 
       a {
+        font-weight: bolder;
         color: $nav-text-color;
         margin: 0 10px;
         &:hover,
@@ -394,5 +435,35 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
   border-left: 18px solid transparent;
   width: 0;
   height: 0;
+}
+
+.triangle-cutout {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  display: block;
+  border: none;
+  bottom: -10px;
+  width: 41px;
+  height: 20px;
+  background: url('/images/reverse-triangle.png') no-repeat top center;
+
+  &:after {
+  	position: absolute;
+		height: 20px;
+		background: #fff;
+		width: 10000%;
+		content: " ";
+		left: 41px;
+  }
+
+	&:before {
+		position: absolute;
+		height: 20px;
+		background: #fff;
+		width: 10000%;
+		content: " ";
+		right: 41px;
+  }
 }
 
