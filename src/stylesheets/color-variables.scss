@@ -109,6 +109,10 @@ $green: #3AC29C; // location page green
   color: $green;
 }
 
+.green-triangle {
+  border-top: 20px solid $green;
+}
+
 .red-bg {
   background-color: $red;
   color: white;
