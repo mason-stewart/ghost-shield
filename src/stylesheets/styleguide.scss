@@ -69,6 +69,7 @@ pre {
   .sg-demo {
     padding: 15px;
     background: url('../images/sg/checked.png');
+
   }
 
   .sg-code {
@@ -96,4 +97,28 @@ pre {
       content: 'Jade';
     }
   }
+
+  .sub-nav {
+    padding: 2px 20px 20px 20px;
+  }
 }
+
+//Over-ride styles for the layout section
+
+.header {
+  margin:0 auto;
+}
+
+.primary-nav {
+  left: 18px;
+  
+  @media screen and (max-width: 768px) {
+    left:0px
+  }
+}
+
+.sub-nav {
+  margin:0 auto;
+}
+
+

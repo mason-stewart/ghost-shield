@@ -1,4 +1,4 @@
-h2 Containers
+h2.section-headline Containers
 .sg-container
   .sg-section
     .sg-info
@@ -66,44 +66,42 @@ h2 Containers
     .sg-info
       h3 Two Column Bio Container
     .sg-demo
-      .two-col-bio
-        .row
-          .col-sm-5
-            .bio-left-col
-              img.photo-bio(src="images/sg/nyancat.gif")
-              a.btn.btn-contact(href="#")
-                img(src="http://theironyard.com/images/email.png")
-                p Say hello
-          .col-sm-7
-            h2 Nyan
-            h4 Erlang Engineer
-            p American Apparel wayfarers normcore mustache, Truffaut Intelligentsia XOXO irony deep v photo booth locavore next level. Helvetica post-ironic four loko dreamcatcher normcore gluten-free, tofu Wes Anderson. Next level retro Schlitz, cardigan cliche jean shorts shabby chic. Hashtag cliche bitters cred Banksy salvia. Austin ennui raw denim Thundercats, wolf asymmetrical paleo. 
-            ul.links
-              li <a href="#">Link 1</a>
-              li <a href="#">Link 2</a>
-              li <a href="#">Link 3</a>
-              li <a href="#">Link 4</a>
-              li <a href="#">Link 5</a>
+      //- don't do this in real life.
+      .bio(style="margin: 0px;") 
+        .bio-left
+          img.photo-bio(src="images/sg/nyancat.gif")
+          a.btn.btn-contact(href="#")
+            img(src="http://theironyard.com/images/email.png")
+            p Say hello
+        .bio-right
+          h2 Nyan
+          h4 Erlang Engineer
+          p American Apparel wayfarers normcore mustache, Truffaut Intelligentsia XOXO irony deep v photo booth locavore next level. Helvetica post-ironic four loko dreamcatcher normcore gluten-free, tofu Wes Anderson. Next level retro Schlitz, cardigan cliche jean shorts shabby chic. Hashtag cliche bitters cred Banksy salvia. Austin ennui raw denim Thundercats, wolf asymmetrical paleo. 
+          ul.links
+            li: a(href="#") Link 1
+            li: a(href="#") Link 2
+            li: a(href="#") Link 3
+            li: a(href="#") Link 4
+
     .sg-code
       pre
         code.prettyprint.lang-jade.
           ---   
-          .two-col-bio
-            .row
-             .col-sm-5
-              .bio-left-col
-                img.photo-bio(src="images/sg/nyancat.gif")
-                a.btn.btn-contact(href="#")
-                  img(src="http://theironyard.com/images/email.png")
-                  p Say hello
-              .col-sm-7
-                h2 Allison Miller
-                h4 Core Front End Dev at Benefit Focus
-                p Bio summary here
-                ul.links
-                  li &lt;a href="#"&gt; Link 1&lt;/a&gt;
-                  li &lt;a href="#"&gt; Link 2&lt;/a&gt;
-                  li &lt;a href="#"&gt; Link 3&lt;/a&gt;
+          .bio
+            .bio-left
+              img.photo-bio(src="images/sg/nyancat.gif")
+              a.btn.btn-contact(href="#")
+                img(src="http://theironyard.com/images/email.png")
+                p Say hello
+            .bio-right
+              h2 Nyan
+              h4 Erlang Engineer
+              p ...
+              ul.links
+                li: a(href="#") Link 1
+                li: a(href="#") Link 2
+                li: a(href="#") Link 3
+                li: a(href="#") Link 4
 
   .sg-section
     .sg-info
@@ -120,9 +118,9 @@ h2 Containers
             hr
             p More copy
             ul
-              li <a href="#">Item 1</a>
-              li <a href="#">Item 2</a>
-              li <a href="#">Item 3</a>
+              li: a(href="#") Item 1
+              li: a(href="#") Item 2
+              li: a(href="#") Item 3
     .sg-code
       pre
         code.prettyprint.lang-jade.
@@ -138,9 +136,9 @@ h2 Containers
                 hr
                 p More copy
                 ul
-                  li &lt;a href="#"&gt; Item 1&lt;/a&gt;
-                  li &lt;a href="#"&gt; Item 2&lt;/a&gt;
-                  li &lt;a href="#"&gt; Item 3&lt;/a&gt;
+                  li: a(href="#") Item 1
+                  li: a(href="#") Item 2
+                  li: a(href="#") Item 3
   
   .sg-section
     .sg-info

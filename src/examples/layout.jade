@@ -1,0 +1,61 @@
+h2.section-headline Layout
+.sg-container
+  .sg-section
+    .sg-info
+      h3 Complete Nav-Bar
+    .sg-demo
+      .container-fluid
+        .header.gray-dark-bg
+          .wrapper
+            .logo
+              img(src="images/iron-yard-logo.svg")
+            .nav
+              .primary-nav
+                ul
+                  li: a(href="#") Locations
+                  li: a(href="#") Events
+                  li: a(href="#") Academy
+                  li: a(href="#") Accelerator
+              
+              .secondary-nav
+                ul
+                  li: a(href="#") Jobs
+                  li: a(href="#") About
+                  li: a(href="#") News
+                  li: a(href="#") Blog           
+        .row.sub-nav.gray-dark-bg
+          .wrapper 
+            h2 Cool Nav
+            ul
+              li: a(href="#") Hire Graduates
+              li: a(href="#") Alumni
+              li: a(href="#") FAQs
+              li: a(href="#") Kids Classes      
+            .triangle(style="border-top: 20px solid #39474E; bottom: -58px") 
+
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+            .container-fluid
+              .header
+                .wrapper
+                  .logo
+                    img(src="images/iron-yard-logo.svg")
+                  .nav
+                    .primary-nav
+                      ul
+                        li: a(href="#") Locations
+                        li ...
+                    .secondary-nav
+                      ul
+                        li ...
+             
+              .row.sub-nav.gray-dark-bg
+                .wrapper 
+                  h2 Cool Nav
+                  ul
+                    li: a(href="#") Hire Graduates
+                    li ...
+                  /* border top on .triangle matches the color of the nav-bar */           
+                  .triangle(style="border-top: 20px solid #39474E")      

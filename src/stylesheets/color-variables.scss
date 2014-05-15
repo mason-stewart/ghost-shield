@@ -17,8 +17,12 @@ $green: #3AC29C; // location page green
 // for the header sections
 
 .blue-bg {
-  background: $blue;
+  background-color: $blue;
   color: white;
+}
+
+.blue-triangle {
+  border-top: 20px solid $blue;
 }
 
 .blue-text {
@@ -26,18 +30,30 @@ $green: #3AC29C; // location page green
 }
 
 .blue-link-bg {
-  background: $blue-link;
+  background-color: $blue-link;
   color: white;
+}
+
+.blue-link-triangle {
+  border-top: 20px solid $blue-link;
 }
 
 .blue-contact-bg {
-  background: $blue-contact;
+  background-color: $blue-contact;
   color: white;
 }
 
+.blue-contact-triangle {
+  border-top: 20px solid $blue-contact;
+}
+
 .gold-bg {
-  background: $gold;
+  background-color: $gold;
   color: white;
+}
+
+.gold-triangle {
+  border-top: 20px solid $gold;
 }
 
 .gold-text {
@@ -45,32 +61,65 @@ $green: #3AC29C; // location page green
 }
 
 .gray-dark-bg {
-  background: $gray-dark;
+  background-color: $gray-dark;
   color: white;
 }
 
+.gray-dark-triangle {
+  border-top: 20px solid $gray-dark;
+}
+
 .gray-lighter-bg {
-  background: $gray-lighter;
+  background-color: $gray-lighter;
   color: $gray-dark;
+}
+
+.gray-lighter-triangle {
+  border-top: 20px solid $gray-lighter;
 }
 
 .gray-light-bg {
-  background: $gray-light;
+  background-color: $gray-light;
   color: $gray-dark;
 }
 
+.gray-light-triangle {
+  border-top: 20px solid $gray-light;
+}
+
 .gray-med-bg {
-  background: $gray-med;
+  background-color: $gray-med;
   color: $gray-dark;
+}
+
+.gray-med-triangle {
+  border-top: 20px solid $gray-med;
 }
 
 .gray-med-text {
   color: $gray-med;
 }
 
-.red-bg {
-  background: $red;
+.green-bg {
+  background-color: $green;
   color: white;
+}
+
+.green-text {
+  color: $green;
+}
+
+.green-triangle {
+  border-top: 20px solid $green;
+}
+
+.red-bg {
+  background-color: $red;
+  color: white;
+}
+
+.red-triangle {
+  border-top: 20px solid $red;
 }
 
 .red-text {
@@ -78,8 +127,12 @@ $green: #3AC29C; // location page green
 }
 
 .yellow-bg {
-  background: $yellow;
+  background-color: $yellow;
   color: white;
+}
+
+.yellow-triangle {
+  border-top: 20px solid $yellow;
 }
 
 .yellow-text {
