@@ -156,6 +156,36 @@ hr {
 	}
 }
 
+.profile-box {
+		text-align: center;
+		display: inline-block;
+		margin: 0 0 0 20px;
+
+		p {
+			margin-top:0
+		}
+
+		ul {
+			border-top:1px solid #777;
+			border-bottom:1px solid #777;
+
+			li {
+				display:inline-block;
+				margin: 5px 2px 2px;
+				padding: 0px;
+
+				img {
+					background-color:#888;
+					height:20px;
+
+					&:hover {
+						background-color:$turquoise;
+					}
+				}
+			}
+		}
+}
+
 // Begin Three Column Container Styling
 // Three Column Container w/Call To Action (cta)
 .three-col-cta {
