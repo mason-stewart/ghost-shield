@@ -96,33 +96,30 @@ hr {
 	}
 }
 
-// // Two Column With Side Bar Column
-// // I removed the margin-top from the 'h' tags
-// // Because it was creating an uneven/cluttered look at the top
-// .two-col-sb {
+// this class is to be used on rows that are broken up by vertical dividers until the columns break onto new lines. 
+// use the .left-box or .right-box on the respective columns depending on which has more content so that the divider is the full height of the row.
+.divide-container {
+	p {
+		color: #7D8A8E;
+	}
+	
+	.left-box {
+		border-right:3px solid #E3E7E9;
+	}
 
-// 	.two-col-sb-left {
-// 	  h1,
-// 		h2,
-// 		h3,
-// 		h4 {
-// 			margin-top: 0px;
-// 		}
+	.right-box {
+		border-left:3px solid #E3E7E9;
+	}
 
-// 		vertical-align: top;
-// 	}
-
-// 	.two-col-sb-right {
-// 		h1,
-// 		h2,
-// 		h3,
-// 		h4 {
-// 			margin-top: 0px;
-// 		}
-
-// 		vertical-align: top;
-// 	}
-// }
+	@media (max-width:768px) {
+		.left-box {
+			border-right:none;
+		}
+		.right-box {
+			border-left: none;
+		}
+	}
+}
 
 .mobile-container {
 	margin-bottom:30px;
