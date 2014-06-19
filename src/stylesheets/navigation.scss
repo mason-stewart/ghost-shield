@@ -16,7 +16,7 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
   background: #39474e;
   background-size: cover;
   clear: both;
-  height: 120px;
+  height: 134px;
   padding-bottom: 15px;
   margin-top: 40px;
 
@@ -291,10 +291,9 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
 .image-header {
   overflow: hidden;
   z-index:0;
-  background-size:cover;
   background-position:center center;
-  height:570px;
-  margin-top:-140px;
+  height:490px;
+  margin-top:-89px;
   margin-right: -15px;
   margin-left: -15px;
   position:relative;
@@ -303,7 +302,11 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
   .container { 
     @include clearfix;
     position: relative;
-    height:570px;
+    height:490px;
+
+    @media (max-width: 490px) {
+      height:415px;
+    }
   }
 
   .sub-nav {
@@ -316,6 +319,10 @@ $nav-text-color-underline: rgba(255, 255, 255, 0.5);
     ul {
       margin-bottom: 20px;
     }
+  }
+
+  @media (max-width: 490px) {
+    height:415px;
   }
 }
 

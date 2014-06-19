@@ -4,6 +4,7 @@ $gray-light: #E3E7E9;
 $gray-med: #ADB8C4;
 $gray-dark: #39474e;
 $red: #A02121;
+$red-orange:#B8584B;
 $blue: #2C94CE;
 $blue-contact: #20a3d9;
 $blue-link: #158cbd;
@@ -125,6 +126,19 @@ $turquoise: #349FAD;
 
 .red-text {
   color: $red;
+}
+
+.red-orange-bg {
+  background-color: $red-orange;
+  color: white;
+}
+
+.red-orange-triangle {
+  border-top:20px solid $red-orange;
+}
+
+.red-orange-text {
+  color:$red-orange;
 }
 
 .turquoise-bg {
