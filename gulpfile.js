@@ -59,6 +59,7 @@ gulp.task('templates', function() {
       pretty: true
     }))
     .pipe(gulp.dest('.tmp/'))
+    .pipe(gulp.dest('dist/'))
 });
 
 gulp.task('express', function() {
