@@ -869,7 +869,53 @@ table.class-table
           li ...
         // the second class is used to determine the color of the triangle. 
         // the color must match the class applied to .header and .sub-nav           
-        .triangle.gray-dark-triangle     </code></pre>
+        .triangle.gray-dark-triangle
+        </code></pre>
+                </div>
+              </div>
+            </div>
+            <div class="sg-container">
+              <div class="sg-section">
+                <div class="sg-info">
+                  <h3>Screen-Width Section</h3>
+                </div>
+                <div style="padding:0" class="sg-demo">
+                  <div class="horizontal-section gray-light-bg">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h2 class="section-headline">Awesome Content</h2>
+                          <p>Letterpress quinoa raw denim, hoodie kale chips stumptown biodiesel Echo Park scenester XOXO 8-bit you probably haven't heard of them. Banksy Helvetica gentrify, distillery hoodie selfies art party American Apparel Truffaut fashion axe irony Tumblr salvia 8-bit keffiyeh.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h2 class="section-headline">Great Job</h2>
+                          <ul>
+                            <li>Sustainable kale chips</li>
+                            <li>Blue Bottle boat shoes</li>
+                            <li>Odd Future chillwave</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sg-code">
+                  <pre><code class="prettyprint lang-jade">---
+  // As long as you have a .container nested within the .horizontal-section div,
+  // you can use whatever content you like within this class.
+  .horizontal-section.gray-light-bg
+    .container
+      .row
+        .col-md-6
+          h2.section-headline Awesome Content
+          p Letterpress quinoa raw denim, 8-bit stumptown biodiesel. . . 
+        .col-md-6
+          h2.section-headline Great Job
+          ul
+            li Sustainable kale chips
+            li Blue Bottle boat shoes
+            li Odd Future chillwave
+            </code></pre>
                 </div>
               </div>
             </div>
