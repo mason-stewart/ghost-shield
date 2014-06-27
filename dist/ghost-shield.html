@@ -36,7 +36,8 @@ $gray-light
 
 // class
 .gray-light-bg
-.gray-triangle
+.gray-light-triangle
+
 
 </code></pre>
                 </div>
@@ -50,7 +51,8 @@ $gray-med
 
 // class
 .gray-med-bg
-.gray-triangle
+.gray-med-text
+.gray-med-triangle
 
 </code></pre>
                 </div>
@@ -66,7 +68,8 @@ $gray-dark
 
 // class
 .gray-dark-bg
-.gray-triangle
+.gray-dark-text
+.gray-dark-triangle
 </code></pre>
                 </div>
                 <div class="col-sm-2">
@@ -167,7 +170,7 @@ $blue-link
 
 // class
 .blue-link-bg 
-.blue-triangle
+.blue-text
 .blue-triangle</code></pre>
                 </div>
               </div>
@@ -836,7 +839,7 @@ table.class-table
                           <li><a href="#">FAQs</a></li>
                           <li><a href="#">Kids Classes      </a></li>
                         </ul>
-                        <div style="border-top: 20px solid #39474E; bottom: -58px" class="triangle"></div>
+                        <div style="bottom:-58px" class="triangle gray-dark-triangle"> </div>
                       </div>
                     </div>
                   </div>
@@ -844,7 +847,7 @@ table.class-table
                 <div class="sg-code">
                   <pre><code class="prettyprint lang-jade">---
   .container-fluid
-    .header
+    .header.gray-dark-bg
       .wrapper
         .logo
           img(src="images/iron-yard-logo.svg")
@@ -863,8 +866,8 @@ table.class-table
         ul
           li: a(href="#") Hire Graduates
           li ...
-        /* border top on .triangle matches the color of the nav-bar */           
-        .triangle(style="border-top: 20px solid #39474E")      </code></pre>
+        /* the second class is used to determine the color of the triangle. the color must match the class applied to .header and .sub-nav */           
+        .triangle.gray-dark-triangle     </code></pre>
                 </div>
               </div>
             </div>
