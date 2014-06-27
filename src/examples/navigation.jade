@@ -73,6 +73,7 @@ h2.section-headline Navigation
       h3 Footer
     .sg-demo
       .container-fluid.gray-dark-bg
+        //don't add this width in the wild
         .footer(style="width:90%")
           .row
             .logo
@@ -97,7 +98,7 @@ h2.section-headline Navigation
         code.prettyprint.lang-jade.
           ---
           .container-fluid.gray-dark-bg
-            .footer(style="width:90%")
+            .footer
               .row
                 .logo
                   img(src="/images/footer-logo.png")

@@ -43,24 +43,18 @@ h2.section-headline Containers
       pre
         code.prettyprint.lang-jade.
           ---
-          .col-sm-6
-            h4 Left Column Copy
-            p ...
-            ul
-              li <a href="#">Link 1</a>
-              li <a href="#">Link 2</a>
-              li <a href="#">Link 3</a>
-          .col-sm-6
-            h4 Right Column Copy
-            p ...
-            a(href="#" class="btn") Learn More
-            .row
-             .col-sm-6
-               h4 Left Column Copy
-               p Lorem ipsum
-             .col-sm-6
-               h4 Right Column Copy
-               p Lorem ipsum
+          .row
+            .col-sm-6
+              h4 Left Column Copy
+              p ...
+              ul
+                li <a href="#">Link 1</a>
+                li <a href="#">Link 2</a>
+                li <a href="#">Link 3</a>
+            .col-sm-6
+              h4 Right Column Copy
+              p ...
+              a(href="#" class="btn") Learn More
   
   .sg-section
     .sg-info
@@ -102,6 +96,35 @@ h2.section-headline Containers
                 li: a(href="#") Link 2
                 li: a(href="#") Link 3
                 li: a(href="#") Link 4
+
+  .sg-section
+    .sg-info
+      h3 Two Column With Divider
+    .sg-demo
+      .two-col-sb
+        .row.divide-container
+          .col-sm-6.left-box
+            h2 Left Column 
+            p <strong>This column has more content,</strong> so the .left-box class should be applied to this column. <em>Pork belly banjo asymmetrical slow-carb, gluten-free farm-to-table synth lo-fi.</em>
+            p <em>Irony kitsch synth meh. Food truck Blue Bottle swag, wolf Odd Future slow-carb Etsy Intelligentsia synth High Life narwhal tofu. Sustainable ugh kale chips pop-up Blue Bottle Intelligentsia, Odd Future chillwave.</em>
+          .col-sm-6
+            h2 Right Column
+            p Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.
+
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          .two-col-sb
+            .row
+              /* If the left columns content is longer than the right, apply the .left-box class to the left column. Otherwise, use the .right-box class on the right column. This allows the border to divide the two containers entirely */ 
+              .col-sm-6.left-box
+                h2 Left Column 
+                p Copy
+              .col-sm-6
+                h4 Right Column
+                p More copy
+
 
   .sg-section
     .sg-info

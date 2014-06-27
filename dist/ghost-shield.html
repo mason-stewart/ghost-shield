@@ -493,25 +493,19 @@ table.class-table
                 </div>
                 <div class="sg-code">
                   <pre><code class="prettyprint lang-jade">---
-.col-sm-6
-  h4 Left Column Copy
-  p ...
-  ul
-    li <a href="#">Link 1</a>
-    li <a href="#">Link 2</a>
-    li <a href="#">Link 3</a>
-.col-sm-6
-  h4 Right Column Copy
-  p ...
-  a(href="#" class="btn") Learn More
-  .row
-   .col-sm-6
-     h4 Left Column Copy
-     p Lorem ipsum
-   .col-sm-6
-     h4 Right Column Copy
-     p Lorem ipsum
-     </code></pre>
+.row
+  .col-sm-6
+    h4 Left Column Copy
+    p ...
+    ul
+      li <a href="#">Link 1</a>
+      li <a href="#">Link 2</a>
+      li <a href="#">Link 3</a>
+  .col-sm-6
+    h4 Right Column Copy
+    p ...
+    a(href="#" class="btn") Learn More
+    </code></pre>
                 </div>
               </div>
               <div class="sg-section">
@@ -552,6 +546,40 @@ table.class-table
       li: a(href="#") Link 2
       li: a(href="#") Link 3
       li: a(href="#") Link 4
+      </code></pre>
+                </div>
+              </div>
+              <div class="sg-section">
+                <div class="sg-info">
+                  <h3>Two Column With Divider</h3>
+                </div>
+                <div class="sg-demo">
+                  <div class="two-col-sb">
+                    <div class="row divide-container">
+                      <div class="col-sm-6 left-box">
+                        <h2>Left Column </h2>
+                        <p><strong>This column has more content,</strong> so the .left-box class should be applied to this column. <em>Pork belly banjo asymmetrical slow-carb, gluten-free farm-to-table synth lo-fi.</em></p>
+                        <p><em>Irony kitsch synth meh. Food truck Blue Bottle swag, wolf Odd Future slow-carb Etsy Intelligentsia synth High Life narwhal tofu. Sustainable ugh kale chips pop-up Blue Bottle Intelligentsia, Odd Future chillwave.</em></p>
+                      </div>
+                      <div class="col-sm-6">
+                        <h2>Right Column</h2>
+                        <p>Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sg-code">
+                  <pre><code class="prettyprint lang-jade">---
+.two-col-sb
+  .row
+    /* If the left columns content is longer than the right, apply the .left-box class to the left column. Otherwise, use the .right-box class on the right column. This allows the border to divide the two containers entirely */ 
+    .col-sm-6.left-box
+      h2 Left Column 
+      p Copy
+    .col-sm-6
+      h4 Right Column
+      p More copy
+      
       </code></pre>
                 </div>
               </div>
@@ -717,6 +745,7 @@ table.class-table
                 </div>
                 <div class="sg-demo">
                   <div class="container-fluid gray-dark-bg">
+                    <!--don't add this width in the wild-->
                     <div style="width:90%" class="footer">
                       <div class="row">
                         <div class="logo"><img src="/images/footer-logo.png"></div>
@@ -746,7 +775,7 @@ table.class-table
                 <div class="sg-code">
                   <pre><code class="prettyprint lang-jade">---
 .container-fluid.gray-dark-bg
-  .footer(style="width:90%")
+  .footer
     .row
       .logo
         img(src="/images/footer-logo.png")
