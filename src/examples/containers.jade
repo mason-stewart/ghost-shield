@@ -22,39 +22,6 @@ h2.section-headline Containers
               (You can also &lt;a href="#"&gt;shoot us an email&lt;/a&gt; or jump into 
                 our &lt;a href="#"&gt;Academy Chat&lt;/a&gt;.)
 
-  .sg-section
-    .sg-info
-      h3 Two Column Containers
-    .sg-demo
-      .row
-        .col-sm-6
-          h4 Left Column Copy
-          p Vegan wayfarers quinoa photo booth. Tote bag VHS cliche art party, occupy freegan artisan. Polaroid kale chips flannel hella cred. Artisan High Life keytar, actually farm-to-table beard Blue Bottle ethnic PBR. Mlkshk Cosby sweater 90's, next level semiotics seitan umami Wes Anderson Austin forage leggings.
-          ul
-            li <a href="#">Link 1</a>
-            li <a href="#">Link 2</a>
-            li <a href="#">Link 3</a>
-        .col-sm-6
-          h4 Right Column Copy
-          p Umami normcore jean shorts, Schlitz polaroid Godard twee wolf American Apparel roof party Truffaut Cosby sweater stumptown YOLO fap. Whatever pug ethnic tofu Brooklyn. Keffiyeh blog Schlitz umami, farm-to-table 8-bit authentic High Life mustache cliche. 
-          a(href="#" class="btn") Learn More
- 
-    .sg-code
-      pre
-        code.prettyprint.lang-jade.
-          ---
-          .row
-            .col-sm-6
-              h4 Left Column Copy
-              p ...
-              ul
-                li <a href="#">Link 1</a>
-                li <a href="#">Link 2</a>
-                li <a href="#">Link 3</a>
-            .col-sm-6
-              h4 Right Column Copy
-              p ...
-              a(href="#" class="btn") Learn More
 
   .sg-section
     .sg-info
@@ -62,12 +29,16 @@ h2.section-headline Containers
     .sg-demo
       .two-col-sb
         .row.divide-container
-          .col-sm-6.left-box
+          .col-sm-6.divider-left
             h2 Left Column 
             p <strong>This column has more content,</strong> so the .left-box class should be applied to this column. <em>Pork belly banjo asymmetrical slow-carb, gluten-free farm-to-table synth lo-fi.</em>
             p <em>Irony kitsch synth meh. Food truck Blue Bottle swag, wolf Odd Future slow-carb Etsy Intelligentsia synth High Life narwhal tofu. Sustainable ugh kale chips pop-up Blue Bottle Intelligentsia, Odd Future chillwave.</em>
           .col-sm-6
             h2 Right Column
+            p Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.
+            p Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.
+            p Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.
+            p Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.
             p Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.
 
     .sg-code
@@ -78,7 +49,7 @@ h2.section-headline Containers
             .row
               // If the left columns content is longer than the right, apply the .left-box class to the left column. Otherwise, use
               // the .right-box class on the right column, allowing the border to divide the two containers by the height of the row 
-              .col-sm-6.left-box
+              .col-sm-6.divider-left
                 h2 Left Column 
                 p Copy
               .col-sm-6
@@ -127,43 +98,6 @@ h2.section-headline Containers
                 li: a(href="#") Link 3
                 li: a(href="#") Link 4
 
-  .sg-section
-    .sg-info
-      h3 Two Column With Side Bar Column
-    .sg-demo
-      .two-col-sb
-        .row
-          .two-col-sb-left.col-sm-8
-            h2 Left Column Content
-            p PBR hashtag vegan wolf ennui. Letterpress quinoa raw denim, hoodie kale chips stumptown biodiesel Echo Park scenester XOXO 8-bit you probably haven't heard of them. Banksy Helvetica gentrify, distillery hoodie selfies art party American Apparel Truffaut fashion axe irony Tumblr salvia 8-bit keffiyeh. Put a bird on it Thundercats DIY narwhal, disrupt kogi tofu irony pop-up ugh. 
-            p Irony kitsch synth meh. Food truck Blue Bottle swag, wolf Odd Future slow-carb Etsy Intelligentsia synth High Life narwhal tofu. Sustainable ugh kale chips pop-up Blue Bottle Intelligentsia, Odd Future chillwave.
-          .two-col-sb-right.col-sm-4
-            h4 Right Column Content
-            hr
-            p More copy
-            ul
-              li: a(href="#") Item 1
-              li: a(href="#") Item 2
-              li: a(href="#") Item 3
-    .sg-code
-      pre
-        code.prettyprint.lang-jade.
-          ---
-          .two-col-sb
-            .row
-              .two-col-sb-left.col-sm-8
-                h2 Left Column Content
-                p PBR hashtag ...
-                p Irony kitsch synth ...
-              .two-col-sb-right.col-sm-4
-                h4 Right Column Content
-                hr
-                p More copy
-                ul
-                  li: a(href="#") Item 1
-                  li: a(href="#") Item 2
-                  li: a(href="#") Item 3
-  
   .sg-section
     .sg-info
       h3 Three Column Container w/Call To Action (cta)
