@@ -487,7 +487,7 @@ table.class-table
                 <div class="sg-demo">
                   <div class="callout-box">
                     <h4>Questions? Want to know what makes us different?</h4>
-                    <p>Call <strong><a href="tel:+18553992275">(855) 399-2275</a> to talk to someone on the team.</strong></p><span>(You can also <a href="#">shoot us an email</a> or jump into our <a href="#">Academy Chat</a>.)</span>
+                    <p>Call <strong><a href="tel:+18553992275">(855) 399-2275</a></strong> to talk to someone on the team.</p><span>(You can also <a href="#">shoot us an email</a> or jump into our <a href="#">Academy Chat</a>.)</span>
                   </div>
                 </div>
                 <div class="sg-code">
@@ -495,8 +495,8 @@ table.class-table
 <strong>.callout-box</strong>
   h4 Questions? Want to know what makes us different?
   p. 
-    Call &lt;strong&gt;&lt;a href="tel:+18553992275"&gt; (855) 399-2275&lt;/a&gt;
-    to talk to someone on the team.&lt;/strong&gt;
+    Call &lt;strong&gt;&lt;a href="tel:+18553992275"&gt; (855) 399-2275&lt;/a&gt;&lt;/strong&gt;
+    to talk to someone on the team.
   span.
     (You can also &lt;a href="#"&gt;shoot us an email&lt;/a&gt; or jump into 
       our &lt;a href="#"&gt;Academy Chat&lt;/a&gt;.)
@@ -543,6 +543,41 @@ table.class-table
               </div>
               <div class="sg-section">
                 <div class="sg-info">
+                  <h3>Two Column With Divider</h3>
+                </div>
+                <div class="sg-demo">
+                  <div class="two-col-sb">
+                    <div class="row divide-container">
+                      <div class="col-sm-6 left-box">
+                        <h2>Left Column </h2>
+                        <p><strong>This column has more content,</strong> so the .left-box class should be applied to this column. <em>Pork belly banjo asymmetrical slow-carb, gluten-free farm-to-table synth lo-fi.</em></p>
+                        <p><em>Irony kitsch synth meh. Food truck Blue Bottle swag, wolf Odd Future slow-carb Etsy Intelligentsia synth High Life narwhal tofu. Sustainable ugh kale chips pop-up Blue Bottle Intelligentsia, Odd Future chillwave.</em></p>
+                      </div>
+                      <div class="col-sm-6">
+                        <h2>Right Column</h2>
+                        <p>Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sg-code">
+                  <pre><code class="prettyprint lang-jade">---
+.two-col-sb
+  .row
+    // If the left columns content is longer than the right, apply the .left-box class to the left column. Otherwise, use
+    // the .right-box class on the right column, allowing the border to divide the two containers by the height of the row 
+    .col-sm-6.left-box
+      h2 Left Column 
+      p Copy
+    .col-sm-6
+      h4 Right Column
+      p More copy
+      
+      </code></pre>
+                </div>
+              </div>
+              <div class="sg-section">
+                <div class="sg-info">
                   <h3>Two Column Bio Container</h3>
                 </div>
                 <div class="sg-demo">
@@ -579,41 +614,6 @@ table.class-table
       li: a(href="#") Link 2
       li: a(href="#") Link 3
       li: a(href="#") Link 4
-      </code></pre>
-                </div>
-              </div>
-              <div class="sg-section">
-                <div class="sg-info">
-                  <h3>Two Column With Divider</h3>
-                </div>
-                <div class="sg-demo">
-                  <div class="two-col-sb">
-                    <div class="row divide-container">
-                      <div class="col-sm-6 left-box">
-                        <h2>Left Column </h2>
-                        <p><strong>This column has more content,</strong> so the .left-box class should be applied to this column. <em>Pork belly banjo asymmetrical slow-carb, gluten-free farm-to-table synth lo-fi.</em></p>
-                        <p><em>Irony kitsch synth meh. Food truck Blue Bottle swag, wolf Odd Future slow-carb Etsy Intelligentsia synth High Life narwhal tofu. Sustainable ugh kale chips pop-up Blue Bottle Intelligentsia, Odd Future chillwave.</em></p>
-                      </div>
-                      <div class="col-sm-6">
-                        <h2>Right Column</h2>
-                        <p>Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="sg-code">
-                  <pre><code class="prettyprint lang-jade">---
-.two-col-sb
-  .row
-    // If the left columns content is longer than the right, apply the .left-box class to the left column. Otherwise, use
-    // the .right-box class on the right column, allowing the border to divide the two containers by the height of the row 
-    .col-sm-6.left-box
-      h2 Left Column 
-      p Copy
-    .col-sm-6
-      h4 Right Column
-      p More copy
-      
       </code></pre>
                 </div>
               </div>
