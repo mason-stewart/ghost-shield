@@ -511,16 +511,16 @@ table.class-table
                     <div class="row divide-container">
                       <div class="col-sm-6 divider-left">
                         <h2>Left Column </h2>
-                        <p><strong>This column has more content,</strong> so the .left-box class should be applied to this column. <em>Pork belly banjo asymmetrical slow-carb, gluten-free farm-to-table synth lo-fi.</em></p>
+                        <p>Pork belly banjo asymmetrical slow-carb, gluten-free farm-to-table synth lo-fi.</em></p>
                         <p><em>Irony kitsch synth meh. Food truck Blue Bottle swag, wolf Odd Future slow-carb Etsy Intelligentsia synth High Life narwhal tofu. Sustainable ugh kale chips pop-up Blue Bottle Intelligentsia, Odd Future chillwave.</em></p>
                       </div>
                       <div class="col-sm-6">
                         <h2>Right Column</h2>
-                        <p>Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.</p>
-                        <p>Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.</p>
-                        <p>Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.</p>
-                        <p>Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.</p>
-                        <p>Before they sold out locavore irony, Austin bicycle rights beard small batch hoodie sriracha gentrify PBR vegan Bushwick plaid Vice. Four loko cliche sustainable authentic, Thundercats mumblecore locavore. Artisan keffiyeh chillwave fixie.</p>
+                        <ul>
+                          <li>sold out locavore irony</li>
+                          <li>Austin bicycle rights beard </li>
+                          <li>small batch vegan sriracha PBR</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -529,8 +529,7 @@ table.class-table
                   <pre><code class="prettyprint lang-jade">---
 .two-col-sb
   .row
-    // If the left columns content is longer than the right, apply the .left-box class to the left column. Otherwise, use
-    // the .right-box class on the right column, allowing the border to divide the two containers by the height of the row 
+    //add .divider-left to the column on the left to create the divider
     .col-sm-6.divider-left
       h2 Left Column 
       p Copy
