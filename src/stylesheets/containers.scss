@@ -105,6 +105,9 @@ hr {
 // this class is to be used on rows that are broken up by vertical dividers until the columns break onto new lines. 
 // use the .left-box or .right-box on the respective columns depending on which has more content so that the divider is the full height of the row.
 .divide-container {
+	display: flex;
+	align-items: stretch;
+
 	p {
 		color: #7D8A8E;
 	}
@@ -117,20 +120,16 @@ hr {
 		font-style: italic;
 	}
 
-	.left-box {
+	.divider-left {
 		border-right:3px solid #E3E7E9;
 	}
 
-	.right-box {
-		border-left:3px solid #E3E7E9;
-	}
 
 	@media (max-width:768px) {
-		.left-box {
+		display:inherit;
+
+		.divider-left {
 			border-right:none;
-		}
-		.right-box {
-			border-left: none;
 		}
 	}
 }

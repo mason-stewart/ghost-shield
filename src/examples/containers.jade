@@ -6,7 +6,7 @@ h2.section-headline Containers
     .sg-demo
       .callout-box 
         h4 Questions? Want to know what makes us different?
-        p Call <strong><a href="tel:+18553992275">(855) 399-2275</a> to talk to someone on the team.</strong>
+        p Call <strong><a href="tel:+18553992275">(855) 399-2275</a></strong> to talk to someone on the team.
         span (You can also <a href="#">shoot us an email</a> or jump into our <a href="#">Academy Chat</a>.)
 
     .sg-code
@@ -16,51 +16,45 @@ h2.section-headline Containers
           <strong>.callout-box</strong>
             h4 Questions? Want to know what makes us different?
             p. 
-              Call &lt;strong&gt;&lt;a href="tel:+18553992275"&gt; (855) 399-2275&lt;/a&gt;
-              to talk to someone on the team.&lt;/strong&gt;
+              Call &lt;strong&gt;&lt;a href="tel:+18553992275"&gt; (855) 399-2275&lt;/a&gt;&lt;/strong&gt;
+              to talk to someone on the team.
             span.
               (You can also &lt;a href="#"&gt;shoot us an email&lt;/a&gt; or jump into 
                 our &lt;a href="#"&gt;Academy Chat&lt;/a&gt;.)
 
+
   .sg-section
     .sg-info
-      h3 Two Column Containers
+      h3 Two Column With Divider
     .sg-demo
-      .row
-        .col-sm-6
-          h4 Left Column Copy
-          p Vegan wayfarers quinoa photo booth. Tote bag VHS cliche art party, occupy freegan artisan. Polaroid kale chips flannel hella cred. Artisan High Life keytar, actually farm-to-table beard Blue Bottle ethnic PBR. Mlkshk Cosby sweater 90's, next level semiotics seitan umami Wes Anderson Austin forage leggings.
-          ul
-            li <a href="#">Link 1</a>
-            li <a href="#">Link 2</a>
-            li <a href="#">Link 3</a>
-        .col-sm-6
-          h4 Right Column Copy
-          p Umami normcore jean shorts, Schlitz polaroid Godard twee wolf American Apparel roof party Truffaut Cosby sweater stumptown YOLO fap. Whatever pug ethnic tofu Brooklyn. Keffiyeh blog Schlitz umami, farm-to-table 8-bit authentic High Life mustache cliche. 
-          a(href="#" class="btn") Learn More
- 
+      .two-col-sb
+        .row.divide-container
+          .col-sm-6.divider-left
+            h2 Left Column 
+            p Pork belly banjo asymmetrical slow-carb, gluten-free farm-to-table synth lo-fi.</em>
+            p <em>Irony kitsch synth meh. Food truck Blue Bottle swag, wolf Odd Future slow-carb Etsy Intelligentsia synth High Life narwhal tofu. Sustainable ugh kale chips pop-up Blue Bottle Intelligentsia, Odd Future chillwave.</em>
+          .col-sm-6
+            h2 Right Column
+            ul
+              li sold out locavore irony
+              li Austin bicycle rights beard 
+              li small batch vegan sriracha PBR
+           
+
     .sg-code
       pre
         code.prettyprint.lang-jade.
           ---
-          .col-sm-6
-            h4 Left Column Copy
-            p ...
-            ul
-              li <a href="#">Link 1</a>
-              li <a href="#">Link 2</a>
-              li <a href="#">Link 3</a>
-          .col-sm-6
-            h4 Right Column Copy
-            p ...
-            a(href="#" class="btn") Learn More
+          .two-col-sb
             .row
-             .col-sm-6
-               h4 Left Column Copy
-               p Lorem ipsum
-             .col-sm-6
-               h4 Right Column Copy
-               p Lorem ipsum
+              //add .divider-left to the column on the left to create the divider
+              .col-sm-6.divider-left
+                h2 Left Column 
+                p Copy
+              .col-sm-6
+                h4 Right Column
+                p More copy
+
   
   .sg-section
     .sg-info
@@ -103,43 +97,6 @@ h2.section-headline Containers
                 li: a(href="#") Link 3
                 li: a(href="#") Link 4
 
-  .sg-section
-    .sg-info
-      h3 Two Column With Side Bar Column
-    .sg-demo
-      .two-col-sb
-        .row
-          .two-col-sb-left.col-sm-8
-            h2 Left Column Content
-            p PBR hashtag vegan wolf ennui. Letterpress quinoa raw denim, hoodie kale chips stumptown biodiesel Echo Park scenester XOXO 8-bit you probably haven't heard of them. Banksy Helvetica gentrify, distillery hoodie selfies art party American Apparel Truffaut fashion axe irony Tumblr salvia 8-bit keffiyeh. Put a bird on it Thundercats DIY narwhal, disrupt kogi tofu irony pop-up ugh. 
-            p Irony kitsch synth meh. Food truck Blue Bottle swag, wolf Odd Future slow-carb Etsy Intelligentsia synth High Life narwhal tofu. Sustainable ugh kale chips pop-up Blue Bottle Intelligentsia, Odd Future chillwave.
-          .two-col-sb-right.col-sm-4
-            h4 Right Column Content
-            hr
-            p More copy
-            ul
-              li: a(href="#") Item 1
-              li: a(href="#") Item 2
-              li: a(href="#") Item 3
-    .sg-code
-      pre
-        code.prettyprint.lang-jade.
-          ---
-          .two-col-sb
-            .row
-              .two-col-sb-left.col-sm-8
-                h2 Left Column Content
-                p PBR hashtag ...
-                p Irony kitsch synth ...
-              .two-col-sb-right.col-sm-4
-                h4 Right Column Content
-                hr
-                p More copy
-                ul
-                  li: a(href="#") Item 1
-                  li: a(href="#") Item 2
-                  li: a(href="#") Item 3
-  
   .sg-section
     .sg-info
       h3 Three Column Container w/Call To Action (cta)

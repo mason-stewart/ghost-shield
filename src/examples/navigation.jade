@@ -72,42 +72,47 @@ h2.section-headline Navigation
     .sg-info
       h3 Footer
     .sg-demo
-      .footer 
-        .wrapper
-          .logo
-            img(src="images/footer-logo.png")
-          .footer-nav: ul
-            li: a(href="#") About
-            li: a(href="#") Jobs
-            li: a(href="#") News
-            li: a(href="#") Blog
-            li: a(href="#") Locations
-            li: a(href="#") Academy
-            li: a(href="#") Accelerator
-          .social-nav: ul
-            li: a(href="http://twitter.com/theironyard").ss-icon twitter
-            li: a(href="http://twitter.com/symbolset").ss-icon facebook
-            li: a(href="http://twitter.com/symbolset").ss-icon vimeo  
-
-          .copyright ©2014 The Iron Yard. All Rights Reserved   
+      .container-fluid.gray-dark-bg
+        //don't add this width in the wild
+        .footer(style="width:90%")
+          .row
+            .logo
+              img(src="/images/footer-logo.png")
+            .footer-nav: ul
+              li: a(href="/about") About
+              li: a(href="/jobs") Jobs
+              li: a(href="http://news.theironyard.com") News
+              li: a(href="http://blog.theironyard.com") Blog
+              li: a(href="/locations") Locations
+              li: a(href="/academy") Academy
+              li: a(href="/accelerator") Accelerator
+            .social-nav: ul
+              li: a(href="http://twitter.com/theironyard").ss-icon twitter
+              li: a(href="http://facebook.com/theironyard").ss-icon facebook
+              li: a(href="http://vimeo.com/theironyard").ss-icon vimeo  
+            
+            .copyright ©2014 The Iron Yard. All Rights Reserved  
 
     .sg-code
       pre
         code.prettyprint.lang-jade.
           ---
-          .footer 
-            .wrapper
-              .logo
-                img(src="images/footer-logo.png")
-              .footer-nav: ul
-                li: a(href="#") About
-                li: ...
-              .social-nav: ul
-                li: a(href="http://twitter.com/theironyard").ss-icon twitter
-                li: a(href="http://twitter.com/symbolset").ss-icon facebook
-                li: a(href="http://twitter.com/symbolset").ss-icon vimeo
-
-              .copyright ©2014 The Iron Yard. All Rights Reserved 
+          .container-fluid.gray-dark-bg
+            .footer
+              .row
+                .logo
+                  img(src="/images/footer-logo.png")
+                .footer-nav: ul
+                  li: a(href="/about") About
+                  li: a(href="/jobs") Jobs
+                  li: a(href="http://news.theironyard.com") News
+                  . . .
+                .social-nav: ul
+                  li: a(href="http://twitter.com/theironyard").ss-icon twitter
+                  li: a(href="http://facebook.com/theironyard").ss-icon facebook
+                  li: a(href="http://vimeo.com/theironyard").ss-icon vimeo  
+                
+                .copyright ©2014 The Iron Yard. All Rights Reserved  
 
   //- .row
   //-   .col-xs-12.gray-dark-bg

@@ -9,26 +9,41 @@
   padding: 10px 20px 15px;
   font-size: 24px;
   text-decoration: none;
-  background: $gray-med;
+  background: #39474e;
   color: #fff;
   
   &:hover {
-    background: $gray-dark;
+    background: #262F34;
     text-decoration: none;
   }
 
-  &.hover-red:hover {
+  &.hover-red {
     background: $red;
     text-decoration: none;
   }
 
-  &.hover-yellow:hover {
+  &.hover-red:hover {
+    background: #7A1B1B;
+    text-decoration:none;
+  }
+
+  &.hover-yellow {
     background: $yellow;
     text-decoration: none;
   }
 
-  &.hover-blue:hover {
+  &.hover-yellow:hover {
+    background: #A78D25;
+    text-decoration: none;
+  }
+
+  &.hover-blue {
     background: $blue;
+    text-decoration: none;
+  }
+
+  &.hover-blue:hover {
+    background: #20719E;
     text-decoration: none;
   }
 
@@ -43,6 +58,7 @@
 
     p {
       display: inline-block;
+      color: #fff;
       font-weight: 100;
       font-size: 24px;
       margin: 0;

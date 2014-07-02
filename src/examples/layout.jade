@@ -2,7 +2,7 @@ h2.section-headline Layout
 .sg-container
   .sg-section
     .sg-info
-      h3 Complete Nav-Bar
+      h3 Complete Nav-Bar with Triangle
     .sg-demo
       .container-fluid
         .header.gray-dark-bg
@@ -31,14 +31,14 @@ h2.section-headline Layout
               li: a(href="#") Alumni
               li: a(href="#") FAQs
               li: a(href="#") Kids Classes      
-            .triangle(style="border-top: 20px solid #39474E; bottom: -58px") 
+            .triangle.gray-dark-triangle(style="bottom:-58px")  
 
     .sg-code
       pre
         code.prettyprint.lang-jade.
           ---
             .container-fluid
-              .header
+              .header.gray-dark-bg
                 .wrapper
                   .logo
                     img(src="images/iron-yard-logo.svg")
@@ -57,5 +57,43 @@ h2.section-headline Layout
                   ul
                     li: a(href="#") Hire Graduates
                     li ...
-                  /* border top on .triangle matches the color of the nav-bar */           
-                  .triangle(style="border-top: 20px solid #39474E")      
+                  // the second class is used to determine the color of the triangle. 
+                  // the color must match the class applied to .header and .sub-nav           
+                  .triangle.gray-dark-triangle
+
+.sg-container 
+  .sg-section
+    .sg-info
+      h3 Screen-Width Section
+    .sg-demo(style="padding:0")
+      .horizontal-section.gray-light-bg
+        .container-fluid
+          .row
+            .col-md-6
+              h2.section-headline Awesome Content
+              p Letterpress quinoa raw denim, hoodie kale chips stumptown biodiesel Echo Park scenester XOXO 8-bit you probably haven't heard of them. Banksy Helvetica gentrify, distillery hoodie selfies art party American Apparel Truffaut fashion axe irony Tumblr salvia 8-bit keffiyeh.
+            .col-md-6
+              h2.section-headline Great Job
+              ul
+                li Sustainable kale chips
+                li Blue Bottle boat shoes
+                li Odd Future chillwave
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+            // As long as you have a .container nested within the .horizontal-section div,
+            // you can use whatever content you like within this class.
+            .horizontal-section.gray-light-bg
+              .container
+                .row
+                  .col-md-6
+                    h2.section-headline Awesome Content
+                    p Letterpress quinoa raw denim, 8-bit stumptown biodiesel. . . 
+                  .col-md-6
+                    h2.section-headline Great Job
+                    ul
+                      li Sustainable kale chips
+                      li Blue Bottle boat shoes
+                      li Odd Future chillwave
+
