@@ -28,7 +28,7 @@
 
 # Ghost Shield is The Iron Yard's Style Guide.
 
-...
+Wow this is cool i'm good at programming.
 
 ## Usage
 
