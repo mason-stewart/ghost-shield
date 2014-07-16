@@ -12,6 +12,7 @@ $yellow: #CEAE2C;
 $gold: #C4843C;
 $green: #3AC29C; // location page green
 $turquoise: #349FAD;
+$purple: #a36bcd;
 
 // Element tags are listed first, then classes
 // All items & properties listed in alphabetical order
@@ -112,6 +113,19 @@ $turquoise: #349FAD;
 }
 
 .green-triangle {
+  border-top: 20px solid $green;
+}
+
+.purple-bg {
+  background-color:$purple;
+  color: white;
+}
+
+.purple-text {
+  color: $purple;
+}
+
+.purple-triangle {
   border-top: 20px solid $green;
 }
 
