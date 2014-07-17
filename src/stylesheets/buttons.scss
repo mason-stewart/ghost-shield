@@ -47,6 +47,15 @@
     text-decoration: none;
   }
 
+  &.hover-purple {
+    background: $purple;
+  }
+
+  &.hover-purple:hover {
+    background: #7C519C;
+    text-decoration:none;
+  }
+
   &.btn-contact {
     background: $blue-contact;
     font-style: normal;
