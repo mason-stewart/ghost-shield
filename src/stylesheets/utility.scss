@@ -11,4 +11,10 @@
 	
 	margin: 40px auto;
 	padding: 20px 0 20px 0;
+
+  //if the horizontal-section is the last element on the page, use this class to eliminate the white margin between this div and the footer
+  &.last {
+    margin-bottom:-40px;
+  }
 }
+
