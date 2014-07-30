@@ -11,8 +11,10 @@ $blue-link: #158cbd;
 $yellow: #CEAE2C;
 $gold: #C4843C;
 $green: #3AC29C; // location page green
+$teal: #3FC8C3;
 $turquoise: #349FAD;
 $purple: #a36bcd;
+
 
 // Element tags are listed first, then classes
 // All items & properties listed in alphabetical order
@@ -153,6 +155,19 @@ $purple: #a36bcd;
 
 .red-orange-text {
   color:$red-orange;
+}
+
+.teal-bg {
+  background-color: $teal;
+  color: white;
+}
+
+.teal-triangle {
+  border-top: 20px solid $teal;
+}
+
+.teal-text {
+  color: $teal;
 }
 
 .turquoise-bg {
