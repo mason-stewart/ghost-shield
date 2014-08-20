@@ -1,0 +1,63 @@
+.ghost-sidebar {
+  margin-left: 0;
+  margin-top: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+  list-style: none;
+
+  ul, li {
+    list-style: none;
+  }
+
+  li {
+    padding: 0 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+
+    &.selected ul {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: $gray-dark;
+      text-decoration: none;
+
+      &:hover {
+        font-weight: bolder;
+      }
+    }
+
+    a.folder {
+
+      color: $blue-link;
+
+      &:before {
+        content: "▶";
+        margin-right: 8px;
+      }
+    }
+
+    &.selected > a.folder:before {
+      content: "▼";
+      margin-right: 8px;
+    }
+
+    &.selected > a {
+      font-weight: bolder;
+    }
+
+  }
+}
+
+.ghost-header {
+
+  li {
+    display: inline-block;
+    margin: 20px 20px 20px 0;
+
+    a {
+      color: white;
+      font-weight: bolder;
+    }
+  }
+}
