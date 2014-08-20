@@ -50,10 +50,14 @@
 }
 
 .ghost-header {
-  border-bottom: 1px solid #acacac;
 
   li {
     display: inline-block;
     margin: 20px 20px 20px 0;
+
+    a {
+      color: white;
+      font-weight: bolder;
+    }
   }
 }
