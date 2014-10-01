@@ -56,6 +56,16 @@
     text-decoration:none;
   }
 
+  &.hover-teal {
+    background: $teal;
+    text-decoration: none;
+  }
+
+  &.hover-teal:hover {
+    background:#319F9B;
+    text-decoration:none;
+  }
+
   &.btn-contact {
     background: $blue-contact;
     font-style: normal;
