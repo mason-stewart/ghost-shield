@@ -13,8 +13,32 @@ $gold: #C4843C;
 $green: #3AC29C; // location page green
 $teal: #3FC8C3;
 $turquoise: #349FAD;
-$purple: #a36bcd;
+$purple: #30A1AD;
+$orange: #FAB16A;
 
+$python-base: rgb(89,189,123);
+$rails-base: rgb(184,89,76);
+$mobile-base: rgb(210,180,42);
+$front-end-base: rgb(206,131,44);
+$web-design-base: rgb(48,161,173);
+
+$python-secondary-lighter: #7EC991;
+$rails-secondary-lighter: #D26C5D;
+$mobile-secondary-lighter: #E9D655;
+$front-end-secondary-lighter: #FBB36B;
+$web-design-secondary-lighter: #70BBB7;
+
+$python-secondary-darker: #298D57;
+$rails-secondary-darker: #7D493E;
+$mobile-secondary-darker: #8C7D22;
+$front-end-secondary-darker: #9F6A38;
+$web-design-secondary-darker: #087890;
+
+$python-callout: rgb(233,213,84);
+$rails-callout: rgb(177,179,181);
+$mobile-callout: rgb(127,199,146);
+$front-end-callout: rgb(111,186,182);
+$web-design-callout: rgb(250,177,106);
 
 // Element tags are listed first, then classes
 // All items & properties listed in alphabetical order
@@ -206,4 +230,10 @@ $purple: #a36bcd;
       color: white;
     }
   }
+}
+
+// Discipline specific background colors
+
+.mobile-bg {
+  background-color: $mobile-base;
 }
