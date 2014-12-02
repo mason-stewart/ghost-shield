@@ -232,8 +232,50 @@ $web-design-callout: rgb(250,177,106);
   }
 }
 
+// Discipline specific text colors
+.front-end-text {
+  color: $front-end-base;
+}
+
+.mobile-text {
+  color: $mobile-base;
+}
+
+.python-text {
+  color: $python-base;
+}
+
+.rails-text {
+  color: $rails-base;
+}
+
+.web-design-text {
+  color: $web-design-base;
+}
+
 // Discipline specific background colors
+
+.front-end-bg {
+  background-color: $front-end-base;
+  color: #fff;
+}
 
 .mobile-bg {
   background-color: $mobile-base;
+  color: #fff;
+}
+
+.python-bg {
+  background-color: $python-base;
+  color: #fff;
+}
+
+.rails-bg {
+  background-color: $rails-base;
+  color: #fff;
+}
+
+.web-design-bg {
+  background-color: $web-design-base;
+  color: #fff;
 }
