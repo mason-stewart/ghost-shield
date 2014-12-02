@@ -17,6 +17,46 @@
     text-decoration: none;
   }
 
+  &.front-end-btn {
+    background: $front-end-base;
+
+    &:hover {
+      background: $front-end-secondary-darker;
+    }
+  }
+
+  &.mobile-btn {
+    background: $mobile-base;
+
+    &:hover {
+      background: $mobile-secondary-darker;
+    }
+  }
+
+  &.python-btn {
+    background: $python-base;
+
+    &:hover {
+      background: $python-secondary-darker;
+    }
+  }
+
+  &.rails-btn {
+    background: $rails-base;
+
+    &:hover {
+      background: $rails-secondary-darker;
+    }
+  }
+
+  &.web-design-btn {
+    background: $web-design-base;
+  
+    &:hover {
+      background: $web-design-secondary-darker;
+    }
+  }
+
   &.hover-red {
     background: $red;
     text-decoration: none;
@@ -52,7 +92,7 @@
   }
 
   &.hover-purple:hover {
-    background: #7C519C;
+    background: $orange;
     text-decoration:none;
   }
 
